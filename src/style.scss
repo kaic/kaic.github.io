@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-$background: rgb(237, 239, 237);
+@import "~bootstrap/dist/css/bootstrap";
 
+$background: rgb(237, 239, 237);
 
 body {
     font-family: 'Roboto', sans-serif;
