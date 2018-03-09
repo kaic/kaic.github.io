@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$background: rgb(237, 239, 237);
+
+
 body {
-    background-color: green;
+    font-family: 'Roboto', sans-serif;
+    background-color: $background;
 }
