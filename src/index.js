@@ -1,1 +1,3 @@
-console.log("Running Webpack")
+import './style.scss';
+
+console.log("Running Webpack");
