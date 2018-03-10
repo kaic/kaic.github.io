@@ -23,27 +23,35 @@ body {
     padding: 1em;
 }
 
-#name {
-    color: $secundaryColor;
-}
-
-#role {
-    font-size: 1rem;
-}
-
 #avatar {
     border: 4px solid $secundaryColor;
     max-width: 100%;
 }
 
-h1{
+h1 {
+    color: $secundaryColor;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;    
+}
+
+div.social-media {
     margin-bottom: 1rem;
 }
 
-h2{
-    margin-bottom: 1rem;
+ul.menu {
+    list-style: none;
+    padding-left: 0;
+    a {
+        font-size: 1.5rem;
+    }
 }
 
-div.social-media{
-    margin-bottom: 1rem;
+a {
+    color: $secundaryColor;
 }
