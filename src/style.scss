@@ -20,6 +20,7 @@ html {
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: $background;
+    border: 8px solid black;
     padding: 1em;
 }
 
@@ -42,6 +43,10 @@ h3 {
 
 div.social-media {
     margin-bottom: 1rem;
+}
+
+div.presentation {
+    margin-bottom: 20px;
 }
 
 ul.menu {
