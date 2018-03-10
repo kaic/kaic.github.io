@@ -1,24 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import "~bootstrap/dist/css/bootstrap";
-
-$background: rgb(237, 239, 237);
-
-$primaryColor: rgb(239, 77, 82);
-$secundaryColor: rgb(103, 96, 249);
-$accentColor: rgb(187, 158, 135);
-
+$background: rgb(237,
+239,
+237);
+$primaryColor: rgb(239,
+77,
+82);
+$secundaryColor: rgb(103,
+96,
+249);
+$accentColor: rgb(187,
+158,
+135);
 html {
     height: 100%;
     width: 100%;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     background-color: $background;
     padding: 1em;
 }
 
-#avatar{
+#avatar {
+    border: 4px solid $primaryColor;
     max-width: 100%;
 }
