@@ -23,7 +23,15 @@ body {
     padding: 1em;
 }
 
+#name {
+    color: $secundaryColor;
+}
+
+#role {
+    font-size: 1rem;
+}
+
 #avatar {
-    border: 4px solid $primaryColor;
+    border: 4px solid $secundaryColor;
     max-width: 100%;
 }
