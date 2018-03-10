@@ -15,13 +15,25 @@ $accentColor: rgb(187,
 html {
     height: 100%;
     width: 100%;
+    padding: 1em;
 }
 
 body {
+    border: 1px solid black;
     font-family: 'Roboto Mono', monospace;
     background-color: $background;
-    border: 8px solid black;
-    padding: 1em;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+#header-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #avatar {
@@ -39,7 +51,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;    
+    font-size: 1rem;
 }
 
 div.social-media {
@@ -51,20 +63,48 @@ div.presentation {
 }
 
 ul.menu {
-    list-style: none;
-    padding-left: 0;
-
+    list-style-type: circle;
     li {
         margin-bottom: 15px;
-    }
-
-    a {
-        font-size: 1.5rem;
-        border-bottom: 1px solid $secundaryColor;
-        
     }
 }
 
 a {
     color: $secundaryColor;
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 320px) { 
+    ul.menu {
+        a {
+            font-size: 1.2rem;
+        }
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    ul.menu {
+        a {
+            font-size: 1rem;
+        }
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    ul.menu {
+        a {
+            font-size: 2vw;
+        }
+    }
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    ul.menu {
+        a {
+            font-size: 2vw;
+        }
+    }
+ }
