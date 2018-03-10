@@ -3,12 +3,12 @@
 $background: rgb(237,
 239,
 237);
-$primaryColor: rgb(239,
+$secundaryColor: rgb(239,
 77,
 82);
-$secundaryColor: rgb(103,
-96,
-249);
+// $secundaryColor: rgb(103,
+// 96,
+// 249);
 $accentColor: rgb(187,
 158,
 135);
@@ -35,6 +35,7 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+    margin-bottom: 1px;
 }
 
 h3 {
