@@ -62,9 +62,11 @@ div.presentation {
 
 a {
     color: $secundaryColor;
-
     &.header-menu-link {
         margin-bottom: 0.4rem;
+        &:hover {
+            color: $secundaryColor;
+        }
     }
 }
 
