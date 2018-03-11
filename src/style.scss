@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import "~bootstrap/dist/css/bootstrap";
-$background: rgb(237,
-239,
-237);
+$background: #faf9f7;
 $secundaryColor: rgb(239,
 77,
 82);
@@ -62,49 +60,39 @@ div.presentation {
     margin-bottom: 20px;
 }
 
-ul.menu {
-    list-style-type: circle;
-    li {
-        margin-bottom: 15px;
-    }
-}
-
 a {
     color: $secundaryColor;
+
+    &.header-menu-link {
+        margin-bottom: 0.4rem;
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 320px) { 
-    ul.menu {
-        a {
-            font-size: 1.2rem;
-        }
+@media (min-width: 320px) {
+    a.header-menu-link {
+        font-size: 1.5rem;
+        margin-bottom: 0.4rem;
     }
- }
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-    ul.menu {
-        a {
-            font-size: 1rem;
-        }
+@media (min-width: 768px) {
+    a.header-menu-link {
+        font-size: 1.7rem;
     }
- }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    ul.menu {
-        a {
-            font-size: 2vw;
-        }
+@media (min-width: 992px) {
+    a.header-menu-link {
+        font-size: 1.9rem;
     }
- }
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-    ul.menu {
-        a {
-            font-size: 2vw;
-        }
+@media (min-width: 1200px) {
+    a.header-menu-link {
+        font-size: 2.1rem;
     }
- }
+}
