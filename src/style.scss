@@ -14,7 +14,7 @@ $accentColor: rgb(187,
 html {
     height: 100%;
     width: 100%;
-    padding: 1em;
+    padding: 0 1em;
 }
 
 body {
@@ -24,7 +24,10 @@ body {
 }
 
 header {
-    position: relative;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     max-height: 100vh;
 }
@@ -36,13 +39,15 @@ header {
 }
 
 #avatar {
+    margin-bottom: 0.5rem;
     border: 4px solid $secundaryColor;
     max-width: 100%;
 }
 
 h1 {
-    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
     margin-bottom: 0;
+    font-family: 'Fredoka One', cursive;
     color: $secundaryColor;
 }
 
@@ -55,6 +60,20 @@ h2 {
 h3 {
     font-size: 1rem;
     color: $secundaryColor;
+}
+
+a.btn-social-media {
+    & svg {
+        font-size: 2em;
+    }
+
+    +a.btn-social-media {
+        margin-left: 5px;
+    }
+}
+
+a.header-menu-link {
+    font-size: 1.5rem;
 }
 
 div.social-media {
@@ -74,39 +93,57 @@ article {
 a {
     font-family: 'Fredoka One', cursive;
     color: $primaryColor;
+    
     &.header-menu-link {
-        margin-bottom: 0.4rem;
         &:hover {
             color: $primaryColor;
         }
     }
 }
 
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 320px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+
     a.header-menu-link {
         font-size: 1.5rem;
-        margin-bottom: 0.4rem;
+    }
+    a.btn-social-media {
+        & svg {
+            font-size: 2.5em;
+            margin-right: 5px;
+        }
     }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    a.header-menu-link {
-        font-size: 1.7rem;
+    h1 {
+        font-size: 3rem;
     }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-    a.header-menu-link {
-        font-size: 1.9rem;
+    h2 {
+        font-size: 2rem;
     }
-}
+    h3 {
+        font-size: 1.5rem;
+    }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
     a.header-menu-link {
-        font-size: 2.1rem;
+        font-size: 2rem;
+    }
+    a.btn-social-media {
+        & svg {
+            font-size: 3rem;
+            margin-right: 10px;
+        }
     }
 }
