@@ -5,7 +5,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import './style.scss';
 
 import fontawesome from '@fortawesome/fontawesome';
-import brands from '@fortawesome/fontawesome-free-brands'
+import faEnvelopeSquare from '@fortawesome/fontawesome-free-solid/faEnvelopeSquare';
+import faLinkedinIn from '@fortawesome/fontawesome-free-brands/faLinkedinIn';
+import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
 
-fontawesome.library.add(brands.faLinkedinIn);
-fontawesome.library.add(brands.faGithub);
+fontawesome.library.add(faGithub, faLinkedinIn, faEnvelopeSquare);
