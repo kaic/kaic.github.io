@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Roboto');
 @import "~bootstrap/dist/css/bootstrap";
 @import "~animate.css/animate.min.css";
 $background: #faf9f7;
 $secundaryColor: rgb(239,
 77,
 82);
-// $secundaryColor: rgb(103,
-// 96,
-// 249);
+$primaryColor: rgb(103,
+96,
+249);
 $accentColor: rgb(187,
 158,
 135);
@@ -18,9 +18,8 @@ html {
 }
 
 body {
-    border: 1px solid black;
     padding: 0 5px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
     background-color: $background;
 }
 
@@ -42,16 +41,20 @@ header {
 }
 
 h1 {
+    font-family: 'Fredoka One', cursive;
+    margin-bottom: 0;
     color: $secundaryColor;
 }
 
 h2 {
     font-size: 1.5rem;
     margin-bottom: 1px;
+    color: $secundaryColor;
 }
 
 h3 {
     font-size: 1rem;
+    color: $secundaryColor;
 }
 
 div.social-media {
@@ -62,12 +65,19 @@ div.presentation {
     margin-bottom: 20px;
 }
 
+article {
+    & h1 {
+        margin-bottom: 0.5rem;
+    }
+}
+
 a {
-    color: $secundaryColor;
+    font-family: 'Fredoka One', cursive;
+    color: $primaryColor;
     &.header-menu-link {
         margin-bottom: 0.4rem;
         &:hover {
-            color: $secundaryColor;
+            color: $primaryColor;
         }
     }
 }
