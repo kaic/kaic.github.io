@@ -18,7 +18,7 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./src/service-worker.js').then(function () {
         console.log('service worker registration complete.');
     }, function () {
-        console.log('sservice worker registration failure.');
+        console.log('service worker registration failure.');
     });
 } else {
     console.log('service worker is not supported.');
