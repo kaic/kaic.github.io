@@ -1,7 +1,3 @@
-import 'jquery/dist/jquery.slim';
-import 'popper.js';
-import 'bootstrap/dist/js/bootstrap.min.js';
-
 import './style.scss';
 
 import fontawesome from '@fortawesome/fontawesome';
