@@ -42,7 +42,7 @@ footer {
 a {
     font-family: 'Fredoka One', cursive;
     color: $primaryColor;
-    &:hover {
+    &:hover, &:active{
         color: $secundaryColor;
         text-decoration: none;
     }
