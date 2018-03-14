@@ -13,15 +13,9 @@
 @import "~animate.css/animate.min.css";
 
 $background: #faf9f7;
-$secundaryColor: rgb(239,
-77,
-82);
-$primaryColor: rgb(103,
-96,
-249);
-$accentColor: rgb(187,
-158,
-135);
+$primaryColor: #ef4d52;
+$secundaryColor: #2b2b2b;
+
 html {
     height: 100%;
     width: 100%;
@@ -72,7 +66,7 @@ a {
 
 #avatar {
     margin-bottom: 0.5rem;
-    border: 4px solid $secundaryColor;
+    border: 4px solid $primaryColor;
     max-width: 100%;
 }
 
@@ -129,10 +123,10 @@ article {
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 320px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     h3 {
         font-size: 1rem;
@@ -142,7 +136,7 @@ article {
     }
     a.btn-social-media {
         & svg {
-            font-size: 2.5em;
+            font-size: 2em;
             margin-right: 5px;
         }
     }
@@ -151,20 +145,20 @@ article {
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     a.header-menu-link {
         font-size: 2rem;
     }
     a.btn-social-media {
         & svg {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-right: 10px;
         }
     }
