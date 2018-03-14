@@ -24,12 +24,12 @@ body {
 }
 
 header {
-    padding: 1em 0;
+    border: 1px solid $secundaryColor;
+    margin: 2.5vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    max-height: 100vh;
+    height: 95vh;
 }
 
 #header-content {
@@ -85,6 +85,8 @@ div.presentation {
 }
 
 article {
+    margin-bottom: 5vh;
+
     & h1 {
         margin-bottom: 0.5rem;
     }
