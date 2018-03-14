@@ -32,6 +32,22 @@ header {
     height: 90vh;
 }
 
+footer {
+    margin-bottom: 2.5vh;
+    & p {
+        margin-top: 0.5rem;
+    }
+}
+
+a {
+    font-family: 'Fredoka One', cursive;
+    color: $primaryColor;
+    &:hover {
+        color: $secundaryColor;
+        text-decoration: none;
+    }
+}
+
 #header-content {
     position: absolute;
     top: 50%;
@@ -62,11 +78,11 @@ h3 {
     color: $secundaryColor;
 }
 
+h4 {
+    font-size: 1.2rem;
+}
+
 a.btn-social-media {
-    &:hover {
-        color: $secundaryColor;
-        text-decoration: none;
-    }
     & svg {
         font-size: 2em;
     }
@@ -91,17 +107,6 @@ article {
     margin-bottom: 5vh;
     & h1 {
         margin-bottom: 0.5rem;
-    }
-}
-
-a {
-    font-family: 'Fredoka One', cursive;
-    color: $primaryColor;
-    &.header-menu-link {
-        &:hover {
-            color: $secundaryColor;
-            text-decoration: none;
-        }
     }
 }
 
