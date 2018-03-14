@@ -15,7 +15,7 @@ window.addEventListener("load",function() {
 
 if ('serviceWorker' in navigator) {
     console.log('Service worker is registrating.');
-    navigator.serviceWorker.register('./src/service-worker.js').then(function () {
+    navigator.serviceWorker.register('service-worker.js').then(function () {
         console.log('service worker registration complete.');
     }, function () {
         console.log('service worker registration failure.');
