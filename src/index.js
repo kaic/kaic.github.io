@@ -7,6 +7,12 @@ import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
 
 fontawesome.library.add(faGithub, faLinkedinIn, faEnvelopeSquare);
 
+window.addEventListener("load",function() {
+    setTimeout(function(){
+        window.scrollTo(0, 1);
+    }, 0);
+})
+
 if ('serviceWorker' in navigator) {
     console.log('Service worker is registrating.');
     navigator.serviceWorker.register('./service-worker.js').then(function () {
