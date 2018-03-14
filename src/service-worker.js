@@ -1,90 +1,51 @@
-"use strict";
+const PRECACHE = 'precache-v1';
+const RUNTIME = 'runtime';
 
-var version = 'v1::';
-
-var offlineFundamentals = [
+const PRECACHE_URLS = [
+  'index.html',
+  './',
   'main.js'
 ];
 
-self.addEventListener("install", function(event) {
-  console.log('Worker is installing');
+// The install handler takes care of precaching the resources we always need.
+self.addEventListener('install', event => {
   event.waitUntil(
-
-    caches
-      .open(version + 'fundamentals')
-      .then(function(cache) {
-        return cache.addAll(offlineFundamentals);
-      })
-      .then(function() {
-        console.log('Worker installed');
-      })
+    caches.open(PRECACHE)
+      .then(cache => cache.addAll(PRECACHE_URLS))
+      .then(self.skipWaiting())
   );
 });
 
-self.addEventListener("fetch", function(event) {
-  console.log('Worker is fetching');
+self.addEventListener('activate', event => {
+  const currentCaches = [PRECACHE, RUNTIME];
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
+    }).then(cachesToDelete => {
+      return Promise.all(cachesToDelete.map(cacheToDelete => {
+        return caches.delete(cacheToDelete);
+      }));
+    }).then(() => self.clients.claim())
+  );
+});
 
-  if (event.request.method !== 'GET') {
-    return;
-  }
-  event.respondWith(
-    caches
-      .match(event.request)
-      .then(function(cached) {
-        var networked = fetch(event.request)
-          .then(fetchedFromNetwork, unableToResolve)
-          .catch(unableToResolve);
+self.addEventListener('fetch', event => {
+  // Skip cross-origin requests, like those for Google Analytics.
+  if (event.request.url.startsWith(self.location.origin)) {
+    event.respondWith(
+      caches.match(event.request).then(cachedResponse => {
+        if (cachedResponse) {
+          return cachedResponse;
+        }
 
-        return cached || networked;
-
-        function fetchedFromNetwork(response) {
-
-          var cacheCopy = response.clone();
-
-
-          caches
-            .open(version + 'pages')
-            .then(function add(cache) {
-              cache.put(event.request, cacheCopy);
-            })
-            .then(function() {
+        return caches.open(RUNTIME).then(cache => {
+          return fetch(event.request).then(response => {
+            return cache.put(event.request, response.clone()).then(() => {
+              return response;
             });
-
-          return response;
-        }
-
-        function unableToResolve () {
-
-          return new Response('<h1>Service Unavailable</h1>', {
-            status: 503,
-            statusText: 'Service Unavailable',
-            headers: new Headers({
-              'Content-Type': 'text/html'
-            })
           });
-        }
+        });
       })
-  );
-});
-
-self.addEventListener("activate", function(event) {
-
-  event.waitUntil(
-    caches
-      .keys()
-      .then(function (keys) {
-        return Promise.all(
-          keys
-            .filter(function (key) {
-              return !key.startsWith(version);
-            })
-            .map(function (key) {
-              return caches.delete(key);
-            })
-        );
-      })
-      .then(function() {
-        console.log('Worker is activated.');
-      })
-  );
+    );
+  }
 });

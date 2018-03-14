@@ -13,11 +13,9 @@ window.addEventListener("load",function() {
     }, 0);
 })
 
-import './service-worker';
-
 if ('serviceWorker' in navigator) {
     console.log('Service worker is registrating.');
-    navigator.serviceWorker.register('./service-worker.js').then(function () {
+    navigator.serviceWorker.register('./src/service-worker.js').then(function () {
         console.log('service worker registration complete.');
     }, function () {
         console.log('sservice worker registration failure.');
