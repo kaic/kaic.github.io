@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Roboto');
+@font-face {
+    font-family: "Roboto";
+    src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Fredoka One";
+    src: url("./assets/fonts/FredokaOne-Regular.ttf") format("truetype")
+}
 
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
@@ -9,13 +17,10 @@
 @import "~bootstrap/scss/images";
 @import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/utilities";
-
 @import "~animate.css/animate.min.css";
-
 $background: #faf9f7;
 $primaryColor: #ef4d52;
 $secundaryColor: #2b2b2b;
-
 html {
     height: 100%;
     width: 100%;
@@ -50,7 +55,8 @@ footer {
 a {
     font-family: 'Fredoka One', cursive;
     color: $primaryColor;
-    &:hover, &:active{
+    &:hover,
+    &:active {
         color: $secundaryColor;
         text-decoration: none;
     }
