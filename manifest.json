@@ -1,6 +1,9 @@
 {
     "name": "Kaic Bento",
     "short_name": "Kaic",
+    "description": "Web Developer, SP",
+    "start_url": ".",
+    "display": "standalone",
     "background_color": "#ef4d52",
     "theme_color": "#ef4d52",
     "icons": [
