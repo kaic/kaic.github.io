@@ -35,12 +35,17 @@ body {
 }
 
 header {
-    border: 1px solid $secundaryColor;
     margin: 5vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
+}
+
+hr {
+    height: 6px;
+	background: url('./assets/sprites/hr.png') repeat-x 0 0;
+    border: 0;
 }
 
 footer {
