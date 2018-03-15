@@ -1,8 +1,8 @@
 @font-face {
-    font-family: "Fredoka One";
+    font-family: "IBM Plex Mono";
     font-style: normal;
-    font-weight: 400, 500;    
-    src: url("./assets/fonts/FredokaOne-Regular.ttf") format("truetype")
+    font-weight: 500;    
+    src: url("./assets/fonts/IBMPlexMono-Medium.ttf") format("truetype")
 }
 
 @import "~bootstrap/scss/functions";
@@ -77,7 +77,7 @@ footer {
 }
 
 a {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'IBM Plex Mono', monospace;
     color: $primaryColor;
     &:hover,
     &:active {
@@ -109,7 +109,7 @@ ul.social-media-list {
 h1 {
     font-size: 2rem;
     margin-bottom: 0;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'IBM Plex Mono', monospace;
     color: $secundaryColor;
 }
 
@@ -130,6 +130,7 @@ h4 {
 
 a.header-menu-link {
     font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 div.social-media {
