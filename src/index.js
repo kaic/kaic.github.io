@@ -2,10 +2,12 @@ import './style.scss';
 
 import fontawesome from '@fortawesome/fontawesome';
 import faEnvelopeSquare from '@fortawesome/fontawesome-free-solid/faEnvelopeSquare';
-import faLinkedinIn from '@fortawesome/fontawesome-free-brands/faLinkedinIn';
-import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
+import faLinkedin from '@fortawesome/fontawesome-free-brands/faLinkedin';
+import faGithubSquare from '@fortawesome/fontawesome-free-brands/faGithubSquare';
+import faGithubAlt from '@fortawesome/fontawesome-free-brands/faGithubAlt';
+import faMedium from '@fortawesome/fontawesome-free-brands/faMedium';
 
-fontawesome.library.add(faGithub, faLinkedinIn, faEnvelopeSquare);
+fontawesome.library.add(faGithubSquare, faLinkedin, faEnvelopeSquare, faMedium, faGithubAlt);
 
 window.addEventListener("load",function() {
     setTimeout(function(){

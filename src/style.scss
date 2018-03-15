@@ -86,6 +86,14 @@ a {
     }
 }
 
+li a {
+    font-size: 1.5rem;
+}
+
+ul.social-media-list {
+    list-style-type: none;
+}
+
 #header-content {
     position: absolute;
     top: 50%;
@@ -107,7 +115,7 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    margin-bottom: 1px;
+    margin-bottom: 0.5rem;
     color: $secundaryColor;
 }
 
@@ -118,15 +126,6 @@ h3 {
 
 h4 {
     font-size: 1.2rem;
-}
-
-a.btn-social-media {
-    & svg {
-        font-size: 2em;
-    }
-    +a.btn-social-media {
-        margin-left: 5px;
-    }
 }
 
 a.header-menu-link {
@@ -162,12 +161,6 @@ article {
     a.header-menu-link {
         font-size: 1.5rem;
     }
-    a.btn-social-media {
-        & svg {
-            font-size: 2em;
-            margin-right: 5px;
-        }
-    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -183,11 +176,5 @@ article {
     }
     a.header-menu-link {
         font-size: 2rem;
-    }
-    a.btn-social-media {
-        & svg {
-            font-size: 2.5rem;
-            margin-right: 10px;
-        }
     }
 }
