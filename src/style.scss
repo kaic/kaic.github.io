@@ -1,18 +1,11 @@
-@font-face {
-    font-family: "IBM Plex Mono";
-    font-style: normal;
-    font-weight: 500;    
-    src: url("./assets/fonts/IBMPlexMono-Medium.ttf") format("truetype")
-}
-
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/type";
 @import "~bootstrap/scss/images";
-@import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/utilities";
 
 $background: #faf9f7;
@@ -74,6 +67,13 @@ footer {
     & p {
         margin-top: 0.5rem;
     }
+}
+
+@font-face {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 500;    
+    src: url("./assets/fonts/IBMPlexMono-Medium.ttf") format("truetype")
 }
 
 a {
