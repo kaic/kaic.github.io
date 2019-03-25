@@ -1,9 +1,8 @@
-const PRECACHE = 'precache-v2.4';
+const PRECACHE = 'precache-v2.5';
 const RUNTIME = 'runtime';
 
 const PRECACHE_URLS = [
-  'index.html',
-  './',
+  'src/index.html',
   'main.js'
 ];
 
