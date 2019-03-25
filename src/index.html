@@ -18,34 +18,33 @@
 </head>
 
 <body>
-    <header class="animated pulse">
+    <header class="animated bounce">
         <div class="container-fluid" id="header-content">
 
             <div class="row justify-content-center">
-                <figure class="col-7 mb-0 text-center">
+                <figure class="col-6 mb-0 text-center">
                     <img src="./assets/images/avatar.jpg" id="avatar" class="img-fluid rounded-circle" alt="Minha foto">
                 </figure>
             </div>
 
-            <div class="presentation text-center">
-                <h1>Kaic Bento</h1>
-                <h2>Software Developer</h2>
-                <h3>São Paulo, Brasil</h3>
-            </div>
             <div class="row justify-content-center">
-                <a class="header-menu-link text-center" href="#sobre">Sobre Mim</a>
+                <div class="col-lg-7 col-md-9 col-sm-11 presentation">
+                    <p class="mb-0">Olá, me chamo</p>
+                    <h1>Kaic Bento</h1>
+                    <h2>e eu desenvolvo software para a Web.</h2>
+                    <h3><i class="fas fa-map-pin"></i>São Paulo, Brasil</h3>
+                </div>
             </div>
-            <div class="row justify-content-center">
-                <a class="header-menu-link text-center" href="#carreira">Carreira</a>
-            </div>
-            <!-- <div class="row justify-content-center">
-                <a class="header-menu-link" href="">Speaking</a>
-            </div>
-            <div class="row justify-content-center">
-                <a class="header-menu-link" href="#trabalho">Publicações</a>
-            </div> -->
-            <div class="row justify-content-center">
-                <a class="header-menu-link text-center" href="#contato">Onde você me encontra</a>
+
+            <div class="row justify-content-center text-center">
+
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#carreira">Carreira</a></li>
+                    <li><a href="#skills">Minhas Skills</a></li>
+                    <li><a href="#contato">Onde você me encontra</a></li>
+                </ul>
+
             </div>
 
         </div>
@@ -68,27 +67,6 @@
             </div>
         </article>
 
-        <article id="skills">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-10">
-                    <h1>Minhas Skills</h1>
-                    <p>Olá, me chamo Kaic, moro em São Paulo/SP e tenho 19 anos. Sou formado Técnico em Informática pela ETEC
-                        da Zona Leste (2013-2015) e desde formado trabalho com desenvolvimento de software.</p>
-
-                        <div class="skill">JavaScript</div>
-                        <div class="skill">NodeJS</div>    
-                        <div class="skill">MongoDB</div>
-                        <div class="skill">Microservices</div>  
-                        <div class="skill">SQL</div>  
-                        <div class="skill">ExpressJS</div>  
-                        <div class="skill">RESTful APIs</div>  
-                        <div class="skill">HTML5</div>  
-                        <div class="skill">CSS3</div>  
-                    <hr>
-                </div>
-            </div>
-        </article>
-
         <article id="carreira">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10">
@@ -104,9 +82,6 @@
                     </p>
                     <p>Já como Junior, trabalhei no desenvolvimento de uma IDE para desenvolvimento web e mobile para uma grnade
                         prestadora de serviços pro varejo</p>
-                    <figure>
-                        <img src="./assets/images/coaching.jpg" class="img-fluid" alt="">
-                    </figure>
                     <p>
                         Cras id enim eu libero laoreet viverra ut a nisl. Nunc nisl urna, tristique quis ornare et, interdum in magna. Maecenas metus
                         arcu, laoreet sit amet libero et, pretium congue mi. Mauris cursus velit tristique est efficitur,
@@ -116,35 +91,82 @@
             </div>
         </article>
 
+                <article id="skills">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <h1>Minhas Skills</h1>
+                    <p>Estas são as tecnologias com as quais estou familiarizado e possuo experiência:</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="skills-container">
+                            <h3>Backend</h3>
+                            <div class="skill">JavaScript</div>
+                            <div class="skill">NodeJS</div>    
+                            <div class="skill">MongoDB</div>
+                            <div class="skill">Microservices</div>
+                            <div class="skill">JavaScript</div>
+                            <div class="skill">NodeJS</div>    
+                            <div class="skill">MongoDB</div>
+                            <div class="skill">Microservices</div> 
+ 
+                        </div>
+
+                        <div class="skills-container">
+                            <h3>Frontend</h3>
+                             <div class="skill">HTML5</div>  
+                            <div class="skill">CSS3</div>
+                            <div class="skill">HTML5</div>  
+                            <div class="skill">CSS3</div>  
+                         </div>
+
+                        <div class="skills-container">
+                            <h3>Data</h3>
+                            <div class="skill">SQL</div>  
+                            <div class="skill">ExpressJS</div>  
+                            <div class="skill">RESTful APIs</div>
+                            <div class="skill">SQL</div>  
+                            <div class="skill">ExpressJS</div>  
+                            <div class="skill">RESTful APIs</div> 
+                        </div>
+                        <hr>
+                </div>                
+            </div>
+        </article>
+
         <article id="contato">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10">
                     <h1>Onde você me encontra</h1>
                     <p>Quer falar comigo sobre qualquer coisa? Me manda um email:
-                        <a class="btn-social-media" href="malito:kaicbento@outlook.com" rel="noopener" aria-label="Email">
-                            kaicbento@outlook.com
-                        </a>
                     </p>
                     <p>Você também me encontra no:</p>
                     <ul class="social-media-list">
                         <li>
-                            <a href="https://github.com/kaic" rel="noopener" aria-label="Github">
+                            <a href="malito:kaicbento@outlook.com" target="_blank" rel="noopener" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kaic" rel="noopener" target="_blank" aria-label="Github">
                                 <i class="fab fa-github-square"></i>
                                 Github
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/kaicbento/" rel="noopener" aria-label="Linkedin">
+                            <a href="https://www.linkedin.com/in/kaicbento/" target="_blank" rel="noopener" aria-label="Linkedin">
                                 <i class="fab fa-linkedin"></i>
                                 Linkedin
                             </a>
                         </li>
-                        <li>
+<!--                         <li>
                             <a href="https://medium.com/@kaicbento" rel="noopener" aria-label="Medium">
                                 <i class="fab fa-medium"></i>
                                 Medium
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                     <hr>
                 </div>
@@ -152,13 +174,13 @@
         </article>
     </main>
     <footer class="text-center">
-        <p>HTML, SASS, ES6 e Webpack -
-            <a class="" href="https://github.com/kaic" rel="noopener">
+        <p>HTML, SASS, JS, Webpack e ❤ -
+            <a target="_blank" href="https://github.com/kaic/kaic.github.io" rel="noopener">
                 Código Fonte
-                <i class="fab fa-github-alt"></i>
+                <i class="fab fa-github-square"></i>
             </a>
         </p>
-        <p>©  2018 Kaic Bento. Todos os direitos reservados.</p>
+        <p>©  2019 Kaic Bento. Todos os direitos reservados.</p>
     </footer>
 </body>
 
