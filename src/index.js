@@ -9,16 +9,34 @@ import faGithubSquare from '@fortawesome/fontawesome-free-brands/faGithubSquare'
 import faGithubAlt from '@fortawesome/fontawesome-free-brands/faGithubAlt';
 import faMedium from '@fortawesome/fontawesome-free-brands/faMedium';
 import faEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope';
+import faFilePdf from '@fortawesome/fontawesome-free-solid/faFilePdf';
+import faArrowUp from '@fortawesome/fontawesome-free-solid/faArrowUp';
 
-fontawesome.library.add(faGithubSquare, faEnvelope, faLinkedin, faEnvelopeSquare, faMedium, faMapPin, faCircle);
+fontawesome.library.add(faGithubSquare, faFilePdf, faArrowUp, faEnvelope, faLinkedin, faEnvelopeSquare, faMedium, faMapPin, faCircle);
 
-window.addEventListener("load",function() {
-    setTimeout(function(){
+const goTopBtn = document.querySelector('.scroll-to-top-btn');
+
+const trackScroll = () => {
+    let scrolled = window.pageYOffset;
+    let coords = document.documentElement.clientHeight;
+
+    if (scrolled > coords) {
+      goTopBtn.classList.add('scroll-to-top-btn-show');
+    }
+    if (scrolled < coords) {
+      goTopBtn.classList.remove('scroll-to-top-btn-show');
+    }
+  }
+
+window.addEventListener('scroll', trackScroll);
+
+window.addEventListener("load",() => {
+    setTimeout(() => {
         window.scrollTo(0, 1);
     }, 0);
-})
+});
 
-if ('serviceWorker' in navigator) {
+/*if ('serviceWorker' in navigator) {
     console.log('Service worker is registrating.');
     navigator.serviceWorker.register('service-worker.js').then(function () {
         console.log('service worker registration complete.');
@@ -27,4 +45,4 @@ if ('serviceWorker' in navigator) {
     });
 } else {
     console.log('service worker is not supported.');
-}
+}*/
