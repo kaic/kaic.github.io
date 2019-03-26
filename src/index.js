@@ -47,7 +47,7 @@ window.addEventListener("load",() => {
     }, 0);
 });
 
-/*if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator) {
     console.log('Service worker is registrating.');
     navigator.serviceWorker.register('service-worker.js').then(function () {
         console.log('service worker registration complete.');
@@ -56,4 +56,4 @@ window.addEventListener("load",() => {
     });
 } else {
     console.log('service worker is not supported.');
-}*/
+}
