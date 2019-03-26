@@ -1,5 +1,16 @@
 import './style.scss';
 
+const myBirthdate = new Date(1998, 6, 12);
+
+const calculateMyAge = (birthdate) => { 
+    var diffMs = Date.now() - birthdate.getTime();
+    var ageDate = new Date(diffMs); 
+  
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
+
+document.getElementById('age').innerText = calculateMyAge(myBirthdate);
+
 import fontawesome from '@fortawesome/fontawesome';
 import faMapPin from '@fortawesome/fontawesome-free-solid/faMapPin';
 import faCircle from '@fortawesome/fontawesome-free-solid/faCircle';
