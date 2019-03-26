@@ -140,6 +140,10 @@ a {
         color: $secundaryColor;
         text-decoration: none;
     }
+
+    &#curriculum-link {
+        font-size: 1.2rem;
+    }
 }
 
 
@@ -160,9 +164,6 @@ ul {
         margin-bottom: 10px;  
         margin-right: 10px;  
 
-        a {
-            font-size: 1.3rem;
-        }
     }
 }
 
@@ -202,7 +203,8 @@ h3 {
 }
 
 article {
-    margin-top: 5vh;
+    margin-top: 10px;
+    padding-top: 5vh;
 
     h1 {
         margin-bottom: 0.5rem;
