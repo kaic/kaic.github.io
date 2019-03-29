@@ -22,7 +22,7 @@ $secundaryColor: #2f2f2f;
 html {
     height: 100%;
     width: 100%;
-    padding: 0 1em;
+    padding: 1em;    
     scroll-behavior: smooth;
 }
 
@@ -107,11 +107,10 @@ html {
 }
 
 body {
-    padding: 0 15px;
+    padding: 1em;
+    border: 1px solid #000000ad;
     font-family: 'Roboto', sans-serif;
     background-color: $background;
-    border: 1px solid #000000ad;
-    margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
@@ -154,11 +153,11 @@ ul {
     li {
 
         &:before{
-        content: "⚫ ";
-        padding: 0;
+        content: "⚫";
+        padding: 1px;
     }
 
-        display: inline-block;
+        display: flex;
         letter-spacing: normal;
         font-size: 1.2rem;
         margin-bottom: 10px;  
@@ -200,6 +199,10 @@ h2 {
 h3 {
     font-size: 1rem;
     color: $secundaryColor;
+}
+
+p {
+    text-align: justify;
 }
 
 article {
@@ -245,6 +248,7 @@ article {
     ul {
         li {
         margin: 0.5rem; 
+        display: inline-block;
             a {
             font-size: 1.3rem; 
             }
@@ -267,6 +271,7 @@ article {
     ul {
         li {
         margin: 0.5rem; 
+        display: inline-block;
             a {
             font-size: 1.5rem; 
             }
