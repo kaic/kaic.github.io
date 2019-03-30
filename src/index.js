@@ -2,10 +2,10 @@ import './style.scss';
 
 const myBirthdate = new Date(1998, 6, 12);
 
-const calculateMyAge = (birthdate) => { 
+const calculateMyAge = (birthdate) => {
     var diffMs = Date.now() - birthdate.getTime();
-    var ageDate = new Date(diffMs); 
-  
+    var ageDate = new Date(diffMs);
+
     return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
 
@@ -32,22 +32,22 @@ const trackScroll = () => {
     let coords = document.documentElement.clientHeight;
 
     if (scrolled > coords) {
-      goTopBtn.classList.add('scroll-to-top-btn-show');
+        goTopBtn.classList.add('scroll-to-top-btn-show');
     }
     if (scrolled < coords) {
-      goTopBtn.classList.remove('scroll-to-top-btn-show');
+        goTopBtn.classList.remove('scroll-to-top-btn-show');
     }
-  }
+}
 
 window.addEventListener('scroll', trackScroll);
 
-window.addEventListener("load",() => {
+window.addEventListener("load", () => {
     setTimeout(() => {
         window.scrollTo(0, 1);
     }, 0);
 });
 
-if ('serviceWorker' in navigator) {
+/*if ('serviceWorker' in navigator) {
     console.log('Service worker is registrating.');
     navigator.serviceWorker.register('service-worker.js').then(function () {
         console.log('service worker registration complete.');
@@ -56,4 +56,4 @@ if ('serviceWorker' in navigator) {
     });
 } else {
     console.log('service worker is not supported.');
-}
+}*/
