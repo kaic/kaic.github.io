@@ -158,6 +158,30 @@ ul {
 
     &.work-links-list {
         font-size: 0.8rem;
+        display: flex;
+
+        li {
+            margin: 0 auto;
+
+            a:not([href]):not([tabindex]) {
+
+                color: $primaryColor;
+                cursor: pointer;
+
+                &.active {
+                    &:before {
+                        content: "⚫";
+                        padding: 1px;
+                    }
+                }
+
+                -moz-user-select: none;
+                -khtml-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+        }
     }
 
 
@@ -262,6 +286,17 @@ article {
     }
 
     ul {
+
+        &.work-links-list {
+            font-size: 0.9rem;
+            display: flex;
+
+            li {
+                margin: 0 auto;
+            }
+
+        }
+
         &.header-links-list {
 
             li {
@@ -292,6 +327,17 @@ article {
     }
 
     ul {
+
+        &.work-links-list {
+            font-size: 0.9rem;
+            display: inline-block;
+
+            li {
+                margin: 10px auto;
+            }
+
+        }
+
         &.header-links-list {
 
             li {
@@ -328,4 +374,16 @@ article {
 
 .scroll-to-top-btn-show {
     display: unset;
+}
+
+.work-container {
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+
+    &.active {
+        display: block;
+        max-height: 100px;
+    }
 }

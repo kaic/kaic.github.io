@@ -39,6 +39,21 @@ const trackScroll = () => {
     }
 }
 
+const showCollapse = (divName, event) => {
+    let content = document.getElementById(divName);
+    let button = event.target;
+
+    if (button.classList.contains('active')){
+      button.classList.remove("active");
+      content.classList.remove("active");
+    } else {
+      button.classList.add("active");
+      content.classList.add("active");
+    } 
+}
+
+window.showCollapse = showCollapse;
+
 window.addEventListener('scroll', trackScroll);
 
 window.addEventListener("load", () => {
