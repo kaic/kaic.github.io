@@ -2,11 +2,11 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
 
-const WWW_FOLDER_PATH = path.resolve(__dirname + "/dist");
+const DIST_FOLDER_PATH = path.resolve(__dirname);
 
 module.exports = {
   output: {
-    path: WWW_FOLDER_PATH
+    path: DIST_FOLDER_PATH
   },
   module: {
     rules: [
@@ -45,8 +45,8 @@ module.exports = {
       title: "Kaic Bento - Software Developer"
     }),
     new CopyPlugin([
-      { from: "./src/manifest.json", to: WWW_FOLDER_PATH },
-      { from: "./src/service-worker.js", to: WWW_FOLDER_PATH }
+      { from: "./src/manifest.json", to: DIST_FOLDER_PATH },
+      { from: "./src/service-worker.js", to: DIST_FOLDER_PATH }
     ])
   ]
 };
