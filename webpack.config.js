@@ -1,8 +1,8 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-const path = require("path");
+const path = require('path');
 
-const DIST_FOLDER_PATH = path.resolve(__dirname);
+const DIST_FOLDER_PATH = path.resolve(__dirname, 'dist');
 
 module.exports = {
   output: {
@@ -40,9 +40,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
+      title: "Kaic Bento - Software Developer",
       template: "./src/index.html",
       filename: "./index.html",
-      title: "Kaic Bento - Software Developer"
     }),
     new CopyPlugin([
       { from: "./src/manifest.json", to: DIST_FOLDER_PATH },

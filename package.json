@@ -1,7 +1,7 @@
 {
-  "name": "kaic.me",
+  "name": "kaic.github.io",
   "version": "1.0.0",
-  "description": "My personal site/portifolio",
+  "description": "My personal website",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open",
@@ -11,13 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kaic/kaic.me.git"
+    "url": "git+https://github.com/kaic/kaic.githuib.io.git"
   },
   "author": "https://github.com/kaic",
   "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/kaic/kaic.me/issues"
-  },
   "homepage": "https://github.com/kaic/kaic.me#readme",
   "devDependencies": {
     "@fortawesome/fontawesome": "1.1.4",
@@ -37,6 +34,5 @@
     "webpack": "4.1.1",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
-  },
-  "dependencies": {}
+  }
 }
