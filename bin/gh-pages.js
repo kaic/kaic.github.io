@@ -9,6 +9,7 @@ const ghpages = require("gh-pages");
       branch: "master",
       message: `Auto-generated commit from build - ${new Date().toLocaleString()}`,
       silent: true,
+      add: true
     },
     err => {
       if (err)  console.error(err);
