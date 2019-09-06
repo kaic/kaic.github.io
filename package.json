@@ -8,6 +8,7 @@
     "build": "webpack --mode production",
     "deploy": "node ./bin/gh-pages.js",
     "production": "npm run build && npm run deploy",
+    "gh-pages-clean": "rm -rf node_modules/gh-pages/.cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

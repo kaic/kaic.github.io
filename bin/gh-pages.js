@@ -8,7 +8,7 @@ const ghpages = require("gh-pages");
       repo: `https://${process.env.GH_TOKEN}@${process.env.GH_REPOSITORY}`,
       branch: "master",
       message: `Auto-generated commit from build - ${new Date().toLocaleString()}`,
-      silent: true,
+      silent: false,
       add: true
     },
     err => {
