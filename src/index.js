@@ -43,13 +43,28 @@ const showCollapse = (divName, event) => {
     let content = document.getElementById(divName);
     let button = event.target;
 
-    if (button.classList.contains('active')){
-      button.classList.remove("active");
-      content.classList.remove("active");
+    if (button.classList.contains('active')) {
+        closeCollapses();
+        button.classList.remove("active");
+        content.classList.remove("active");
     } else {
-      button.classList.add("active");
-      content.classList.add("active");
-    } 
+        closeCollapses();
+        button.classList.add("active");
+        content.classList.add("active");
+    }
+}
+
+const closeCollapses = () => {
+    let anchors = document.getElementsByClassName('collapse-anchor');
+    let containers = document.getElementsByClassName('work-container');
+
+    for (let i = 0; i < anchors.length; i++) {
+        if (anchors[i].classList.contains('active'))
+            anchors[i].classList.remove("active");
+        if (containers[i].classList.contains('active'))
+            containers[i].classList.remove("active");
+
+    }
 }
 
 window.showCollapse = showCollapse;

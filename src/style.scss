@@ -157,18 +157,22 @@ ul {
 
 
     &.work-links-list {
-        font-size: 0.8rem;
-        display: flex;
+        font-size: 0.9rem;
+        white-space: nowrap;
+        overflow: auto;
 
         li {
-            margin: 0 auto;
+            margin: 5px;
+            display: inline;
 
             a:not([href]):not([tabindex]) {
-
+                opacity: 0.7;
                 color: $primaryColor;
                 cursor: pointer;
 
                 &.active {
+                    opacity: 1 !important;
+
                     &:before {
                         content: "⚫";
                         padding: 1px;
@@ -330,10 +334,14 @@ article {
 
         &.work-links-list {
             font-size: 0.9rem;
-            display: inline-block;
+            display: inline-grid;
 
             li {
                 margin: 10px auto;
+            }
+
+            & > li:first-child {
+                margin: 0px auto 10px auto;
             }
 
         }
