@@ -1,3 +1,4 @@
+const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const path = require("path");
@@ -49,7 +50,7 @@ module.exports = {
       { from: "./src/service-worker.js", to: DIST_FOLDER_PATH }
     ]),
     new webpack.DefinePlugin({
-      "process.env.NODE_ENV": JSON.stringify("production"),
+      "process.env.NODE_ENV": JSON.stringify("production")
     })
   ]
 };
