@@ -1,5 +1,4 @@
 import './style.scss'
-import * as $ from 'jquery'
 
 import fontawesome from '@fortawesome/fontawesome'
 import faCircle from '@fortawesome/fontawesome-free-solid/faCircle'
@@ -21,17 +20,6 @@ const calculateMyAge = birthdate => {
 }
 
 document.getElementById('age').innerText = calculateMyAge(myBirthdate)
-
-fontawesome.library.add(
-  faGithubSquare,
-  faFilePdf,
-  faArrowUp,
-  faEnvelope,
-  faLinkedin,
-  faEnvelopeSquare,
-  faMedium,
-  faCircle
-)
 
 const goTopBtn = document.querySelector('.scroll-to-top-btn')
 
@@ -67,8 +55,12 @@ const closeCollapses = () => {
   const containers = document.getElementsByClassName('work-container')
 
   for (let i = 0; i < anchors.length; i++) {
-    if (anchors[i].classList.contains('active')) { anchors[i].classList.remove('active') }
-    if (containers[i].classList.contains('active')) { containers[i].classList.remove('active') }
+    if (anchors[i].classList.contains('active')) {
+      anchors[i].classList.remove('active')
+    }
+    if (containers[i].classList.contains('active')) {
+      containers[i].classList.remove('active')
+    }
   }
 }
 
@@ -76,16 +68,22 @@ window.showCollapse = showCollapse
 
 window.addEventListener('scroll', trackScroll)
 
-$(window).load(function () {
-  // Animate loader off screen
-  $('.se-pre-con').fadeOut('slow')
-})
-
 window.addEventListener('load', () => {
   setTimeout(() => {
     window.scrollTo(0, 1)
   }, 0)
 })
+
+fontawesome.library.add(
+  faGithubSquare,
+  faFilePdf,
+  faArrowUp,
+  faEnvelope,
+  faLinkedin,
+  faEnvelopeSquare,
+  faMedium,
+  faCircle
+)
 
 if (process.env.NODE_ENV === 'production') {
   if ('serviceWorker' in navigator) {
