@@ -9,391 +9,402 @@
 @import "~bootstrap/scss/utilities";
 
 $background: #e2e2e2;
-$primaryColor: #A81011;
+$primaryColor: #a81011;
 $secundaryColor: #2f2f2f;
 
 @font-face {
-    font-family: "IBM Plex Mono";
-    font-style: normal;
-    font-weight: 500;
-    src: url("./assets/fonts/IBMPlexMono-Medium.ttf") format("truetype")
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/IBMPlexMono-Medium.ttf") format("truetype");
 }
 
 html {
-    height: 100%;
-    width: 100%;
-    padding: 1em;
-    scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  scroll-behavior: smooth;
 }
 
 .animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @-webkit-keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-    from,
-    20%,
-    53%,
-    80%,
-    to {
-        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
 
-    40%,
-    43% {
-        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-        -webkit-transform: translate3d(0, -30px, 0);
-        transform: translate3d(0, -30px, 0);
-    }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
 
-    70% {
-        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-        -webkit-transform: translate3d(0, -15px, 0);
-        transform: translate3d(0, -15px, 0);
-    }
-
-    90% {
-        -webkit-transform: translate3d(0, -4px, 0);
-        transform: translate3d(0, -4px, 0);
-    }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
 }
 
 @keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-    from,
-    20%,
-    53%,
-    80%,
-    to {
-        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
 
-    40%,
-    43% {
-        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-        -webkit-transform: translate3d(0, -30px, 0);
-        transform: translate3d(0, -30px, 0);
-    }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
 
-    70% {
-        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-        -webkit-transform: translate3d(0, -15px, 0);
-        transform: translate3d(0, -15px, 0);
-    }
-
-    90% {
-        -webkit-transform: translate3d(0, -4px, 0);
-        transform: translate3d(0, -4px, 0);
-    }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
 }
 
 .bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
 }
 
 body {
-    padding: 1em;
-    border: 1px solid #000000ad;
-    font-family: 'Roboto', sans-serif;
-    background-color: $background;
-    margin-bottom: 5vh;
+  padding: 1em;
+  border: 1px solid #000000ad;
+  font-family: "Roboto", sans-serif;
+  background-color: $background;
+  margin-bottom: 5vh;
 }
 
 header {
-    margin: 5vh 0;
-    height: 90vh;
+  margin: 5vh 0;
+  height: 90vh;
 }
 
 hr {
-    margin-bottom: 10px;
-    border: 1px dashed #788080;
+  margin-bottom: 10px;
+  border: 1px dashed #788080;
 }
 
 footer {
-    margin-bottom: 2.5vh;
+  margin-bottom: 2.5vh;
 
-    & p {
-        margin: 0;
-    }
+  & p {
+    margin: 0;
+  }
 }
 
 a {
-    font-family: 'IBM Plex Mono', monospace;
-    color: $primaryColor;
+  font-family: "IBM Plex Mono", monospace;
+  color: $primaryColor;
 
-    &:hover,
-    &:active {
-        color: $secundaryColor;
-        text-decoration: none;
-    }
+  &:hover,
+  &:active {
+    color: $secundaryColor;
+    text-decoration: none;
+  }
 
-    &#curriculum-link {
-        font-size: 1.2rem;
-    }
+  &#curriculum-link {
+    font-size: 1.2rem;
+  }
 }
 
-
 ul {
+  padding: 0;
+  list-style-type: none;
 
-    padding: 0;
-    list-style-type: none;
+  &.work-links-list {
+    font-size: 1rem;
+    white-space: normal;
+    overflow: auto;
 
+    li {
+      margin: 0;
+      display: inline;
 
-    &.work-links-list {
-        font-size: 0.9rem;
-        white-space: nowrap;
-        overflow: auto;
+      a:not([href]):not([tabindex]) {
+        opacity: 0.6;
+        color: $primaryColor;
+        cursor: pointer;
 
-        li {
-            margin: 5px;
-            display: inline;
+        &.active {
+          opacity: 1 !important;
 
-            a:not([href]):not([tabindex]) {
-                opacity: 0.7;
-                color: $primaryColor;
-                cursor: pointer;
-
-                &.active {
-                    opacity: 1 !important;
-
-                    &:before {
-                        content: "⚫";
-                        padding: 1px;
-                    }
-                }
-
-                -moz-user-select: none;
-                -khtml-user-select: none;
-                -webkit-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
+          &:before {
+            content: "⚫";
+            padding: 1px;
+          }
         }
+
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
     }
+  }
 
+  &.header-links-list {
+    li {
+      &:before {
+        content: "⚫";
+        padding: 1px;
+      }
 
-    &.header-links-list {
-        li {
-
-            &:before {
-                content: "⚫";
-                padding: 1px;
-            }
-
-            display: flex;
-            letter-spacing: normal;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            margin-right: 10px;
-
-        }
+      display: flex;
+      letter-spacing: normal;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      padding-right: 15px;
+      padding-left: 15px;
     }
-
+  }
 }
 
 #header-content {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #avatar {
-    margin-bottom: 0.5rem;
-    border: 4px solid $primaryColor;
-    max-width: 90%;
+  margin-bottom: 0.5rem;
+  border: 4px solid $primaryColor;
+  max-width: 90%;
 }
 
 #map-pin {
-    margin-right: 10px;
-    color: $primaryColor;
+  margin-right: 10px;
+  color: $primaryColor;
 }
 
 h1 {
-    font-size: 2rem;
-    margin-bottom: 0;
-    font-family: 'IBM Plex Mono', monospace;
-    color: $secundaryColor;
+  font-size: 2rem;
+  margin-bottom: 0;
+  font-family: "IBM Plex Mono", monospace;
+  color: $secundaryColor;
 }
 
 h2 {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    color: $secundaryColor;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: $secundaryColor;
 }
 
 h3 {
-    font-size: 1rem;
-    color: $secundaryColor;
+  font-size: 1rem;
+  color: $secundaryColor;
 }
 
 article {
-    margin-top: 10px;
-    padding-top: 5vh;
+  margin-top: 10px;
+  padding-top: 5vh;
 
-    p {
-        text-align: justify;
-    }
+  p {
+    text-align: justify;
+  }
 
-    h1 {
-        margin-bottom: 0.5rem;
-    }
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.presentation {
+  font-family: "IBM Plex Mono", monospace;
+
 }
 
 .skill {
-    font-family: 'IBM Plex Mono', monospace;
-    background-color: white;
-    display: inline-block;
-    padding: 4px 20px;
-    border: 2px solid $secundaryColor;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    margin: 5px 2px;
-    color: $primaryColor;
-
+  font-family: "IBM Plex Mono", monospace;
+  background-color: white;
+  display: inline-block;
+  padding: 4px 20px;
+  border: 2px solid $secundaryColor;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin: 5px 2px;
+  color: $primaryColor;
 }
 
 .skills-container {
-    border-left: 2px solid $primaryColor;
-    padding: 10px;
-    margin: 5px;
-    display: inline-block;
+  border-left: 2px solid $primaryColor;
+  padding: 10px;
+  margin: 0;
+  display: inline-block;
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    h1 {
-        font-size: 2rem;
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  ul {
+    &.work-links-list {
+      font-size: 0.8rem;
+      display: flex;
+
+      li {
+        margin: 0 auto;
+      }
     }
 
-    h2 {
-        font-size: 1.3rem;
-    }
+    &.header-links-list {
+      text-align: center !important;
+      li {
+        margin: 0.5rem;
+        display: inline-block;
 
-    h3 {
-        font-size: 1rem;
-    }
-
-    ul {
-
-        &.work-links-list {
-            font-size: 0.9rem;
-            display: flex;
-
-            li {
-                margin: 0 auto;
-            }
-
+        a {
+          font-size: 1.3rem;
         }
-
-        &.header-links-list {
-
-            li {
-                margin: 0.5rem;
-                display: inline-block;
-
-                a {
-                    font-size: 1.3rem;
-                }
-            }
-
-        }
+      }
     }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    h1 {
-        font-size: 2.2rem;
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  ul {
+    &.work-links-list {
+      font-size: 0.8rem;
+      display: inline-grid;
+
+      li {
+        margin: 10px auto;
+      }
+
+      & > li:first-child {
+        margin: 0px auto 10px auto;
+      }
     }
 
-    h2 {
-        font-size: 1.5rem;
-    }
+    &.header-links-list {
+      text-align: center !important;
+      li {
+        margin: 0.5rem;
+        display: inline-block;
 
-    h3 {
-        font-size: 1.2rem;
-    }
-
-    ul {
-
-        &.work-links-list {
-            font-size: 0.9rem;
-            display: inline-grid;
-
-            li {
-                margin: 10px auto;
-            }
-
-            & > li:first-child {
-                margin: 0px auto 10px auto;
-            }
-
+        a {
+          font-size: 1.5rem;
         }
-
-        &.header-links-list {
-
-            li {
-                margin: 0.5rem;
-                display: inline-block;
-
-                a {
-                    font-size: 1.5rem;
-                }
-            }
-
-        }
+      }
     }
+  }
 }
 
 .scroll-to-top-btn {
-    display: none;
-    opacity: 0.5;
-    color: white;
-    background-color: $primaryColor;
-    width: 6vh;
-    height: 6vh;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    border-radius: 50%;
-    border: none;
+  display: none;
+  opacity: 0.6;
+  color: white;
+  background-color: $primaryColor;
+  width: 7vh;
+  height: 7vh;
+  position: fixed;
+  bottom: 12px;
+  right: 8px;
+  border-radius: 50%;
+  border: none;
+  transition: ease-in;
 
-    &:hover {
-        opacity: 1;
-        color: white;
-    }
+  &:hover {
+    opacity: 1;
+    color: white;
+  }
 }
 
 .scroll-to-top-btn-show {
-    display: unset;
+  display: unset;
 }
 
 .work-container {
-    display: none;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
+  display: list-item;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 
-    &.active {
-        display: block;
-        max-height: 100px;
-    }
+  &.active {
+    display: block;
+    max-height: 100px;
+  }
+}
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
 }
