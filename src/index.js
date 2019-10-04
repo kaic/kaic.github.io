@@ -1,11 +1,8 @@
 import './style.scss'
 
 import fontawesome from '@fortawesome/fontawesome'
-import faCircle from '@fortawesome/fontawesome-free-solid/faCircle'
-import faEnvelopeSquare from '@fortawesome/fontawesome-free-solid/faEnvelopeSquare'
 import faLinkedin from '@fortawesome/fontawesome-free-brands/faLinkedin'
 import faGithubSquare from '@fortawesome/fontawesome-free-brands/faGithubSquare'
-import faMedium from '@fortawesome/fontawesome-free-brands/faMedium'
 import faEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope'
 import faFilePdf from '@fortawesome/fontawesome-free-solid/faFilePdf'
 import faArrowUp from '@fortawesome/fontawesome-free-solid/faArrowUp'
@@ -79,10 +76,7 @@ fontawesome.library.add(
   faFilePdf,
   faArrowUp,
   faEnvelope,
-  faLinkedin,
-  faEnvelopeSquare,
-  faMedium,
-  faCircle
+  faLinkedin
 )
 
 if (process.env.NODE_ENV === 'production') {
