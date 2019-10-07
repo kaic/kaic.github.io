@@ -1,4 +1,4 @@
-import './style.scss'
+import './style/main.scss'
 
 import fontawesome from '@fortawesome/fontawesome'
 import faLinkedin from '@fortawesome/fontawesome-free-brands/faLinkedin'

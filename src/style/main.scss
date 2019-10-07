@@ -8,9 +8,10 @@
 @import "~bootstrap/scss/images";
 @import "~bootstrap/scss/utilities";
 
-$background: #e2e2e2;
-$primaryColor: #a81011;
-$secundaryColor: #2f2f2f;
+$background: #dddddd;
+//$primaryColor: #cf000f;
+$primaryColor: #000000;
+$secundaryColor: #2e3131;
 
 @font-face {
     font-family: "IBM Plex Mono";
@@ -128,7 +129,7 @@ html {
 
 body {
     padding: 1em;
-    border: 1px solid #000000ad;
+    border: 2px solid $primaryColor;
     font-family: "Roboto", sans-serif;
     background-color: $background;
     margin-bottom: 5vh;
@@ -215,7 +216,7 @@ ul {
         li {
             letter-spacing: normal;
             font-size: 1.3rem;
-            font-weight: bold;
+            //font-weight: bold;
             padding-bottom: 5px;
             padding-top: 5px;
             padding-right: 10px;
@@ -245,7 +246,7 @@ ul {
     margin-bottom: 1rem;
     transform: translatey(0px);
     animation: float 7s ease-in-out infinite;
-    border: 5px solid $primaryColor;
+    border: 4px solid $primaryColor;
     max-width: 90%;
 }
 
@@ -292,7 +293,8 @@ article {
     }
 
     h1 {
-        margin-bottom: 0.5rem;
+        margin-bottom: 10px;
+        padding-bottom: 5vh;
     }
 }
 
@@ -313,9 +315,9 @@ article {
 }
 
 .skills-container {
-    border-left: 2px solid $primaryColor;
+    border-left: 2px solid $secundaryColor;
     padding: 10px;
-    margin: 0;
+    margin-top: 10px;
     display: inline-block;
 }
 
@@ -346,7 +348,7 @@ article {
 }
 
 // Medium devices (tablets, 768px and up)
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     h1 {
         font-size: 2.2rem;
     }
@@ -438,12 +440,15 @@ article {
 }
 
 @media (max-width: 375px) {
+    h1 {
+        font-size: 1.5rem;
+    }
     ul {
         &.header-links-list {
             li {
                 padding: 0;
                 a {
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                 }
             }
         }
@@ -451,6 +456,9 @@ article {
 }
 
 @media (min-width: 425px) {
+    h1 {
+        font-size: 1.8rem;
+    }
     ul {
         &.header-links-list {
             li {
