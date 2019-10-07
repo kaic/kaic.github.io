@@ -1,48 +1,41 @@
 {
-  "name": "kaic.github.io",
-  "version": "1.0.0",
-  "description": "My personal website",
-  "main": "index.js",
-  "scripts": {
-    "dev": "./node_modules/.bin/standard --verbose --fix && webpack-dev-server --mode development --env.development --open --progress",
-    "build": "./node_modules/.bin/standard --verbose --fix && webpack --mode production --env.production --progress",
-    "deploy": "node ./bin/gh-pages.js",
-    "production": "npm run build && npm run deploy",
-    "gh-pages-clean": "rm -rf node_modules/gh-pages/.cache",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kaic/kaic.githuib.io.git"
-  },
-  "author": "https://github.com/kaic",
-  "license": "GPL-3.0",
-  "homepage": "https://github.com/kaic/kaic.me#readme",
-  "devDependencies": {
-    "@fortawesome/fontawesome": "1.1.4",
-    "@fortawesome/fontawesome-free-brands": "5.0.8",
-    "@fortawesome/fontawesome-free-solid": "5.0.8",
-    "bootstrap": "^4.3.1",
-    "copy-webpack-plugin": "^5.0.4",
-    "css-loader": "^3.2.0",
-    "dotenv": "^8.1.0",
-    "gh-pages": "^2.1.1",
-    "html-loader": "0.5.5",
-    "html-webpack-plugin": "3.0.6",
-    "node-sass": "^4.11.0",
-    "sass-loader": "6.0.7",
-    "standard": "^14.2.0",
-    "style-loader": "0.20.2",
-    "url-loader": "1.0.1",
-    "webpack": "4.1.1",
-    "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1"
-  },
-  "standard": {
-    "globals": [
-      "self",
-      "caches",
-      "fetch"
-    ]
-  }
+    "name": "kaic.github.io",
+    "version": "1.0.0",
+    "description": "My personal website",
+    "main": "index.js",
+    "scripts": {
+        "dev": "webpack-dev-server --mode development --env.development --open --progress",
+        "build": "webpack --mode production --env.production --progress",
+        "deploy": "node ./bin/gh-pages.js",
+        "production": "npm run build && npm run deploy",
+        "gh-pages-clean": "rm -rf node_modules/gh-pages/.cache"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kaic/kaic.githuib.io.git"
+    },
+    "author": "https://github.com/kaic",
+    "license": "GPL-3.0",
+    "homepage": "https://github.com/kaic/kaic.me#readme",
+    "dependencies": {
+        "@fortawesome/fontawesome": "1.1.4",
+        "@fortawesome/fontawesome-free-brands": "5.0.8",
+        "@fortawesome/fontawesome-free-solid": "5.0.8",
+        "bootstrap": "^4.3.1"
+    },
+    "devDependencies": {
+        "copy-webpack-plugin": "^5.0.4",
+        "css-loader": "^3.2.0",
+        "dotenv": "^8.1.0",
+        "gh-pages": "^2.1.1",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^4.0.0-beta.8",
+        "node-sass": "^4.12.0",
+        "sass-loader": "6.0.7",
+        "style-loader": "0.20.2",
+        "url-loader": "1.0.1",
+        "webpack": "4.1.1",
+        "webpack-cli": "^3.3.0",
+        "webpack-dev-server": "^3.2.1"
+    }
 }
