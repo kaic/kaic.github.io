@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const path = require('path')
 
-const DIST_FOLDER_PATH = path.resolve(__dirname, 'dist')
+const DIST_FOLDER_PATH = path.join(__dirname, 'dist')
 
 module.exports = env => {
   return {
@@ -13,12 +13,13 @@ module.exports = env => {
     module: {
       rules: [
         {
-          test: /\.html$/,
+          test: [/\.html$/],
           use: [
             {
               loader: 'html-loader',
               options: {
-                minimize: true
+                minimize: false,
+                interpolate: true
               }
             }
           ]
@@ -29,7 +30,14 @@ module.exports = env => {
         },
         {
           test: /\.(png|jpg)$/,
-          loader: 'url-loader'
+          use: [
+            {
+              loader: 'url-loader',
+              options: {
+                mimetype: 'image/jpeg',
+              },
+            },
+          ],
         },
         {
           test: /\.(eot|svg|ttf|woff|woff2)$/,
@@ -44,7 +52,12 @@ module.exports = env => {
       new HtmlWebPackPlugin({
         title: 'Kaic Bento - Software Developer',
         template: './src/index.html',
-        filename: './index.html'
+        filename: './index.html',
+        minify: {
+          removeComments: true,
+          collapseWhitespace: true,
+          removeAttributeQuotes: false
+        },
       }),
       new CopyPlugin([
         { from: './README.md', to: DIST_FOLDER_PATH },
