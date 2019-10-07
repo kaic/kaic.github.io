@@ -1,0 +1,52 @@
+$background: #dddddd;
+$primaryColor: #000000;
+$secundaryColor: #2e3131;
+
+@font-face {
+    font-family: "IBM Plex Mono";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../assets/fonts/IBMPlexMono-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Prompt";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/Prompt-Regular.ttf") format("truetype");
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 1em;
+    border: 2px solid $primaryColor;
+    font-family: "Prompt", sans-serif;
+    background-color: $background;
+    margin-bottom: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+    margin: 5vh 0;
+    height: 90vh;
+}
+
+hr {
+    margin-bottom: 10px;
+    border: 1px dashed #788080;
+}
+
+footer {
+
+    & p {
+        margin: 0;
+    }
+}

@@ -1,0 +1,10 @@
+#avatar {
+    -webkit-box-shadow: 6px 10px 25px 6px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 6px 10px 25px 6px rgba(0, 0, 0, 0.7);
+    box-shadow: 6px 10px 25px 6px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+    transform: translatey(0px);
+    animation: float 7s ease-in-out infinite;
+    border: 4px solid $primaryColor;
+    max-width: 90%;
+}
