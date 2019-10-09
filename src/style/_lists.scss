@@ -3,17 +3,23 @@ ul {
     list-style-type: none;
 
     &.work-links-list {
-        border-left: 4px solid $primaryColor;
+        div.vl {
+            border-left: 4px solid $primaryColor;
+            margin-left: 5px;
+        }
         padding-left: 4px;
         font-size: 1rem;
         white-space: normal;
         overflow: auto;
 
         li {
-            margin: 0;
             display: inline;
 
             a:not([href]):not([tabindex]) {
+                word-wrap: break-word;
+                position: relative;
+                left: -14px;
+                font-size: 1.2em;
                 opacity: 0.6;
                 color: $primaryColor;
                 cursor: pointer;

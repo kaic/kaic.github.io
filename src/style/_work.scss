@@ -1,12 +1,13 @@
 .work-container {
     display: list-item;
     overflow: hidden;
+    margin-bottom: 10px;
+    margin-left: 10px;
     max-height: 0;
     transition: max-height 0.2s ease-out;
-    margin-bottom: 15px;
 
     &.active {
         display: block;
-        max-height: 100px;
+        max-height: 200px;
     }
 }

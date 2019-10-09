@@ -144,11 +144,9 @@ const showCollapse = (divName, event) => {
   const content = document.getElementById(divName)
   const button = event.target
 
-  if (button.classList.contains('active')) {
+  if (button.classList.contains('active'))
     closeCollapses()
-    button.classList.remove('active')
-    content.classList.remove('active')
-  } else {
+  else {
     closeCollapses()
     button.classList.add('active')
     content.classList.add('active')
