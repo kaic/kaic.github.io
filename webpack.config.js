@@ -62,7 +62,8 @@ module.exports = env => {
       new CopyPlugin([
         { from: './README.md', to: DIST_FOLDER_PATH },
         { from: './LICENSE', to: DIST_FOLDER_PATH },
-        { from: './src/assets/images/favicons/', to: DIST_FOLDER_PATH+'/assets/images/favicons' },
+        { from: './src/assets/icons/icons.svg', to: DIST_FOLDER_PATH + '/assets/icons/' },
+        { from: './src/assets/images/favicons/', to: DIST_FOLDER_PATH + '/assets/images/favicons' },
         { from: './src/manifest.json', to: DIST_FOLDER_PATH },
         { from: './src/service-worker.js', to: DIST_FOLDER_PATH }
       ]),
