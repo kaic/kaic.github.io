@@ -2,7 +2,7 @@
     "name": "Kaic Bento",
     "short_name": "Kaic",
     "description": "Web Developer",
-    "start_url": "https://kaic.me",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#2e3131",
     "theme_color": "#2e3131",
