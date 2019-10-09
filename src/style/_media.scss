@@ -84,12 +84,11 @@
 
 @media (max-width: 375px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.3 rem;
     }
 
     ul {
         &.work-links-list {
-
             li a:not([href]):not([tabindex]) {
                 font-size: 0.9rem;
                 left: -11px;
