@@ -1,7 +1,7 @@
 // Small devices (landscape phones, 576px and up)
 @media screen and (min-width: 576px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     h2 {
@@ -14,7 +14,7 @@
 
     ul {
         &.work-links-list {
-            font-size: 1rem;
+            font-size: 1.2rem;
             display: flex;
 
             li {
@@ -67,6 +67,9 @@
 }
 
 @media (max-width: 425px) {
+    h1 {
+        font-size: 1.8rem;
+    }
     ul {
         &.header-links-list {
             li {
@@ -83,7 +86,16 @@
     h1 {
         font-size: 1.5rem;
     }
+
     ul {
+        &.work-links-list {
+
+            li a:not([href]):not([tabindex]) {
+                font-size: 0.9rem;
+                left: -11px;
+            }
+        }
+
         &.header-links-list {
             li {
                 padding: 0;
@@ -120,6 +132,9 @@
     /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
 @media (min-width: 1025px) {
+    h1 {
+        font-size: 2rem;
+    }
     ul {
         &.header-links-list {
             li {
