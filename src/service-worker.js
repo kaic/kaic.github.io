@@ -1,8 +1,9 @@
-const PRECACHE = 'precache-v3.0'
+const PRECACHE = 'precache-v3.1'
 const RUNTIME = 'runtime'
 
 const PRECACHE_URLS = [
   './index.html',
+  './assets/',
   './main.js'
 ]
 
