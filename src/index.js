@@ -14,7 +14,13 @@ const skillsets =
     {
       name: 'Backend',
       skills: [{
-        name: "NodeJS - Express, HapiJS",
+        name: "NodeJS",
+        icon: "nodejs"
+      },{
+        name: "ExpressJS",
+        icon: "nodejs"
+      },{
+        name: "HapiJS",
         icon: "nodejs"
       }, {
         name: "RESTful APIs",
