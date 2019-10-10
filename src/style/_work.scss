@@ -13,8 +13,12 @@
 }
 
 .education-container {
-    display: inline-block;
-    margin: 5px;
-    padding: 5px;
-    border-left: 2px solid $secundaryColor;
+    display: block;
+    margin-top: 1rem;
+    padding-left: 5px;
+    border-left: 4px solid $primaryColor;
+
+    p {
+        margin-bottom: 8px;
+    }
 }
