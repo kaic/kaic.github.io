@@ -1,13 +1,11 @@
-const PRECACHE = 'precache-v3.6'
+const PRECACHE = 'precache-v3.7'
 const RUNTIME = 'runtime'
 
 const PRECACHE_URLS = [
   './index.html',
-  './assets/',
-  './main.js'
+  './main.js',
+  './assets/**/*'
 ]
-
-console.log(self.location.origin)
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener('install', event => {
