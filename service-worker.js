@@ -3,7 +3,7 @@ const RUNTIME = 'runtime'
 
 const PRECACHE_URLS = [
   './index.html',
-  './assets/',
+  './assets/*',
   './main.js'
 ]
 

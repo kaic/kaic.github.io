@@ -1,8 +1,9 @@
 {
-    "name": "Kaic Bento",
-    "short_name": "Kaic",
-    "description": "Web Developer",
-    "start_url": "/",
+    "name": "Kaic Bento - Software Developer",
+    "short_name": "Kaic Bento",
+    "description": "Software Developer",
+    "start_url": "./",
+    "scope": ".",
     "display": "standalone",
     "background_color": "#2e3131",
     "theme_color": "#2e3131",
