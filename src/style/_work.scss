@@ -8,17 +8,29 @@
 
     &.active {
         display: block;
-        @include rfs(200px, max-height);
+        @include rfs(50vh, max-height);
     }
 }
 
-.education-container {
-    display: block;
-    @include margin-top(1rem);
-    @include padding-left(5px);
-    border-left: 4px solid $primaryColor;
+.education {
+    @include margin-left(5px);
+    .education-container {
+        display: block;
+        @include margin(1rem);
+        @include padding-left(5px);
+        border-left: 4px solid $primaryColor;
 
-    p {
-        @include margin-bottom(8px);
+        h3 {
+            @include font-size(1.2rem);
+        }
+
+        p {
+            @include margin-bottom(8px);
+        }
+
+        span {
+            position: relative;
+            @include rfs(-17px, left);
+        }
     }
 }

@@ -5,9 +5,10 @@ ul {
     &.work-links-list {
         div.vl {
             border-left: 4px solid $primaryColor;
-            margin-left: 5px;
+            @include margin-left(5px);
         }
         @include padding-left(4px);
+        @include margin(1rem);
         @include font-size(1rem);
         white-space: normal;
         overflow: auto;
@@ -18,7 +19,7 @@ ul {
             a:not([href]):not([tabindex]) {
                 word-wrap: break-word;
                 position: relative;
-                left: -14px;
+                @include rfs(-13px, left);
                 @include font-size(1.2rem);
                 opacity: 0.6;
                 color: $primaryColor;
