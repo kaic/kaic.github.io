@@ -11,3 +11,10 @@
         max-height: 200px;
     }
 }
+
+.education-container {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border-left: 2px solid $secundaryColor;
+}
