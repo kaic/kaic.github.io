@@ -2,7 +2,7 @@
     font-family: "IBM Plex Mono", monospace;
     background-color: white;
     display: inline-block;
-    @include padding(4px 15px);
+    @include padding(2px 15px);
     @include margin(4px 4px);
     border: 2px solid $secundaryColor;
     border-radius: 15px;
