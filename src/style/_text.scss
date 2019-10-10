@@ -18,7 +18,7 @@ h3 {
 }
 
 article {
-    @include margin-top(4vh);
+    @include padding-top(4vh);
 
     p {
         text-align: justify;
