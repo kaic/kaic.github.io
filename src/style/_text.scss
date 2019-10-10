@@ -1,5 +1,5 @@
 h1 {
-    font-size: 2.3rem;
+    @include font-size(1.8rem);
     margin-bottom: 0;
     font-family: "IBM Plex Mono", monospace;
     color: $primaryColor;
@@ -7,18 +7,18 @@ h1 {
 
 h2 {
     font-family: "IBM Plex Mono", monospace;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    @include font-size(1rem);
+    @include margin-bottom(0.5rem);
     color: $secundaryColor;
 }
 
 h3 {
-    font-size: 1rem;
+    @include font-size(1rem);
     color: $primaryColor;
 }
 
 article {
-    margin-top: 4vh;
+    @include margin-top(4vh);
 
     p {
         text-align: justify;
@@ -26,7 +26,7 @@ article {
 
     h1 {
         font-weight: bold;
-        padding-bottom: 4vh;
+        @include margin-bottom(4vh);
     }
 }
 

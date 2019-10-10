@@ -19,29 +19,31 @@ $secundaryColor: #2e3131;
 html {
     height: 100%;
     width: 100%;
-    padding: 1em;
+    @include padding(1rem);
     scroll-behavior: smooth;
 }
 
 body {
-    padding: 1em;
+    @include padding(1rem);
+    @include font-size(1rem);
+    @include margin-bottom(1rem);
     border: 2px solid $primaryColor;
     font-family: "Prompt", sans-serif;
     background-color: $background;
-    margin-bottom: 1em;
 }
 
 header {
     display: flex;
-    justify-content: center; /* align horizontal */
+    justify-content: center;
     align-items: center;
-    margin: 5vh 0;
+    @include margin-bottom(5vh);
+    @include margin-top(5vh);
     height: 90vh;
 }
 
 hr {
-    margin-bottom: 10px;
-    border: 1px dashed #788080;
+    @include margin-bottom(10px);    
+    border: 1px dashed $secundaryColor;
 }
 
 footer {

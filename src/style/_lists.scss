@@ -7,8 +7,8 @@ ul {
             border-left: 4px solid $primaryColor;
             margin-left: 5px;
         }
-        padding-left: 4px;
-        font-size: 1rem;
+        @include padding-left(4px);
+        @include font-size(1rem);
         white-space: normal;
         overflow: auto;
 
@@ -19,13 +19,13 @@ ul {
                 word-wrap: break-word;
                 position: relative;
                 left: -14px;
-                font-size: 1.2em;
+                @include font-size(1.2rem);
                 opacity: 0.6;
                 color: $primaryColor;
                 cursor: pointer;
 
                 &.active {
-                    opacity: 1 !important;
+                    opacity: 1;
                 }
 
                 -moz-user-select: none;
@@ -38,15 +38,18 @@ ul {
     }
 
     &.header-links-list {
-        margin-top: 10px;
+        @include margin-top(10px);
 
         li {
+            display: inline-block;
             letter-spacing: normal;
-            font-size: 1.5rem;
             font-weight: bold;
-            padding-bottom: 5px;
-            padding-top: 5px;
-            padding-right: 10px;
+            @include font-size(1.5rem);
+            @include margin-bottom(3px);
+            @include margin-right(10px);
+            @include padding-top(5px);
+            @include padding-bottom(5px);
+            @include padding-right(10px);
         }
     }
 
@@ -54,9 +57,9 @@ ul {
         li {
             display: inline-block;
             letter-spacing: normal;
-            font-size: 0.8rem;
-            margin-bottom: 20px;
-            margin-right: 20px;
+            @include font-size(0.8rem);
+            @include margin-bottom(20px);
+            @include margin-right(20px);
         }
     }
 }

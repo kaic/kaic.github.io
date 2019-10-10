@@ -18,7 +18,8 @@
     "license": "GPL-3.0",
     "homepage": "https://github.com/kaic/kaic.me#readme",
     "dependencies": {
-        "bootstrap": "^4.3.1"
+        "bootstrap": "^4.3.1",
+        "rfs": "^9.0.0"
     },
     "devDependencies": {
         "copy-webpack-plugin": "^5.0.4",

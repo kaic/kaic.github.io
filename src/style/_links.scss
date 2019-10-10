@@ -8,12 +8,3 @@ a {
         text-decoration: none;
     }
 }
-
-a#header-arrow {
-    position: absolute;
-    bottom: 0;
-    font-size: -webkit-xxx-large;
-    &:hover {
-        cursor: pointer;
-    }
-}

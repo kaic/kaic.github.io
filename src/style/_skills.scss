@@ -2,18 +2,18 @@
     font-family: "IBM Plex Mono", monospace;
     background-color: white;
     display: inline-block;
-    padding: 2px 15px;
+    @include padding(4px 15px);
+    @include margin(4px 4px);
     border: 2px solid $secundaryColor;
     border-radius: 15px;
-    font-size: 0.8rem;
-    margin: 5px 2px;
     color: $primaryColor;
+    @include font-size(0.8rem);
     font-weight: bold;    
 }
 
 .skills-container {
-    border-left: 2px solid $secundaryColor;
-    padding: 10px;
-    margin-top: 10px;
     display: inline-block;
+    border-left: 2px solid $secundaryColor;
+    @include padding(10px);
+    @include margin-top(10px);
 }

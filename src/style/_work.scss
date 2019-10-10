@@ -1,24 +1,24 @@
 .work-container {
     display: list-item;
     overflow: hidden;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    @include margin-bottom(10px);
+    @include margin-left(10px);
     max-height: 0;
     transition: max-height 0.2s ease-out;
 
     &.active {
         display: block;
-        max-height: 200px;
+        @include rfs(200px, max-height);
     }
 }
 
 .education-container {
     display: block;
-    margin-top: 1rem;
-    padding-left: 5px;
+    @include margin-top(1rem);
+    @include padding-left(5px);
     border-left: 4px solid $primaryColor;
 
     p {
-        margin-bottom: 8px;
+        @include margin-bottom(8px);
     }
 }

@@ -26,10 +26,10 @@
 .icon-bootstrap
  {
     display: inline-block;
-    width: 1.8em;
-    height: 1.8em;
-    fill: currentColor;
     vertical-align: middle;
+    fill: currentColor;
+    @include rfs(1.8rem, width);
+    @include rfs(1.8rem, height);
 }
 
 .icon-javascript>svg, 
@@ -60,9 +60,9 @@
 .icon-bootstrap>svg
  {
     display: inline-block;
-    width: 1.8em;
-    height: 1.8em;
-    fill: currentColor;
     vertical-align: middle;
+    fill: currentColor;
+    @include rfs(1.8rem, width);
+    @include rfs(1.8rem, height);
 }
 
