@@ -68,14 +68,14 @@
 
 @media (max-width: 425px) {
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     ul {
         &.header-links-list {
             li {
-                padding: 5px 0px 5px 0px;
+                padding: 0;
                 a {
-                    font-size: 1.2rem;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -84,7 +84,7 @@
 
 @media (max-width: 375px) {
     h1 {
-        font-size: 1.3 rem;
+        font-size: 1.2rem;
     }
 
     ul {
@@ -110,19 +110,6 @@
     h1 {
         font-size: 1.8rem;
     }
-    ul {
-        &.header-links-list {
-            li {
-                padding: 5px;
-                a {
-                    font-size: 1.5rem;
-                }
-            }
-        }
-    }
-}
-@media (min-width: 481px) {
-    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 @media (min-width: 641px) {
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
