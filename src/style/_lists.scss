@@ -8,7 +8,6 @@ ul {
             @include margin-left(5px);
         }
         @include padding-left(4px);
-        @include margin(1rem);
         @include font-size(1rem);
         white-space: normal;
         overflow: auto;
