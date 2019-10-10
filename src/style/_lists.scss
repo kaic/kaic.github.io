@@ -57,9 +57,18 @@ ul {
         li {
             display: inline-block;
             letter-spacing: normal;
-            @include font-size(0.8rem);
+            @include font-size(1.1rem);
             @include margin-bottom(20px);
             @include margin-right(20px);
+
+            i {
+                @include rfs(3rem, width);
+                @include rfs(3rem, height);
+                svg {
+                    @include rfs(3rem, width);
+                    @include rfs(3rem, height);
+                }
+            }
         }
     }
 }
