@@ -19,7 +19,7 @@ ul {
             a:not([href]):not([tabindex]) {
                 word-wrap: break-word;
                 position: relative;
-                @include rfs(-13px, left);
+                @include rfs(-14px, left);
                 @include font-size(1.2rem);
                 opacity: 0.6;
                 color: $primaryColor;

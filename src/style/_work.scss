@@ -30,7 +30,8 @@
 
         span {
             position: relative;
-            @include rfs(-17px, left);
+            @include rfs(-18px, left);
+            @include font-size(1.2rem);
         }
     }
 }
