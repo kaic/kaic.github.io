@@ -13,7 +13,34 @@ h2 {
 }
 
 h3 {
-    @include font-size(1rem);
+    font-family: "IBM Plex Mono", monospace;
+    @include font-size(1.2rem);
+    color: $primaryColor;
+}
+
+.work-container {
+    p {
+        white-space: pre-line;
+    }
+    h3 {
+        position: relative;
+        left: 10px;
+        //top: calc(0.6vw);
+    }
+
+    h4 {
+        position: relative;
+        left: 10px;
+        font-family: "IBM Plex Mono", monospace;
+        @include font-size(1rem);
+        color: $primaryColor;
+    }
+
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
     color: $primaryColor;
 }
 
@@ -22,6 +49,7 @@ article {
 
     p {
         text-align: justify;
+        float: left;
     }
 
     h1 {
@@ -31,5 +59,6 @@ article {
 }
 
 .presentation {
+    padding: 0em 1em 0em 1em;
     font-family: "IBM Plex Mono", monospace;
 }

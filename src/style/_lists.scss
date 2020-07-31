@@ -3,11 +3,6 @@ ul {
     list-style-type: none;
 
     &.work-links-list {
-        div.vl {
-            border-left: 4px solid $primaryColor;
-            @include margin-left(5px);
-        }
-        @include padding-left(4px);
         @include font-size(1rem);
         white-space: normal;
         overflow: auto;

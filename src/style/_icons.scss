@@ -66,8 +66,8 @@
 .icon-arduino > svg,
 .icon-python > svg {
     display: inline-block;
-    @include rfs(1.8rem, width);
-    @include rfs(1.8rem, height);
+    @include rfs(2rem, width);
+    @include rfs(2rem, height);
     fill: currentColor;
     vertical-align: center;
 }

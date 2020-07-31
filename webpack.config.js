@@ -1,7 +1,7 @@
-const webpack = require('webpack')
-const HtmlWebPackPlugin = require('html-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
 const path = require('path')
+const webpack = require('webpack')
+const CopyPlugin = require('copy-webpack-plugin')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 const DIST_FOLDER_PATH = path.join(__dirname, 'dist')
 
@@ -29,7 +29,7 @@ module.exports = env => {
           use: ['style-loader', 'css-loader', 'sass-loader']
         },
         {
-          test: /\.(png|jpg)$/,
+          test: /\.(png|jpg|jpeg)$/,
           use: [
             {
               loader: 'url-loader',

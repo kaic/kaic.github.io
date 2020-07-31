@@ -5,11 +5,9 @@
     @include margin-left(10px);
     max-height: 0;
     transition: max-height 0.2s ease-out;
-
-    &.active {
-        display: block;
-        @include rfs(50vh, max-height);
-    }
+    display: block;
+    @include rfs(50vh, max-height);
+    
 }
 
 .education {
@@ -18,19 +16,15 @@
         display: block;
         @include padding-left(5px);
         border-left: 4px solid $primaryColor;
+        @include margin-bottom(1rem);
 
         h3 {
             @include font-size(1.2rem);
+            @include margin-bottom(0.5rem);
         }
 
         p {
-            @include margin-bottom(8px);
-        }
-
-        span {
-            position: relative;
-            @include rfs(-18px, left);
-            @include font-size(1.2rem);
+            @include margin-bottom(0);
         }
     }
 }

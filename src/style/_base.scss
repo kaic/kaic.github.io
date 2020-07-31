@@ -1,6 +1,6 @@
-$background: #dddddd;
-$primaryColor: #000000;
-$secundaryColor: #2e3131;
+$background: #131313;
+$primaryColor: #ffffff;
+$secundaryColor: #ffffff;
 
 @font-face {
     font-family: "IBM Plex Mono";
@@ -24,10 +24,8 @@ html {
 }
 
 body {
-    @include padding(1rem);
     @include font-size(1rem);
     @include margin-bottom(1rem);
-    border: 2px solid $primaryColor;
     font-family: "Prompt", sans-serif;
     background-color: $background;
 }
