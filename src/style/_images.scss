@@ -1,9 +1,5 @@
 #avatar {
-    -webkit-box-shadow: 6px 10px 25px 6px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 6px 10px 25px 6px rgba(0, 0, 0, 0.7);
-    box-shadow: 6px 10px 25px 6px rgba(0, 0, 0, 0.7);
     @include margin-bottom(1rem);
-    border: 4px solid $primaryColor;
 }
 
 .img-thumbnail {
