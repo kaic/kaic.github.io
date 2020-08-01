@@ -2,7 +2,7 @@
     display: block;
     background-color: $background2;
     @include padding(10px);
-    @include margin-bottom(10px);
+    @include margin-bottom(15px);
     border-radius: 5px;
 
     .work-header {
