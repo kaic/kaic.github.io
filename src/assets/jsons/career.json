@@ -1,0 +1,50 @@
+[
+    {
+      "company": "FitDance",
+      "position": "Software Developer",
+      "period": "dez de 2019 - atualmente",
+      "description": "Projeto: Desenvolvimento fullstack e refatoração de legado\n  Manutenção e adição de features em APIs (Microserviços, Typescript, Kafka, ExpressJS).\n  Manutenção e modelagem do Banco de Dados (PostgreSQL).\n  Manutenção e adição de features no WebApp (ReactJS).\n  Desenvolvimento mobile com React Native.\n  CI/CD, Docker, Kubernetes\n  Testes\n  Code Review\n  ",
+      "location": "São Paulo, Brasil",
+      "img": "fitdance.jpeg"
+    },
+    {
+      "company": "LinkApi",
+      "position": "Backend Developer",
+      "period": "abr de 2019 - jul de 2019",
+      "description": "Projeto: Desenvolvimento de integrações.\n  Integrações VTEX, Oracle DB, Microvix, Salesforce.\n  ",
+      "location": "São Paulo, Brasil",
+      "img": "linkapi.png"
+    },
+    {
+      "company": "Ebix",
+      "position": "Javascript Developer",
+      "period": "nov de 2018 - fev de 2019",
+      "description": "Projeto: Desenvolvimento de backend para o chatbot BIA da Bradesco Seguros.\n  Manutenção e adição de features em APIs (NodeJS, ExpressJS).\n  IBM Watson.\n  Serveless functions.  \n  ",
+      "location": "São Paulo, Brasil",
+      "img": "ebix.jpeg"
+    },
+    {
+      "company": "Concrete",
+      "position": "Javascript Developer",
+      "period": "abr de 2017 - fev de 2018",
+      "description": "Projeto: Desenvolvimento de backend para o aplicativo móvel Meu Carrefour.\n  Manutenção e adição de features em APIs (NodeJS, HapiJS).\n  Uso de filas com RabbitMQ.\n  Desenvolvimento de API Gateway para integrar diversos serviços do cliente.\n  Testes automatizados.   \n  ",
+      "location": "São Paulo, Brasil",
+      "img": "concrete.png"
+    },
+    {
+      "company": "FCamara",
+      "position": "IT Solutions Consultant",
+      "period": "abr de 2017 - set de 2017",
+      "description": "Projeto: Desenvolvimento de uma IDE e um Framework para auxílio no desenvolvimento Web de um grande prestador de serviços para o varejo.\nDesenvolvimento de aplicação desktop multiplataforma (Windows e Linux) usando ElectronJS.\nManutenção e adição de features em APIs (NodeJS, ExpressJS).\nDesenvolvimento mobile com Ionic I e III.\nDesenvolvimento web com AngularJS e Angular.\n  ",
+      "location": "São Paulo, Brasil",
+      "img": "fcamara.jpeg"
+    },
+    {
+      "company": "FCamara",
+      "position": "Developer Trainee",
+      "period": "nov de 2016 - abr de 2017",
+      "description": "Projeto: Timesheet Online para gestão e controle de tempo.\n  Manutenção e adição de features no WebApp (AngularJS).\n  Desenvolvimento da extensão do HashTrack para Google Chrome.\n  Desenvolvimento da versão mobile do HashTrack (https://mobile.hashtrack.io/) no formato de Progressive Web App. No blog -\n  http://blog.hashtrack.io/hashtrack-mobile\n  Manutenção e adição de features na API (NodeJS, ExpressJS).\n  Manutenção e modelagem do Banco de Dados (MongoDB).\n  Entrega do software na nuvem (Digital Ocean e Azure) utilizando Docker.   \n  ",
+      "location": "São Paulo, Brasil",
+      "img": "fcamara.jpeg"
+    }
+  ]

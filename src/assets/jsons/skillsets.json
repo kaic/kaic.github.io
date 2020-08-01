@@ -1,0 +1,127 @@
+[
+    {
+      "name": "Linguagens",
+      "skills": [
+        {
+          "name": "JavaScript",
+          "icon": "javascript"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "javascript"
+        }
+      ]
+    },
+    {
+      "name": "Backend",
+      "skills": [
+        {
+          "name": "NodeJS",
+          "icon": "nodejs"
+        },
+        {
+          "name": "ExpressJS",
+          "icon": "nodejs"
+        },
+        {
+          "name": "HapiJS",
+          "icon": "nodejs"
+        },
+        {
+          "name": "RESTful APIs",
+          "icon": "api-settings"
+        },
+        {
+          "name": "Microservices",
+          "icon": "cloud-connection"
+        }
+      ]
+    },
+    {
+      "name": "Frontend",
+      "skills": [
+        {
+          "name": "HTML 5",
+          "icon": "html-5"
+        },
+        {
+          "name": "CSS 3",
+          "icon": "css3"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "bootstrap"
+        },
+        {
+          "name": "Angular",
+          "icon": "angularjs"
+        },
+        {
+          "name": "SASS",
+          "icon": "sass"
+        },
+        {
+          "name": "Ionic",
+          "icon": "ionic"
+        }
+      ]
+    },
+    {
+      "name": "Data",
+      "skills": [
+        {
+          "name": "SQL",
+          "icon": "sql"
+        },
+        {
+          "name": "MySQL",
+          "icon": "mysql"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgreesql"
+        },
+        {
+          "name": "MongoDB",
+          "icon": "mongodb"
+        }
+      ]
+    },
+    {
+      "name": "Ferramental",
+      "skills": [
+        {
+          "name": "NPM",
+          "icon": "npm"
+        },
+        {
+          "name": "Jenkins",
+          "icon": "jenkins"
+        },
+        {
+          "name": "Git",
+          "icon": "git"
+        },
+        {
+          "name": "Linux",
+          "icon": "linux"
+        },
+        {
+          "name": "Bash",
+          "icon": "console"
+        },
+        {
+          "name": "Webpack",
+          "icon": "webpack"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker"
+        },
+        {
+          "name": "Scrum",
+          "icon": "sprint-iteration"
+        }
+      ]
+    }
+  ]
