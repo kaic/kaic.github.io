@@ -1,16 +1,11 @@
-const PRECACHE = 'precache-v4.2'
+const PRECACHE = 'precache-v4.3'
 const RUNTIME = 'runtime'
 
 const PRECACHE_URLS = [
   './main.js',
   './index.html',
-  './assets/icons/icons.svg',
-  './assets/images/avatar.jpg',
-  './assets/images/concrete.png',
-  './assets/images/ebix.jpeg',
-  './assets/images/fcamara.jpeg',
-  './assets/images/fitdance.jpeg',
-  './assets/images/linkapi.png'
+  './assets/icons/*',
+  './assets/images/*',
 ]
 
 // The install handler takes care of precaching the resources we always need.
