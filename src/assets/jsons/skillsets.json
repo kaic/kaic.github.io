@@ -135,10 +135,6 @@
                 "icon": "aws"
             },
             {
-                "name": "Jenkins",
-                "icon": "jenkins"
-            },
-            {
                 "name": "Git",
                 "icon": "git"
             },
