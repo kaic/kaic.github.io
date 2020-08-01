@@ -55,11 +55,12 @@ ul {
             @include font-size(1.1rem);
             @include margin-bottom(20px);
             @include margin-right(20px);
-
+            
             i {
                 @include rfs(3rem, width);
                 @include rfs(3rem, height);
                 svg {
+                    @include padding(3px);
                     @include rfs(3rem, width);
                     @include rfs(3rem, height);
                 }

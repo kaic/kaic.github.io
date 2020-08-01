@@ -19,13 +19,16 @@ h3 {
 }
 
 .work-container {
+    margin-bottom: 10px;
+
     p {
+        float: left;
         white-space: pre-line;
     }
     h3 {
+        text-transform: uppercase;
         position: relative;
         left: 10px;
-        //top: calc(0.6vw);
     }
 
     h4 {
@@ -36,7 +39,6 @@ h3 {
         color: $primaryColor;
     }
 
-    margin-bottom: 10px;
 }
 
 p {
@@ -48,8 +50,6 @@ article {
     @include padding-top(4vh);
 
     p {
-        text-align: justify;
-        float: left;
     }
 
     h1 {

@@ -9,7 +9,9 @@ const skillsets =
       skills: [{
         name: "JavaScript",
         icon: "javascript"
-      }]
+      }, 
+    {name: "TypeScript",
+    icon: "javascript"}]
     },
     {
       name: 'Backend',

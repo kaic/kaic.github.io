@@ -2,11 +2,7 @@
     display: list-item;
     overflow: hidden;
     @include margin-bottom(10px);
-    @include margin-left(10px);
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
     display: block;
-    @include rfs(50vh, max-height);
     
 }
 
