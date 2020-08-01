@@ -3,7 +3,6 @@ const RUNTIME = 'runtime'
 
 const PRECACHE_URLS = [
   './main.js',
-  './main.js',
   './index.html',
   './assets/icons/icons.svg',
   './assets/images/avatar.jpg',
