@@ -1,127 +1,164 @@
 [
     {
-      "name": "Linguagens",
-      "skills": [
-        {
-          "name": "JavaScript",
-          "icon": "javascript"
-        },
-        {
-          "name": "TypeScript",
-          "icon": "javascript"
-        }
-      ]
+        "name": "Linguagens",
+        "skills": [
+            {
+                "name": "JavaScript",
+                "icon": "javascript"
+            },
+            {
+                "name": "TypeScript",
+                "icon": "typescript"
+            }
+        ]
     },
     {
-      "name": "Backend",
-      "skills": [
-        {
-          "name": "NodeJS",
-          "icon": "nodejs"
-        },
-        {
-          "name": "ExpressJS",
-          "icon": "nodejs"
-        },
-        {
-          "name": "HapiJS",
-          "icon": "nodejs"
-        },
-        {
-          "name": "RESTful APIs",
-          "icon": "api-settings"
-        },
-        {
-          "name": "Microservices",
-          "icon": "cloud-connection"
-        }
-      ]
+        "name": "Backend",
+        "skills": [
+            {
+                "name": "NodeJS",
+                "icon": "nodejs"
+            },
+            {
+                "name": "ExpressJS",
+                "icon": "nodejs"
+            },
+            {
+                "name": "NestJS",
+                "icon": "nodejs"
+            },
+            {
+                "name": "HapiJS",
+                "icon": "nodejs"
+            },
+            {
+                "name": "MicroServices",
+                "icon": "cloud-connection"
+            },
+            {
+                "name": "RESTful APIs",
+                "icon": "api"
+            },
+            {
+                "name": "HTTP",
+                "icon": "server-connection"
+            },
+            {
+                "name": "Kafka",
+                "icon": "server-connection"
+            },
+            {
+                "name": "WebSocket",
+                "icon": "server-connection"
+            },
+            {
+                "name": "RabbitMQ",
+                "icon": "server-connection"
+            }
+        ]
     },
     {
-      "name": "Frontend",
-      "skills": [
-        {
-          "name": "HTML 5",
-          "icon": "html-5"
-        },
-        {
-          "name": "CSS 3",
-          "icon": "css3"
-        },
-        {
-          "name": "Bootstrap",
-          "icon": "bootstrap"
-        },
-        {
-          "name": "Angular",
-          "icon": "angularjs"
-        },
-        {
-          "name": "SASS",
-          "icon": "sass"
-        },
-        {
-          "name": "Ionic",
-          "icon": "ionic"
-        }
-      ]
+        "name": "Frontend",
+        "skills": [
+            {
+                "name": "HTML 5",
+                "icon": "html"
+            },
+            {
+                "name": "CSS 3",
+                "icon": "css"
+            },
+            {
+                "name": "SASS",
+                "icon": "sass"
+            },
+            {
+                "name": "Angular",
+                "icon": "angular"
+            },
+            {
+                "name": "React",
+                "icon": "react"
+            },
+            {
+                "name": "React Native",
+                "icon": "react"
+            },
+            {
+                "name": "Ionic",
+                "icon": "ionic"
+            },
+            {
+                "name": "Webpack",
+                "icon": "webpack"
+            }
+        ]
     },
     {
-      "name": "Data",
-      "skills": [
-        {
-          "name": "SQL",
-          "icon": "sql"
-        },
-        {
-          "name": "MySQL",
-          "icon": "mysql"
-        },
-        {
-          "name": "PostgreSQL",
-          "icon": "postgreesql"
-        },
-        {
-          "name": "MongoDB",
-          "icon": "mongodb"
-        }
-      ]
+        "name": "Data",
+        "skills": [
+            {
+                "name": "SQL",
+                "icon": "sql"
+            },
+            {
+                "name": "MySQL",
+                "icon": "mysql"
+            },
+            {
+                "name": "PostgreSQL",
+                "icon": "postgres"
+            },
+            {
+                "name": "MongoDB",
+                "icon": "mongodb"
+            }
+        ]
     },
     {
-      "name": "Ferramental",
-      "skills": [
-        {
-          "name": "NPM",
-          "icon": "npm"
-        },
-        {
-          "name": "Jenkins",
-          "icon": "jenkins"
-        },
-        {
-          "name": "Git",
-          "icon": "git"
-        },
-        {
-          "name": "Linux",
-          "icon": "linux"
-        },
-        {
-          "name": "Bash",
-          "icon": "console"
-        },
-        {
-          "name": "Webpack",
-          "icon": "webpack"
-        },
-        {
-          "name": "Docker",
-          "icon": "docker"
-        },
-        {
-          "name": "Scrum",
-          "icon": "sprint-iteration"
-        }
-      ]
+        "name": "Ferramental",
+        "skills": [
+            {
+                "name": "Linux",
+                "icon": "linux"
+            },
+            {
+                "name": "Docker",
+                "icon": "docker"
+            },
+            {
+                "name": "Kubernetes",
+                "icon": "kubernetes"
+            },
+            {
+                "name": "AWS",
+                "icon": "aws"
+            },
+            {
+                "name": "Jenkins",
+                "icon": "jenkins"
+            },
+            {
+                "name": "Git",
+                "icon": "git"
+            },
+            {
+                "name": "NPM",
+                "icon": "npm"
+            },
+            {
+                "name": "Bash",
+                "icon": "console"
+            }
+        ]
+    },
+    {
+        "name": "Agile",
+        "skills": [
+            {
+                "name": "Scrum",
+                "icon": "scrum"
+            }
+        ]
     }
-  ]
+]

@@ -2,12 +2,11 @@
     font-family: "IBM Plex Mono", monospace;
     background-color: white;
     display: inline-block;
-    @include padding(0.3rem 1rem);
+    @include padding(0.2rem 1rem);
     @include margin(5px 5px);
-    border: 2px dotted $secundaryColor;
-    border-radius: 15px;
+    border-radius: 10px;
     color: $background;
-    @include font-size(0.8rem);
+    @include font-size(1rem);
     font-weight: bold;    
 }
 
@@ -16,4 +15,9 @@
     border-left: 2px solid $secundaryColor;
     @include padding(10px);
     @include margin-top(10px);
+
+    img {
+        @include rfs(2rem, width);
+        @include rfs(2rem, height);
+    }
 }

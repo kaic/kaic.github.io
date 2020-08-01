@@ -8,10 +8,7 @@ return `
     <h3>${skillset.name}</h3>
     ${skillset.skills.map(skill => {
     return `<div class="skill">
-        <i class="icon-${skill.icon}">
-        <svg>
-        <use xlink:href="./assets/icons/icons.svg#icon-${skill.icon}"></use>
-        </svg>
+        <img src="${require(`../assets/icons/${skill.icon}.png`)}" class="img" alt="${skill.name} Logo" />
         </i> <span class="justify-content-center text-center">${skill.name}</span></div>`
         }).join('')}
     </div>`
