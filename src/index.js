@@ -3,6 +3,7 @@ import './style/main.scss'
 import './scripts/date.js'
 import './scripts/skillset.js'
 import './scripts/career.js'
+import './scripts/google-analitycs.js'
 
 window.addEventListener('load', () => {
   setTimeout(() => {
