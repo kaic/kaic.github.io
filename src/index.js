@@ -1,14 +1,21 @@
 import './style/main.scss'
 
 import './scripts/date.js'
+import { loadHeaderTexts, loadTranslateBtn } from './scripts/header.js'
 import './scripts/skillset.js'
 import './scripts/career.js'
 import './scripts/google-analitycs.js'
+import { initI18n } from './scripts/i18n.js'
 
-window.addEventListener('load', () => {
+window.addEventListener('load', async () => {
+  await initI18n();
+  await loadHeaderTexts();
+  await loadTranslateBtn();
+
   setTimeout(() => {
     window.scrollTo(0, 1)
-  }, 0)
+  }, 1000)
+
 })
 
 if (process.env.NODE_ENV === 'production') {
