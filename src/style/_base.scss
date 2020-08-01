@@ -53,6 +53,8 @@ hr {
 }
 
 footer {
+    @include margin-bottom(5vh);
+
     & p {
         margin: 0;
     }
