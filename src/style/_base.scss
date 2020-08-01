@@ -1,4 +1,5 @@
 $background: #131313;
+$background2: #252525;
 $primaryColor: #ffffff;
 $secundaryColor: #ffffff;
 
@@ -40,12 +41,18 @@ header {
 }
 
 hr {
-    @include margin-bottom(10px);    
+    @include margin-bottom(10px);
     border: 1px dashed $secundaryColor;
 }
 
-footer {
+.col-sm-12,
+.col-md-10,
+.col-lg-8 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
+footer {
     & p {
         margin: 0;
     }

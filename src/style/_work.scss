@@ -1,9 +1,24 @@
 .work-container {
-    display: list-item;
-    overflow: hidden;
-    @include margin-bottom(10px);
     display: block;
-    
+    background-color: $background2;
+    @include padding(10px);
+    @include margin-bottom(10px);
+    border-radius: 5px;
+
+    .work-header {
+        @include margin-bottom(10px);
+        @include margin-top(10px);
+        display: flex;
+
+        img {
+            align-self: start;
+        }
+
+        #header-text {
+            display: inline-grid;
+            align-self: flex-end;
+        }
+    }
 }
 
 .education {

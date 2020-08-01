@@ -7,11 +7,14 @@
 }
 
 .img-thumbnail {
-    float: left;
+    display: flex;
+    align-content: center;
+    justify-content: center;
     border: none;
     padding: 0;
     border-radius: 0.25rem;
     max-width: 4vw;
-    min-width: 80px;
+    min-width: 75px;
+    margin: auto 10px auto 0;
     height: auto;
 }
