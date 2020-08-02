@@ -10,7 +10,6 @@ const calculateAge = birthdate => {
 }
 
 const YEAR = new Date().getUTCFullYear()
-const MY_AGE = calculateAge(MY_BIRTHDATE)
+export const MY_AGE = calculateAge(MY_BIRTHDATE)
 
 insertText('year', YEAR)
-insertText('age', MY_AGE)
