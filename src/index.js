@@ -1,20 +1,21 @@
 import './style/main.scss'
 
-import './scripts/date.js'
-import { loadHeaderTexts, loadTranslateBtn } from './scripts/header.js'
-import './scripts/skillset.js'
-import './scripts/career.js'
-import './scripts/google-analitycs.js'
-import { initI18n } from './scripts/i18n.js'
+import './scripts/about'
+import './scripts/career'
+import './scripts/skillset'
+import './scripts/google-analitycs'
+import { loadTexts } from './scripts/view'
+import { initI18n } from './scripts/i18n'
+import { loadTranslateBtn } from './scripts/header'
 
 window.addEventListener('load', async () => {
-  await initI18n();
-  await loadHeaderTexts();
-  await loadTranslateBtn();
+  await initI18n()
+  await loadTexts()
+  await loadTranslateBtn()
 
-  setTimeout(() => {
-    window.scrollTo(0, 1)
-  }, 1000)
+  // setTimeout(() => {
+  //   window.scrollTo(0, 1)
+  // }, 1000)
 
 })
 

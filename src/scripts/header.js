@@ -1,35 +1,35 @@
-import { insertText } from './view';
-import { t, changeLanguage, getCurrentLanguage } from './i18n';
+import { insertText, loadTexts } from './view'
+import { t, changeLanguage, getCurrentLanguage } from './i18n'
 
 const translateBtnId = 'translate-btn'
-const header = '_hello', slogan = '_slogan', location = '_location', about = '_about', skills = '_skills', contact = '_contact';
+const header = '_hello', slogan = '_slogan', location = '_location', about = '_about', skills = '_skills', contact = '_contact'
 
-const en = '🇺🇸';
-const ptbr = '🇧🇷';
+const enFlag = '🇺🇸'
+const ptbrFlag = '🇧🇷'
 
 export const loadHeaderTexts = async () => {
-    insertText(header, t('Olá! Meu nome é'));
-    insertText(slogan, t('e eu desenvolvo software para o sec XXI'));
-    insertText(location, t('🌎 São Paulo, Brasil'));
-    insertText(about, t('👨🏽‍💻 Sobre Mim'));
-    insertText(skills, t('🧠  Minhas Skills'));
-    insertText(contact, t('📫 Contato'));
+    insertText(header, t(header))
+    insertText(slogan, t(slogan))
+    insertText(location, t(location))
+    insertText(about, t(about))
+    insertText(skills, t(skills))
+    insertText(contact, t(contact))
 }
 
 const changeLanguageBtnFunc = async () => {
-    const currentLanguage = getCurrentLanguage();
+    const currentLanguage = getCurrentLanguage()
 
-    const newLang = currentLanguage === 'pt-br' ? 'en' : 'pt-br';
+    const newLang = currentLanguage === 'pt-br' ? 'en' : 'pt-br'
     await changeLanguage(newLang)
 
     changeFlag(newLang)
 
-    await loadHeaderTexts()
+    await loadTexts()
 }
 
 export const loadTranslateBtn = () => {
-    const currentLanguage = getCurrentLanguage();
-    const translateBtn = document.getElementById(translateBtnId);
+    const currentLanguage = getCurrentLanguage()
+    const translateBtn = document.getElementById(translateBtnId)
 
     changeFlag(currentLanguage)
 
@@ -38,7 +38,7 @@ export const loadTranslateBtn = () => {
 
 
 export const changeFlag = (currentLanguage) => {
-    const flag = currentLanguage === 'pt-br' ? en : ptbr;
+    const flag = currentLanguage === 'pt-br' ? enFlag : ptbrFlag
 
     insertText(translateBtnId, flag)
 }
