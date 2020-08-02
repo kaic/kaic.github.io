@@ -1,20 +1,10 @@
 import { insertText, loadTexts } from './view'
-import { t, changeLanguage, getCurrentLanguage } from './i18n'
+import { changeLanguage, getCurrentLanguage } from './i18n'
 
-const translateBtnId = 'translate-btn'
-const header = '_hello', slogan = '_slogan', location = '_location', about = '_about', skills = '_skills', contact = '_contact'
+const EN_FLAG = '🇺🇸'
+const PTBR_FLAG = '🇧🇷'
 
-const enFlag = '🇺🇸'
-const ptbrFlag = '🇧🇷'
-
-export const loadHeaderTexts = async () => {
-    insertText(header, t(header))
-    insertText(slogan, t(slogan))
-    insertText(location, t(location))
-    insertText(about, t(about))
-    insertText(skills, t(skills))
-    insertText(contact, t(contact))
-}
+const TRANSL_BTN_ID = 'translate-btn'
 
 const changeLanguageBtnFunc = async () => {
     const currentLanguage = getCurrentLanguage()
@@ -29,7 +19,7 @@ const changeLanguageBtnFunc = async () => {
 
 export const loadTranslateBtn = () => {
     const currentLanguage = getCurrentLanguage()
-    const translateBtn = document.getElementById(translateBtnId)
+    const translateBtn = document.getElementById(TRANSL_BTN_ID)
 
     changeFlag(currentLanguage)
 
@@ -38,7 +28,7 @@ export const loadTranslateBtn = () => {
 
 
 export const changeFlag = (currentLanguage) => {
-    const flag = currentLanguage === 'pt-br' ? enFlag : ptbrFlag
+    const flag = currentLanguage === 'pt-br' ? EN_FLAG : PTBR_FLAG
 
-    insertText(translateBtnId, flag)
+    insertText(TRANSL_BTN_ID, flag)
 }

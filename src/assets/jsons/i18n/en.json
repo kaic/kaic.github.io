@@ -1,14 +1,22 @@
 {
     "translation": {
-        "_hello": "Hello! My name is",
-        "_slogan": "and I develop software for the XXI century.",
-        "_location": "🌎 São Paulo, Brazil",
-        "_about": "👨🏽‍💻 About Me",
-        "_aboutMe": "👨🏽‍💻 About Me",
-        "_skills": "🧠  My Skills",
-        "_contact": "📫 Contact",
-        "_about1": "Hello! My name is Kaic Bento and I develop software for the web. I'm {{myAge}} years old, born and resident in São Paulo, Brazil. Currently I work as a JavaScript Developer with a focus on backend and microservices development.",
-        "_about2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed vehicula erat. Nullam placerat congue enim. Sed aliquam massa ac nunc semper, a accumsan massa hendrerit. Duis et orci malesuada, suscipit mauris at, facilisis odio. Curabitur sed tristique justo. Fusce sodales interdum mauris id iaculis. Nullam ultrices rutrum tincidunt. Vestibulum tempor arcu eu finibus auctor. Etiam fringilla enim diam, euismod pharetra nisi pulvinar at. Suspendisse gravida pretium velit, sit amet malesuada purus sodales eget. Etiam pharetra tellus et vulputate blandit. Donec id lacinia nisl.",
-        "_curriculum": "📑 My CV"
+        "header": {
+            "t-hello": "Hello! My name is",
+            "t-slogan": "and I develop software for the XXI century.",
+            "t-location": "🌎 São Paulo, Brazil",
+            "t-about-link": "👨🏽‍💻 About Me",
+            "t-skills-link": "🧠  My Skills",
+            "t-contact-link": "📫 Contact"
+        },
+        "about-me": {
+            "t-about-title": "👨🏽‍💻 About Me",
+            "t-about-p1": "Hello! My name is Kaic Bento and I develop software for the web. I'm {{myAge}} years old, born and resident in São Paulo, Brazil. Currently I work as a JavaScript Developer with a focus on backend and microservices development.",
+            "t-about-p2": "Hello! My name is Kaic Bento and I develop software for the web. I'm {{myAge}} years old, born and resident in São Paulo, Brazil. Currently I work as a JavaScript Developer with a focus on backend and microservices development.",
+            "t-cv-link": "📑 My CV"
+        },
+        "skills": {
+            "t-skills-title": "🧠 My Skills",
+            "t-skills-p1": "These are the technologies which I have experience."
+        }
     }
 }
