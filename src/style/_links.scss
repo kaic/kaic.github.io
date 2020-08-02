@@ -8,7 +8,14 @@ a {
         text-decoration: none;
     }
 
-    #_curriculum {
-        @include font-size(1.125rem);
+    &#_curriculum {
+        @include font-size(1.1rem);
+    }
+
+    &#translate-btn {
+        @include font-size(20px);
+        position: absolute;
+        top: 10px;
+        right: 15px;
     }
 }
