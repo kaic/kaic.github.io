@@ -10,7 +10,7 @@ const configs = {
     resources: { pt: ptbr, en }
 }
 
-export const t = (text) => i18next.t(text)
+export const t = (text, args) => i18next.t(text, args)
 
 export const changeLanguage = async (lang) => await i18next.changeLanguage(lang)
 
