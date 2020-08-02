@@ -1,10 +1,14 @@
 {
     "translation": {
-        "Olá! Meu nome é": "Olá! Meu nome é",
-        "e eu desenvolvo software para o sec XXI": "e eu desenvolvo software para o séc XXI.",
-        "🌎 São Paulo, Brasil": "🌎 São Paulo, Brasil",
-        "👨🏽‍💻 Sobre Mim": "👨🏽‍💻 Sobre Mim",
-        "🧠  Minhas Skills": "🧠  Minhas Skills",
-        "📫 Contato": "📫 Contato"
+        "_hello": "Olá! Meu nome é",
+        "_slogan": "e eu desenvolvo software para o séc XXI.",
+        "_location": "🌎 São Paulo, Brasil",
+        "_about": "👨🏽‍💻 Sobre Mim",
+        "_aboutMe": "👨🏽‍💻 Sobre Mim",
+        "_skills": "🧠  Minhas Skills",
+        "_contact": "📫 Contato",
+        "_about1": "Olá! Meu nome é Kaic Bento e eu desenvolvo software para a Web. Tenho {{myAge}} anos de idade, sou natural e residente da cidade de São Paulo, Brasil. Atualmente atuo como Desenvolvedor JavaScript com foco em desenvolvimento backend e microsserviços.",
+        "_about2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed vehicula erat. Nullam placerat congue enim. Sed aliquam massa ac nunc semper, a accumsan massa hendrerit. Duis et orci malesuada, suscipit mauris at, facilisis odio. Curabitur sed tristique justo. Fusce sodales interdum mauris id iaculis. Nullam ultrices rutrum tincidunt. Vestibulum tempor arcu eu finibus auctor. Etiam fringilla enim diam, euismod pharetra nisi pulvinar at. Suspendisse gravida pretium velit, sit amet malesuada purus sodales eget. Etiam pharetra tellus et vulputate blandit. Donec id lacinia nisl.",
+        "_curriculum": "📑 Meu Curriculum"
     }
 }
