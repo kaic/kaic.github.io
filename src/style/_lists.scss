@@ -6,30 +6,6 @@ ul {
         @include font-size(1rem);
         white-space: normal;
         overflow: auto;
-
-        li {
-            display: inline;
-
-            a:not([href]):not([tabindex]) {
-                word-wrap: break-word;
-                position: relative;
-                @include rfs(-14px, left);
-                @include font-size(1.2rem);
-                opacity: 0.6;
-                color: $primaryColor;
-                cursor: pointer;
-
-                &.active {
-                    opacity: 1;
-                }
-
-                -moz-user-select: none;
-                -khtml-user-select: none;
-                -webkit-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
-        }
     }
 
     &.header-links-list {

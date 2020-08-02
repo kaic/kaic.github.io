@@ -8,9 +8,9 @@
     justify-content: center;
     border: none;
     padding: 0;
-    border-radius: 0.25rem;
+    @include border-radius(0.25rem);
     max-width: 4vw;
     min-width: 75px;
-    margin: auto 10px auto 0;
+    @include margin(auto 10px auto 0);
     height: auto;
 }

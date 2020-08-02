@@ -38,8 +38,8 @@ h3 {
 }
 
 p {
-    font-size: 1rem;
     color: $primaryColor;
+    @include font-size(1rem);
 }
 
 article {
@@ -52,6 +52,6 @@ article {
 }
 
 .presentation {
-    padding: 0em 1em 0em 1em;
+    @include padding(0em 1em 0em 1em);
     font-family: "IBM Plex Mono", monospace;
 }
