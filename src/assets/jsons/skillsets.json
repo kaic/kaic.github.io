@@ -1,6 +1,6 @@
 [
     {
-        "name": "Linguagens",
+        "name": "Languages",
         "skills": [
             {
                 "name": "JavaScript",
@@ -116,7 +116,7 @@
         ]
     },
     {
-        "name": "Ferramental",
+        "name": "Tooling",
         "skills": [
             {
                 "name": "Linux",
