@@ -10,7 +10,7 @@
         },
         "about-me": {
             "t-about-title": "👨🏽‍💻 About Me",
-            "t-about-p1": "Hello! My name is Kaic Bento and I develop software for the web. I'm {{myAge}} years old, born and resident in São Paulo, Brazil. Currently I work as a JavaScript Developer with a focus on backend and microservices development.",
+            "t-about-p1": "Hello! My name is Kaic Bento and I develop software for the web. I'm {{MY_AGE}} years old, born and resident in São Paulo, Brazil. Currently I work as a JavaScript Developer with a focus on backend and microservices development.",
             "t-about-p2": "Hello! My name is Kaic Bento and I develop software for the web. I'm {{myAge}} years old, born and resident in São Paulo, Brazil. Currently I work as a JavaScript Developer with a focus on backend and microservices development.",
             "t-cv-link": "📑 My CV"
         },

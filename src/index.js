@@ -1,5 +1,6 @@
 import './style/main.scss'
 
+import './scripts/date'
 import './scripts/about'
 import './scripts/career'
 import './scripts/skillset'

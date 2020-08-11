@@ -1,5 +1,3 @@
-import { insertText } from './view'
-
 const MY_BIRTHDATE = new Date(1998, 6, 12)
 
 const calculateAge = birthdate => {
@@ -11,5 +9,3 @@ const calculateAge = birthdate => {
 
 const YEAR = new Date().getUTCFullYear()
 export const MY_AGE = calculateAge(MY_BIRTHDATE)
-
-insertText('year', YEAR)

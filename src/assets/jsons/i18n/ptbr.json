@@ -10,7 +10,7 @@
         },
         "about-me": {
             "t-about-title": "👨🏽‍💻 Sobre Mim",
-            "t-about-p1": "Olá! Meu nome é Kaic Bento e eu desenvolvo software para a Web. Tenho {{myAge}} anos de idade, sou natural e residente da cidade de São Paulo, Brasil. Atualmente atuo como Desenvolvedor JavaScript com foco em desenvolvimento backend e microsserviços.",
+            "t-about-p1": "Olá! Meu nome é Kaic Bento e eu desenvolvo software para a Web. Tenho {{MY_AGE}} anos de idade, sou natural e residente da cidade de São Paulo, Brasil. Atualmente atuo como Desenvolvedor JavaScript com foco em desenvolvimento backend e microsserviços.",
             "t-about-p2": "Olá! Meu nome é Kaic Bento e eu desenvolvo software para a Web. Tenho {{myAge}} anos de idade, sou natural e residente da cidade de São Paulo, Brasil. Atualmente atuo como Desenvolvedor JavaScript com foco em desenvolvimento backend e microsserviços.",
             "t-cv-link": "📑 Meu Curriculum"
         },

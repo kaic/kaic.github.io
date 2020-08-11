@@ -1,8 +1,9 @@
 import { t } from './i18n'
+import { MY_AGE } from './date'
 
-const headerTextElements = ['t-hello', 't-slogan', 't-location', 't-about-link', 't-skills-link', 't-contact-link']
-const aboutTextElements = ['t-about-title', 't-about-p1', 't-about-p2', 't-cv-link']
-const skillsTextElements = ['t-skills-title', 't-skills-p1']
+const headerTextElements = [{ id: 't-hello', args: null }, { id: 't-slogan', args: null }, { id: 't-location', args: null }, { id: 't-about-link', args: null }, { id: 't-skills-link', args: null }, { id: 't-contact-link', args: null }, ]
+const aboutTextElements = [{ id: 't-about-title', args: null }, { id: 't-about-p1', args: { MY_AGE }}, { id: 't-about-p2', args: null }, { id: 't-cv-link', args: null }]
+const skillsTextElements = [{ id: 't-skills-title', args: null }, { id: 't-skills-p1', args: null }]
 const careerTextElements = []
 const educationTextElements = []
 const contactTextElements = []
@@ -12,8 +13,8 @@ export const insertText = (elementId, text) => document.getElementById(elementId
 
 export const insertHTML = (elementId, HTML) => document.getElementById(elementId).insertAdjacentHTML('beforeend', HTML)
 
-export const loadArticleTexts = async (articleName, textsElements) => 
-    await textsElements.map(elemement => insertText(elemement, t(`${articleName}.${elemement}`)))
+export const loadArticleTexts = async (articleName, textsElements) =>
+    await textsElements.map(element => insertText(element.id, t(`${articleName}.${element.id}`, element.args)))
 
 export const loadTexts = async () => {
     await loadArticleTexts('header', headerTextElements)
@@ -22,5 +23,5 @@ export const loadTexts = async () => {
     await loadArticleTexts('career', careerTextElements)
     await loadArticleTexts('education', educationTextElements)
     await loadArticleTexts('contact', contactTextElements)
-    await loadArticleTexts('footer', footerTextElements) 
+    await loadArticleTexts('footer', footerTextElements)
 }
