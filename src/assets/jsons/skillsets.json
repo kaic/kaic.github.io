@@ -147,14 +147,5 @@
                 "icon": "console"
             }
         ]
-    },
-    {
-        "name": "Agile",
-        "skills": [
-            {
-                "name": "Scrum",
-                "icon": "scrum"
-            }
-        ]
     }
 ]
