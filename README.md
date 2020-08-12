@@ -23,11 +23,11 @@ First create a `.env` file with:
 GH_TOKEN={Your Github Access Token}`
 
 `
-GH_REPOSITORY={Your github page repository without http://}
+GH_REPOSITORY={Your github page repository without https://}
 `
 
 Then run:
 
 `npm run production`
 
-This will build the project, send the build code to `master` branc` and push the code to production!
+This will build the project, send the build code to `master` branch and push the code to production!
