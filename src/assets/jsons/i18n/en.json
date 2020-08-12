@@ -10,8 +10,11 @@
         },
         "about-me": {
             "t-about-title": "👨🏽‍💻 About Me",
-            "t-about-p1": "Hello! My name is Kaic Bento and I develop software for the web. I'm {{MY_AGE}} years old, born and resident in São Paulo, Brazil. Currently I work as a JavaScript Developer with a focus on backend and microservices development.",
-            "t-about-p2": "Hello! My name is Kaic Bento and I develop software for the web. I'm {{myAge}} years old, born and resident in São Paulo, Brazil. Currently I work as a JavaScript Developer with a focus on backend and microservices development.",
+            "t-about-p1": "Hello! My name is Kaic Bento. I'm {{MY_AGE}} years old, born and resident in São Paulo, Brazil. Currently I work as a JavaScript Developer with a focus on backend and microservices development. Also, I am Father, a big soccer fan, street culture and PC strategy games enthusiast. I also dedicate part of my time being curious about economics, geopolitics, entrepreneurship and world history.",
+            "t-about-p2": "I have personally always been very curious, and I always wanted to know how things work (especially electronics). From an early age I was drawn to buttons, wires, lights and screens. I disassembled and assembled everything I saw ahead in search of THAT answer. When I got my first computer at 9 years old, I was delighted. That machine did everything and, when combined with the internet, had all the answers! It was love at first sight.",
+            "t-about-p3": "I started venturing with programming at the age of 12, writing scripts with Sanny Builder to create MODs for GTA San Andreas. At that time I also got to know HTML and CSS while playing with Blogspot and some forum tools. When I was 15 years old I started studying Computer Science integrated with high school and that's when I started to really learn how a computer worked, which made me fall in love with software engineering. That love make me the decision of which profession I wanted to follow.",
+            "t-about-p4": "At 18 two great things happened in my life: I became a father (yes, things are precocious in my life!) And I got my first job as a developer. I became an intern at a software consultancy in São Paulo and started my journey as a developer.",
+            "t-about-p5": "Since then I have been working as a web software developer. I am currently focusing my attention on developing backend systems distributed in the cloud, containerization, testing, functional programming, good practices and software development flows.",
             "t-cv-link": "📑 My CV"
         },
         "skills": {

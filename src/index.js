@@ -2,11 +2,11 @@ import './style/main.scss'
 
 import './scripts/date'
 import './scripts/about'
-import './scripts/career'
 import './scripts/skillset'
 import './scripts/google-analitycs'
 import { loadTexts } from './scripts/view'
 import { initI18n } from './scripts/i18n'
+import './scripts/career'
 import { loadTranslateBtn } from './scripts/header'
 
 window.addEventListener('load', async () => {

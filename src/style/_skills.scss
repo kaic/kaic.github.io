@@ -4,7 +4,7 @@
     display: inline-block;
     @include padding(0.2rem 1rem);
     @include margin(5px 5px);
-    border-radius: 10px;
+    @include border-radius(2%);
     color: $background;
     @include font-size(1rem);
     font-weight: bold;    

@@ -1,18 +1,23 @@
 #avatar {
     @include margin-bottom(1rem);
+    @include border-radius(5%);
+    // -webkit-box-shadow: 1px 1px 3px 4px white; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    // -moz-box-shadow: 1px 1px 3px 4px white; /* Firefox 3.5 - 3.6 */
+    // box-shadow: 1px 1px 3px 4px white; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    border: 2px solid white;
 }
 
 @media only screen and (max-width: 450px) {
     #avatar {
         max-width: auto;
     }
-}   
+}
 
 @media only screen and (min-width: 450px) {
     #avatar {
         max-width: 300px;
     }
-}   
+}
 
 .img-thumbnail {
     display: flex;
@@ -20,7 +25,7 @@
     justify-content: center;
     border: none;
     padding: 0;
-    @include border-radius(0.25rem);
+    @include border-radius(5%);
     max-width: 4vw;
     min-width: 75px;
     @include margin(auto 10px auto 0);

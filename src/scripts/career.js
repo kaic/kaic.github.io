@@ -1,3 +1,4 @@
+import { getCurrentLanguage } from './i18n'
 import { insertHTML } from './view'
 import career from '../assets/jsons/career.json'
 

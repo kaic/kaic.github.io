@@ -3,8 +3,8 @@
     background-color: $background2;
     @include padding(10px);
     @include margin-bottom(15px);
-    border-radius: 5px;
-    border-left: 4px solid $primaryColor;
+    @include border-radius(4px);
+    border-left: 3px solid $primaryColor;
 
     .work-header {
         @include margin-bottom(10px);
@@ -23,16 +23,21 @@
 }
 
 .education {
-    @include margin-left(5px);
-
     .education-container {
-        display: block;
-        border-radius: 5px;
-        border-left: 4px solid $primaryColor;
-        background-color: $background2;
+        width: 100%;
+        width: -moz-available; /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+        width: fill-available;
+        display: inline-block;
+        @include border-radius(4px);
         @include padding(10px);
-        @include margin-bottom(15px);
         @include margin-bottom(1rem);
+        border-left: 3px solid $primaryColor;
+        background-color: $background2;
+        
+        &:first-child {
+            @include margin-right(1rem);
+        }
 
         h3 {
             @include font-size(1.2rem);
@@ -47,6 +52,6 @@
 
 @media only screen and (min-width: 1200px) {
     .education-container {
-        max-width: 30vw;
+        max-width: 49%;
     }
 }
