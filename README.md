@@ -1,5 +1,33 @@
 # kaic.github.io
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+
+The source code is on `dev` branch.
+
+To run the project:
+
+First install the dependencies:
+
+`npm install`
+
+Then run:
+
+`npm run dev`
+
+
+To deploy in production (with your github account)
+
+First create a `.env` file with:
+
+`
+GH_TOKEN={Your Github Access Token}`
+
+`
+GH_REPOSITORY={Your github page repository without http://}
+`
+
+Then run:
+
+`npm run production`
+
+This will build the project, send the build code to `master` branc` and push the code to production!
