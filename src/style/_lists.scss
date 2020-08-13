@@ -26,13 +26,14 @@ ul {
 
     &.bottom-links-list {
         li {
-            display: inline-block;
+            display: block;
             letter-spacing: normal;
             @include font-size(1.1rem);
             @include margin-bottom(20px);
             @include margin-right(20px);
-            
+
             i {
+                @include margin-right(2px);
                 @include rfs(3rem, width);
                 @include rfs(3rem, height);
                 svg {
@@ -40,6 +41,13 @@ ul {
                     @include rfs(3rem, width);
                     @include rfs(3rem, height);
                 }
+            }
+
+            img {
+                @include margin-right(2px);
+                @include padding(1px);
+                @include rfs(3rem, width);
+                @include rfs(3rem, height);
             }
         }
     }

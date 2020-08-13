@@ -34,10 +34,6 @@
         @include margin-bottom(1rem);
         border-left: 3px solid $primaryColor;
         background-color: $background2;
-        
-        &:first-child {
-            @include margin-right(1rem);
-        }
 
         h3 {
             @include font-size(1.2rem);
@@ -52,6 +48,9 @@
 
 @media only screen and (min-width: 1200px) {
     .education-container {
-        max-width: 49%;
+        &:first-child {
+            @include margin-right(10px);
+        }
+        @include rfs(49%, max-width);
     }
 }
