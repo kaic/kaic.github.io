@@ -13,11 +13,6 @@ window.addEventListener('load', async () => {
   await initI18n()
   await loadTexts()
   await loadTranslateBtn()
-
-  // setTimeout(() => {
-  //   window.scrollTo(0, 1)
-  // }, 1000)
-
 })
 
 if (process.env.NODE_ENV === 'production') {
