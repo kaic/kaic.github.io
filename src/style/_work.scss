@@ -1,12 +1,13 @@
 .work-container {
     display: block;
-    background-color: $background2;
     @include padding(10px);
-    @include margin-bottom(15px);
-    @include border-radius(4px);
     border-left: 3px solid $primaryColor;
 
     .work-header {
+        transition: 0.5s;
+        &:hover {
+            transform: scale(0.97)
+        }
         @include margin-bottom(10px);
         @include margin-top(10px);
         display: flex;
@@ -28,12 +29,9 @@
         width: -moz-available; /* WebKit-based browsers will ignore this. */
         width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
         width: fill-available;
-        display: inline-block;
-        @include border-radius(4px);
+        display: block;
         @include padding(10px);
-        @include margin-bottom(1rem);
         border-left: 3px solid $primaryColor;
-        background-color: $background2;
 
         h3 {
             @include font-size(1.2rem);

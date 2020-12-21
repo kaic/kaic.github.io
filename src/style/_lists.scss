@@ -10,8 +10,12 @@ ul {
 
     &.header-links-list {
         @include margin-top(10px);
-
+        
         li {
+            transition: 0.5s;
+            &:hover {
+                transform: scale(0.97)
+            }
             display: inline-block;
             letter-spacing: normal;
             font-weight: bold;
@@ -26,6 +30,10 @@ ul {
 
     &.bottom-links-list {
         li {
+            transition: 0.5s;
+            &:hover {
+                transform: scale(0.97)
+            }
             display: block;
             letter-spacing: normal;
             @include font-size(1.1rem);
