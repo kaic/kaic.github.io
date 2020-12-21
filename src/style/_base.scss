@@ -1,5 +1,4 @@
-$background: #131313;
-$background2: #252525;
+$background: #000000;
 $primaryColor: #ffffff;
 $secundaryColor: #ffffff;
 
@@ -15,6 +14,12 @@ $secundaryColor: #ffffff;
     font-style: normal;
     font-weight: 400;
     src: url("../assets/fonts/Prompt-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-style: normal;
+    font-family: 'emoji' !important;
+    src: url("../assets/fonts/EmojiOneColor.otf") format("woff2");
 }
 
 html {

@@ -40,7 +40,7 @@ module.exports = env => {
           ],
         },
         {
-          test: /\.(eot|svg|ttf|woff|woff2)$/,
+          test: /\.(eot|svg|ttf|woff|woff2|otf)$/,
           loader: 'url-loader',
           options: {
             name: 'assets/fonts/[name].[ext]'
