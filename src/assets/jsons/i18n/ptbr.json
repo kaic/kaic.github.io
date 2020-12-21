@@ -6,6 +6,7 @@
             "t-location": "🌎 São Paulo, Brasil",
             "t-about-link": "👨🏽‍💻 Sobre Mim",
             "t-skills-link": "🧠  Minhas Skills",
+            "t-publications-link": "📚 Publicações",
             "t-contact-link": "📫 Contato"
         },
         "about-me": {
@@ -20,6 +21,10 @@
         "skills": {
             "t-skills-title": "🧠 Minhas Skills",
             "t-skills-p1": "Estas são as tecnologias com as quais possuo experiência e estou familiarizado."
+        },
+        "publications": {
+            "t-publications-title": "📚 Publicações",
+            "t-publications-p1": "Em breve..."
         }
     }
 }
