@@ -1,16 +1,9 @@
 .work-container {
-    display: block;
-    @include padding(10px);
-    border-left: 3px solid $primaryColor;
-
     .work-header {
-        transition: 0.5s;
-        &:hover {
-            transform: scale(0.97)
-        }
-        @include margin-bottom(10px);
-        @include margin-top(10px);
+        @include margin-bottom(1em);
+        @include margin-top(1em);
         display: flex;
+        justify-content: flex-start;
 
         img {
             align-self: start;
@@ -19,8 +12,20 @@
         #header-text {
             display: inline-grid;
             align-self: flex-end;
+
+            h3 {
+                margin-top: 0;
+            }
         }
     }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: initial;
 }
 
 .education {
