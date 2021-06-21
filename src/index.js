@@ -2,7 +2,7 @@ import './style/main.scss'
 
 import './scripts/date'
 import './scripts/about'
-import './scripts/skillset'
+// import './scripts/skillset'
 import './scripts/google-analitycs'
 import { loadTexts } from './scripts/view'
 import { initI18n } from './scripts/i18n'
