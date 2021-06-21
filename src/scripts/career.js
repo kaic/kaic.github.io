@@ -1,11 +1,12 @@
 import { insertHTML } from './view'
 import career from '../assets/jsons/career.json'
 
+// class="${(index > 0) ? `hide`: `show`}"
 const careerHtml = `
   <div class="col-lg-8 col-md-10">
     <ul class="work-links-list">
       <div class="vl">
-        ${career.map(work => `
+        ${career.map((work, index) => `
         <a href="${work.companyUrl}" target="_blank"> 
           <li> 
             <div class="work-container">

@@ -3,11 +3,11 @@
         "header": {
             "t-hello": "Olá! Meu nome é",
             "t-slogan": "e eu desenvolvo software para o séc XXI.",
-            "t-job": "💼 Software Engineer @ Pagar.me",
-            "t-location": "🌎 São Paulo, Brasil",
-            "t-about-link": "💬 Sobre Mim",
-            "t-publications-link": "📝 Publicações",
-            "t-contact-link": "📫 Contato"
+            "t-job": "💼Software Engineer @ Pagar.me",
+            "t-location": "🌎São Paulo, Brasil",
+            "t-about-link": "💬Sobre Mim",
+            "t-publications-link": "📝Publicações",
+            "t-contact-link": "📫Contato"
         },
         "about-me": {
             "t-about-title": "💬 Sobre Mim",
