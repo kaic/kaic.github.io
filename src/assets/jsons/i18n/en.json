@@ -3,10 +3,9 @@
         "header": {
             "t-hello": "Hello! My name is",
             "t-slogan": "and I develop software for the 21st century.",
-            "t-job": "💼Software Engineer @ Pagar.me",
+            "t-job": "💼Software Engineer",
             "t-location": "🌎São Paulo, Brazil",
             "t-about-link": "💬About Me",
-            "t-publications-link": "📝Publications",
             "t-contact-link": "📫Contact"
         },
         "about-me": {
