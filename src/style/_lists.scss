@@ -11,9 +11,6 @@ ul {
 
     &.header-links-list {
         li {
-            &:hover {
-                font-weight: bold;
-            }
             letter-spacing: normal;
             @include font-size(1.5rem);
             @include padding-top(5px);
@@ -23,9 +20,6 @@ ul {
 
     &.bottom-links-list {
         li {
-            &:hover {
-                font-weight: bold;
-            }
             display: block;
             letter-spacing: normal;
             @include font-size(1.1rem);
