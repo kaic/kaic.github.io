@@ -1,12 +1,11 @@
 {
     "translation": {
         "header": {
-            "t-hello": "Hello! My name is",
+            "t-hello": "Hi! I im Kaic.",
             "t-slogan": "and I develop software for the 21st century.",
-            "t-job": "💼Software Engineer",
             "t-location": "🌎São Paulo, Brazil",
-            "t-about-link": "💬About Me",
-            "t-contact-link": "📫Contact"
+            "t-about-link": "About Me",
+            "t-contact-link": "Contact"
         },
         "about-me": {
             "t-about-title": "💬 About Me",
