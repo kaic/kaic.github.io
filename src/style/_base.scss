@@ -1,6 +1,7 @@
-$background: #191919;
+$background: #252525;
 $primaryColor: #EDEDED;
-$secundaryColor: #ECDBBA;
+$secundaryColor: #FF0000;
+$tertiaryColor: #444444;
 
 @font-face {
     font-family: "IBM Plex Mono";
@@ -39,9 +40,9 @@ header {
     height: 90vh;
 }
 
-.header {
+.nav-links {
     position: fixed;
-    padding-top: 10px;
+    padding-top: 20px;
     background-color: $background;
     z-index: 999;
     width: 100vw;
@@ -53,7 +54,7 @@ header {
 
 hr {
     @include margin-bottom(10px);
-    border: 1px dashed $secundaryColor;
+    border: 1px dashed $tertiaryColor;
 }
 
 .col-sm-12,
