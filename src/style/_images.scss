@@ -1,6 +1,9 @@
 #avatar {
     @include margin-bottom(1rem);
-    @include border-radius(4px);
+    @include border-radius(70px);
+    box-shadow: 13px 12px 25px -10px rgba(236,219,186,0.75);
+    -webkit-box-shadow: 13px 12px 25px -10px rgba(236,219,186,0.75);
+    -moz-box-shadow: 13px 12px 25px -10px rgba(236,219,186,0.75);
 }
 
 @media only screen and (max-width: 600px) {
