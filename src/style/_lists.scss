@@ -1,6 +1,7 @@
 ul {
     padding: 0;
     list-style-type: none;
+    display: flex;
 
     &.work-links-list {
         @include font-size(1rem);
@@ -13,11 +14,10 @@ ul {
             &:hover {
                 font-weight: bold;
             }
-            display: list-item;
             letter-spacing: normal;
             @include font-size(1.5rem);
             @include padding-top(5px);
-            @include margin-right(5px);
+            @include margin-right(25px);
         }
     }
 
