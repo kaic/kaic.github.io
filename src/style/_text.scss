@@ -9,19 +9,14 @@ h2 {
     font-family: "IBM Plex Mono", monospace;
     @include font-size(1rem);
     @include margin-bottom(0.5rem);
-    color: $secundaryColor;
+    color: #EEEEEE;
 }
 
 h3 {
     font-family: "IBM Plex Mono", monospace;
     @include font-size(1.1rem);
     color: $primaryColor;
-}
-
-@media only screen and (max-width: 360px) {
-    h3 {
-        @include font-size(1rem);
-    }
+    @include font-size(14px);
 }
 
 .work-container {
