@@ -16,7 +16,7 @@ h3 {
     font-family: "IBM Plex Mono", monospace;
     @include font-size(1.1rem);
     color: $primaryColor;
-    @include font-size(14px);
+    @include font-size(16px);
 }
 
 .work-container {
@@ -45,6 +45,10 @@ p {
 
 article {
     @include padding-top(4vh);
+
+    &#sobre{
+        @include padding-top(10vh);
+    }
 
     h1 {
         font-weight: bold;
