@@ -1,7 +1,7 @@
 {
     "translation": {
         "header": {
-            "t-hello": "Hi! I im Kaic.",
+            "t-hello": "Hi! I im Kaic,",
             "t-slogan": "and I develop software for the 21st century.",
             "t-location": "🌎São Paulo, Brazil",
             "t-about-link": "About Me",
@@ -14,14 +14,6 @@
             "t-about-p3": "I started venturing with programming at the age of 12, writing scripts with Sanny Builder to create MODs for GTA San Andreas. At that time I also got to know HTML and CSS while playing with Blogspot and some forum tools. When I was 15 years old I started studying Computer Science integrated with high school and that's when I started to really learn how a computer worked, which made me fall in love with software engineering. That love make me the decision of which profession I wanted to follow.",
             "t-about-p4": "At 18 two great things happened in my life: I became a father (yes, things are precocious in my life!) And I got my first job as a developer. I became an intern at a software consultancy in São Paulo and started my journey as a developer.",
             "t-about-p5": "Since then I have been working as a web software developer. I am currently focusing my attention on developing backend systems distributed in the cloud, containerization, testing, functional programming, good practices and software development flows."
-        },
-        "skills": {
-            "t-skills-title": "🧠 My Skills",
-            "t-skills-p1": "These are the technologies which I have experience."
-        },
-        "publications": {
-            "t-publications-title": "📝 Publications",
-            "t-publications-p1": "Soon..."
         }
     }
 }
