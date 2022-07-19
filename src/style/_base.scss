@@ -40,7 +40,7 @@ header {
     height: 90vh;
 }
 
-.nav-links {
+#nav-links {
     position: fixed;
     padding-top: 20px;
     background-color: $background;
@@ -50,6 +50,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.nav-links-with-shadows {
+    box-shadow: -2px -2px 14px 0px rgb(0 0 0);
+    -webkit-box-shadow: -2px -2px 14px 0px rgb(0 0 0);
+    -moz-box-shadow: -2px -2px 14px 0px rgb(0 0 0);
 }
 
 hr {
