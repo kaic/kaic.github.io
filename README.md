@@ -8,6 +8,10 @@ To run the project:
 
 First install the dependencies:
 
+For Linux: 
+
+`sudo apt install build-essential`
+
 `npm install`
 
 Then run:
