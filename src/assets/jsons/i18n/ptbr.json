@@ -3,12 +3,13 @@
         "header": {
             "t-hello": "Olá! Eu sou o Kaic,",
             "t-slogan": "e eu desenvolvo software para o séc XXI.",
-            "t-location": "🌎São Paulo, Brasil",
+            "t-location-1": "🌎São Paulo, Brasil",
+            "t-location-2": " e 🌐Toda a Web",
             "t-about-link": "Sobre Mim",
             "t-contact-link": "Contato"
         },
         "about-me": {
-            "t-about-title": "💬 Sobre Mim",
+            "t-about-title": "Sobre Mim",
             "t-about-p1": "Olá! Meu nome é Kaic Bento. Tenho {{MY_AGE}} anos de idade, sou natural e residente da cidade de São Paulo, Brasil. Atualmente atuo como Desenvolvedor JavaScript com foco em desenvolvimento de backend e microsserviços. Além disso sou Pai, um grande apaixonado por futebol, entusiasta de street culture e games de estratégia para PC. Também dedico parte do meu tempo sendo um curioso por economia, geopolítica, empreendedorismo e história mundial.",
             "t-about-p2": "Sempre fui muito curioso, e sempre quis saber Como As Coisas Funcionam (principalmente as eletrônicas). Desde muito pequeno era atraído por botões, fios, luzes e telas. Desmontava e montava tudo o que via pela frente em busca dessa resposta. Quando ganhei meu primeiro computador aos 9 anos, fiquei encantado. Aquela máquina fazia tudo e, quando combinada com a internet, tinha todas as respostas! Foi amor à primeira vista.",
             "t-about-p3": "Comecei a me aventurar com programação com 12 anos de idade, escrevendo scripts  com Sanny Builder para criar MODs para GTA San Andreas. Nessa época também conheci o HTML e o CSS enquanto brincava com Blogspot e algumas ferramentas de fórum. Com 15 anos comecei a estudar Informática integrado ao ensino médio e foi aí quando comecei a aprender de fato como um computador funcionava, o que fez eu me apaixonar pela engenharia de software e tomar a decisão de qual profissão queria seguir.            ",
