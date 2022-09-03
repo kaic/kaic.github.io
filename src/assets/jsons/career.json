@@ -1,50 +1,58 @@
 [
-    {
-      "company": "Pagar.me",
-      "companyUrl": "https://pagar.me/",
-      "position": "Software Engineer",
-      "period": "out de 2020 - atualmente",
-      "location": "🏡 Remoto",
-      "img": "pagarme.png"
-    },
-    {
-      "company": "FitDance",
-      "companyUrl": "https://fitdance.com/",
-      "position": "Software Developer",
-      "period": "dez de 2019 - set de 2020",
-      "location": "🏡 Remoto / 📍 São Paulo, Brasil",
-      "img": "fitdance.jpeg"
-    },
-    {
-      "company": "LinkApi",
-      "companyUrl": "https://www.linkapi.solutions/",
-      "position": "Backend Developer",
-      "period": "abr de 2019 - jul de 2019",
-      "location": "📍 São Paulo, Brasil",
-      "img": "linkapi.png"
-    },
-    {
-      "company": "Ebix",
-      "companyUrl": "https://www.ebix.com/br/ebix/",
-      "position": "Javascript Developer",
-      "period": "nov de 2018 - fev de 2019",
-      "location": "📍 São Paulo, Brasil",
-      "img": "ebix.jpeg"
-    },
-    {
-      "company": "Concrete",
-      "companyUrl": "https://www.concrete.com.br/",
-      "position": "NodeJS Developer",
-      "period": "set de 2017 - fev de 2018",
-      "location": "📍 São Paulo, Brasil",
-      "img": "concrete.png"
-    },
-    {
-      "company": "FCamara",
-      "companyUrl": "https://www.fcamara.com.br/",
-      "position": "FullStack JavaScript Developer",
-      "period": "nov de 2016 - set de 2017",
-      "location": "📍 São Paulo, Brasil",
-      "img": "fcamara.jpeg"
-    }
-  ]
+  {
+    "company": "GoodDonor",
+    "companyUrl": "https://www.linkedin.com/company/gooddonor/",
+    "position": "Co-Founder & Tech Lead",
+    "period": "set de 2020 - jul de 2022",
+    "location": "🏡 Remoto / 📍 São Paulo",
+    "img": "gooddonor.jpg"
+  },
+  {
+    "company": "Pagar.me",
+    "companyUrl": "https://pagar.me/",
+    "position": "Software Engineer",
+    "period": "out de 2020 - ago de 2021",
+    "location": "🏡 Remoto",
+    "img": "pagarme.png"
+  },
+  {
+    "company": "FitDance",
+    "companyUrl": "https://fitdance.com/",
+    "position": "Software Developer",
+    "period": "nov de 2019 - out de 2020",
+    "location": "🏡 Remoto / 📍 São Paulo",
+    "img": "fitdance.jpeg"
+  },
+  {
+    "company": "LinkApi",
+    "companyUrl": "https://www.linkapi.solutions/",
+    "position": "Backend Developer",
+    "period": "abr de 2019 - jul de 2019",
+    "location": "📍 São Paulo",
+    "img": "linkapi.png"
+  },
+  {
+    "company": "Ebix",
+    "companyUrl": "https://www.ebix.com/br/ebix/",
+    "position": "Javascript Developer",
+    "period": "nov de 2018 - fev de 2019",
+    "location": "📍 São Paulo",
+    "img": "ebix.jpeg"
+  },
+  {
+    "company": "Concrete",
+    "companyUrl": "https://www.concrete.com.br/",
+    "position": "NodeJS Developer",
+    "period": "out de 2017 - fev de 2018",
+    "location": "📍 São Paulo",
+    "img": "concrete.png"
+  },
+  {
+    "company": "FCamara",
+    "companyUrl": "https://www.fcamara.com.br/",
+    "position": "FullStack JavaScript Developer",
+    "period": "nov de 2016 - out de 2017",
+    "location": "📍 São Paulo",
+    "img": "fcamara.jpeg"
+  }
+]
