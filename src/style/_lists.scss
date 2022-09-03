@@ -17,32 +17,50 @@ ul {
             @include margin-right(25px);
         }
     }
+}
 
-    &.bottom-links-list {
-        li {
-            display: block;
-            letter-spacing: normal;
-            @include font-size(1.1rem);
-            @include margin-bottom(20px);
-            @include margin-right(20px);
+div.bottom-links-list {
+    div {
+        display: block;
+        letter-spacing: normal;
+        @include font-size(1.1rem);
+        @include margin-bottom(20px);
+        @include margin-right(20px);
 
-            i {
-                @include margin-right(2px);
+        &.contact-item {
+            width: fit-content;
+        }
+
+        &:hover {
+            transform: scale(1.1) translate(35px, 0);
+        }
+
+        a:hover {
+            color: white;
+        }
+
+
+        i {
+            @include margin-right(2px);
+            @include rfs(3rem, width);
+            @include rfs(3rem, height);
+            svg {
+                @include padding(3px);
                 @include rfs(3rem, width);
                 @include rfs(3rem, height);
-                svg {
-                    @include padding(3px);
-                    @include rfs(3rem, width);
-                    @include rfs(3rem, height);
+                &:hover {
+                    fill: white !important;
                 }
             }
 
-            img {
-                @include margin-right(2px);
-                @include padding(1px);
-                @include rfs(3rem, width);
-                @include rfs(3rem, height);
-            }
+   
+        }
+
+        img {
+            @include margin-right(2px);
+            @include padding(1px);
+            @include rfs(3rem, width);
+            @include rfs(3rem, height);
         }
     }
 }
