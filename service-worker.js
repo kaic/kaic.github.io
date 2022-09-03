@@ -1,5 +1,5 @@
 const RUNTIME = 'runtime'
-const PRECACHE = 'precache-v4.8'
+const PRECACHE = 'precache-v4.9'
 
 const PRECACHE_URLS = [
   './main.js',
