@@ -5,7 +5,7 @@ const headerTextElements = [{ id: 't-hello', args: null }, { id: 't-slogan', arg
 const aboutTextElements = [{ id: 't-about-title', args: null }, { id: 't-about-p1', args: { MY_AGE } }, { id: 't-about-p2', args: null }, { id: 't-about-p3', args: null }, { id: 't-about-p4', args: null }, { id: 't-about-p5', args: null }]
 const careerTextElements = [{ id: 't-career-title', args: null }]
 const contactTextElements = [{ id: 't-contact-title', args: null }, { id: 't-contact-p1', args: null }]
-const footerTextElements = []
+const footerTextElements = [{ id: 't-footer-p1', args: null }, { id: 't-footer-sourcecode', args: null }, { id: 't-footer-p2', args: null }]
 
 export const insertText = (elementId, text) => document.getElementById(elementId).innerText = text
 

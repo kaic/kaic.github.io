@@ -23,6 +23,11 @@
         "contact": {
             "t-contact-title": "Fale Comigo",
             "t-contact-p1": "Quer falar comigo sobre tecnologia, trabalho ou algo interessante? Aqui estão os meus contatos."
+        },
+        "footer": {
+            "t-footer-p1": "Este site foi feito com HTML, SASS, JavaScript e Webpack.",
+            "t-footer-sourcecode": "📕 Aqui está o Código Fonte",
+            "t-footer-p2": "Todos os direitos reservados."
         }
     }
 }

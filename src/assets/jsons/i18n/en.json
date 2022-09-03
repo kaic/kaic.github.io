@@ -3,7 +3,7 @@
         "header": {
             "t-hello": "Hi! I im Kaic,",
             "t-slogan": "and I develop software for the 21st century.",
-            "t-location": "🌎São Paulo, Brazil",
+            "t-location-1": "🌎São Paulo, Brazil",
             "t-location-2": "and 🌐All the Web",
             "t-about-link": "About",
             "t-career-link": "Career",
@@ -23,6 +23,11 @@
         "contact": {
             "t-contact-title": "Talk to me",
             "t-contact-p1": "Wanna talk to me about technology, work or something interesting? Here are my contacts."
+        },
+        "footer": {
+            "t-footer-p1": "This site was made with HTML, SASS, JavaScript and Webpack.",
+            "t-footer-sourcecode": "📕 Here's the Source Code",
+            "t-footer-p2": "All rights reserved."
         }
     }
 }
