@@ -1,7 +1,6 @@
 $background: #000000;
 $primaryColor: #EDEDED;
-$secundaryColor: #05E0E9;
-$tertiaryColor: #FF2768;
+$secundaryColor: #FF2768;
 
 @font-face {
     font-family: "IBM Plex Mono";
@@ -60,7 +59,7 @@ header {
 
 hr {
     @include margin-bottom(10px);
-    border: 1px dashed $tertiaryColor;
+    border: 1px dashed $secundaryColor;
 }
 
 .col-sm-12,
