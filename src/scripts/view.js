@@ -3,7 +3,7 @@ import { MY_AGE } from './date'
 
 const headerTextElements = [{ id: 't-hello', args: null }, { id: 't-slogan', args: null }, { id: 't-location-1', args: null }, { id: 't-location-2', args: null }, { id: 't-about-link', args: null }, { id: 't-career-link', args: null }, { id: 't-contact-link', args: null },]
 const aboutTextElements = [{ id: 't-about-title', args: null }, { id: 't-about-p1', args: { MY_AGE } }, { id: 't-about-p2', args: null }, { id: 't-about-p3', args: null }, { id: 't-about-p4', args: null }, { id: 't-about-p5', args: null }]
-const careerTextElements = []
+const careerTextElements = [{ id: 't-career-title', args: null }]
 const educationTextElements = []
 const contactTextElements = []
 const footerTextElements = []

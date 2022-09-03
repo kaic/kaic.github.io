@@ -16,6 +16,9 @@
             "t-about-p3": "Comecei a me aventurar com programação com 12 anos de idade, escrevendo scripts  com Sanny Builder para criar MODs para GTA San Andreas. Nessa época também conheci o HTML e o CSS enquanto brincava com Blogspot e algumas ferramentas de fórum. Com 15 anos comecei a estudar Informática integrado ao ensino médio e foi aí quando comecei a aprender de fato como um computador funcionava, o que fez eu me apaixonar pela engenharia de software e tomar a decisão de qual profissão queria seguir.            ",
             "t-about-p4": "Aos 18 duas grandes coisas aconteceram em minha vida: me tornei pai (sim as coisas são precoces em minha vida!) e consegui meu primeiro emprego como desenvolvedor. Virei estagiário em uma consultoria de software em São Paulo e comecei a minha jornada como Desenvolvedor.",
             "t-about-p5": "Desde então venho atuando como desenvolvedor de software para web. Atualmente estou focando minhas atenções em desenvolvimento de sistemas backend distribuídos na nuvem, conteinerização, testes, programação funcional, boas práticas e fluxos de desenvolvimento de software."
+        },
+        "career": {
+            "t-career-title": "Carreira"
         }
     }
 }
