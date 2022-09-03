@@ -8,9 +8,10 @@ a {
         text-decoration: none;
     }
 
-    &#_curriculum {
-        @include font-size(1.1rem);
-    }
+}
+
+#t-footer-sourcecode {
+    text-decoration: underline;
 }
 
 button {
