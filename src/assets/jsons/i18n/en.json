@@ -19,6 +19,10 @@
         },
         "career": {
             "t-career-title": "Career"
+        },
+        "contact": {
+            "t-contact-title": "Talk to me",
+            "t-contact-p1": "Wanna talk to me about technology, work or something interesting? Here are my contacts."
         }
     }
 }
