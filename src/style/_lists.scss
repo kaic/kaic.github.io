@@ -10,11 +10,41 @@ ul {
     }
 
     &.header-links-list {
+        min-width: 400px;
+        max-width: 80%;
+        margin-left: 5px;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
         li {
             letter-spacing: normal;
-            @include font-size(1.5rem);
+            @include font-size(1.3rem);
             @include padding-top(5px);
-            @include margin-right(25px);
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    ul {
+        &.header-links-list {
+            min-width: 350px;
+            li {
+                @include font-size(1rem);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    ul {
+        &.header-links-list {
+            min-width: 300px;
+            li {
+                @include font-size(1rem);
+            }
         }
     }
 }
@@ -44,16 +74,18 @@ div.bottom-links-list {
             @include margin-right(2px);
             @include rfs(3rem, width);
             @include rfs(3rem, height);
+
             svg {
                 @include padding(3px);
                 @include rfs(3rem, width);
                 @include rfs(3rem, height);
+
                 &:hover {
                     fill: white !important;
                 }
             }
 
-   
+
         }
 
         img {

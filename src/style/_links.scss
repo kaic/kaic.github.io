@@ -11,11 +11,17 @@ a {
     &#_curriculum {
         @include font-size(1.1rem);
     }
+}
 
+button {
     &#translate-btn {
         @include font-size(20px);
-        position: absolute;
-        top: 10px;
-        right: 15px;
+        background: none;
+        color: white;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
     }
 }
