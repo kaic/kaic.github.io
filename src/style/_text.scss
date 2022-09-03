@@ -50,6 +50,10 @@ article {
         @include padding-top(13vh);
     }
 
+    &#carreira{
+        @include padding-top(13vh);
+    }
+
     h1 {
         font-weight: bold;
         @include margin-bottom(4vh);

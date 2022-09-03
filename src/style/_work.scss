@@ -1,4 +1,8 @@
 .work-container {
+    &:hover {
+        transform: scale(1.1) translate(1.2em,0);
+    }
+    @include margin-bottom(1em);
     .work-header {
         @include margin-bottom(1em);
         @include margin-top(1em);
