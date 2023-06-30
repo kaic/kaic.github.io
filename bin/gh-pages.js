@@ -6,7 +6,7 @@ const ghpages = require('gh-pages');
     'dist',
     {
       repo: `https://${process.env.GH_TOKEN}@${process.env.GH_REPOSITORY}`,
-      branch: 'master',
+      branch: 'main',
       message: `Auto-generated commit from build - ${new Date().toLocaleString()}`,
       silent: false,
       add: true
