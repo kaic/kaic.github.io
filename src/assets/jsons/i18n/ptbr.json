@@ -3,10 +3,10 @@
         "header": {
             "t-hello": "Olá! Eu sou o Kaic,",
             "t-slogan": "e eu desenvolvo software para o séc XXI.",
-            "t-location-1": "🌎São Paulo, Brasil",
-            "t-location-2": " e 🌐Toda a Web",
+            "t-role": "💼 Software Engineer @ Nubank",
+            "t-location": "🌎 São Paulo, Brasil",
+            "t-articles-link": "Artigos",
             "t-about-link": "Sobre",
-            "t-career-link": "Carreira",
             "t-contact-link": "Contato"
         },
         "about-me": {
@@ -18,8 +18,9 @@
             "t-about-p5": "Desde então já atuei em projetos para grandes varejistas, uma grande seguradora, a maior subadquirente do Brasil, a produtora de conteúdo por trás do maior canal do Youtube da América Latina, ajudei a desenvolver uma IDE para desenvolvimento Web, foi um dos primeiros a implementar em produção um site usando PWA no Brasil em 2016 e co-fundei a minha própria startup, dentre outras coisas.",
             "t-about-p6": "Atualmente venho focando minhas atenções para arquitetura de sistemas distribuídos em nuvem, sistemas de larga escala, boas práticas de desenvolvimento, comunicação, liderança e gerenciamento de times."
         },
-        "career": {
-            "t-career-title": "Carreira"
+        "articles": {
+            "t-articles-title": "Artigos",
+            "t-articles-p1": "Aqui estão alguns artigos que escrevi sobre tecnologia, engenharia de software e outras coisas que gosto de falar."
         },
         "contact": {
             "t-contact-title": "Fale Comigo",

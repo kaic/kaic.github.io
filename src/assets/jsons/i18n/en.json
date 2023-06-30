@@ -3,10 +3,10 @@
         "header": {
             "t-hello": "Hi! I im Kaic,",
             "t-slogan": "and I develop software for the 21st century.",
-            "t-location-1": "🌎São Paulo, Brazil",
-            "t-location-2": "and 🌐All the Web",
+            "t-role": "💼 Software Engineer @ Nubank",
+            "t-location": "🌎 São Paulo, Brazil",
+            "t-articles-link": "Articles",
             "t-about-link": "About",
-            "t-career-link": "Career",
             "t-contact-link": "Contact"
         },
         "about-me": {
@@ -18,8 +18,9 @@
             "t-about-p5": "Since then I have worked on projects for large retailers, a large insurance company, the largest sub-buyer in Brazil, the content producer behind the largest YouTube channel in Latin America, I helped to develop an IDE for Web development, I was one of the first to implement in production a website using PWA in Brazil in 2016 and co-founded my own startup, among other things.",
             "t-about-p6": "Currently I've been focusing my attention on the architecture of distributed systems in the cloud, large-scale systems, good development practices, communication, leadership and team management."
         },
-        "career": {
-            "t-career-title": "Career"
+        "articles": {
+            "t-articles-title": "Articles",
+            "t-articles-p1": "Here are some articles I wrote about technology, software engineering and other things I like to talk about."
         },
         "contact": {
             "t-contact-title": "Talk to me",
