@@ -1,15 +1,15 @@
 interface IJob {
-    company: string;
-    role: string;
+  company: string;
+  role: string;
 }
 
 interface IConfig {
-    job: IJob
+  job: IJob;
 }
 
-export const config:IConfig = {
-    job: {
-        company: "Nubank",
-        role: "Software Engineer"
-    }
-}
+export const config: IConfig = {
+  job: {
+    company: 'Nubank',
+    role: 'Software Engineer',
+  },
+};
