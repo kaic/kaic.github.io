@@ -1,3 +1,4 @@
+import type { AppProps } from "next/app";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -17,18 +18,10 @@ export const metadata: Metadata = {
   description: "I develop software for the 21st century",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <div className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <Component {...pageProps} />
+    </div>
   );
 }
