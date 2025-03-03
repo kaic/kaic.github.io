@@ -5,6 +5,15 @@ import { config } from "../config"
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+      <header className="w-full p-4">
+        <nav className="container mx-auto">
+          <ul className="flex justify-center space-x-6">
+            <li><a href="#" className="text-white hover:text-red-500 px-4 py-2">Artigos</a></li>
+            <li><a href="#" className="text-white hover:text-red-500 px-4 py-2">Sobre</a></li>
+            <li><a href="#" className="text-white hover:text-red-500 px-4 py-2">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           src="/avatar.jpg"
