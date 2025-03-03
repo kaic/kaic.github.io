@@ -5,7 +5,10 @@ import { config } from '../config';
 //TODO:
 //- [ ] Add a Fix imports
 import Articles from './Articles/articles';
-import About from './About/about';
+import { About } from './About/about';
+import { Contant } from './Contant/contant';
+
+import { SectionSeparator } from './components/SectionSeparator';
 
 export default function Home() {
   return (
@@ -68,9 +71,13 @@ export default function Home() {
           </ul>
         </main>
       </div>
-
+      <SectionSeparator />
       <Articles />
+      <SectionSeparator />
       <About />
+      <SectionSeparator />
+      <Contant />
+
 
       <footer className=''></footer>
     </div>

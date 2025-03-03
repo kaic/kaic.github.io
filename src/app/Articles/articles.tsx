@@ -11,7 +11,7 @@ interface IArticle {
   title: string;
   url: string;
 }
-export default function Articles() {
+function Articles() {
   // Lista de artigos com seus URLs
   const articlesList: IArticle[] = [
     {
@@ -43,3 +43,5 @@ export default function Articles() {
     </article>
   );
 }
+
+export default Articles;

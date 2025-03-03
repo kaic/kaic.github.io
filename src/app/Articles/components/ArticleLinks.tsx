@@ -8,6 +8,7 @@ interface ArticleLinkProps {
 export const ArticleLink = ({ href, children }: ArticleLinkProps) => {
   return (
     <a
+      target='blank'
       className='hover:text-red-500 hover:font-medium transition-all duration-200'
       href={href}
     >
