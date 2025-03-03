@@ -1,0 +1,14 @@
+{
+  "Home": {
+      "nav": {
+          "articles": "Meus Artigos",
+          "about": "Sonre mim",
+          "contact": "Contatos"
+      },
+      "header": {
+          "title": "Oi Eu sou o Kaic",
+          "subtitle": "e eu desenvolvo software para o século XXI.",
+          "location": "São Paulo, Brasil"
+      }
+  }
+}

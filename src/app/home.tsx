@@ -10,7 +10,12 @@ import { Contant } from './Contant/contant';
 
 import { SectionSeparator } from './components/SectionSeparator';
 
+import { useTranslations } from 'next-intl';
+
 export default function Home() {
+
+  const t = useTranslations('Home');
+
   return (
     <div>
       <div className='grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-[100vh] p-8 pb-20 gap-16 sm:p-20'>
@@ -22,7 +27,7 @@ export default function Home() {
                   href='#articles'
                   className='text-white hover:text-red-500 px-4 py-2'
                 >
-                  My articles
+                  {t('nav.articles')}
                 </a>
               </li>
               <li>
@@ -30,7 +35,7 @@ export default function Home() {
                   href='#'
                   className='text-white hover:text-red-500 px-4 py-2 text-m sm:text-base'
                 >
-                  About
+                  {t('nav.about')}
                 </a>
               </li>
               <li>
@@ -38,7 +43,7 @@ export default function Home() {
                   href='#'
                   className='text-white hover:text-red-500 px-4 py-2 text-ms sm:text-base'
                 >
-                  Contact me
+                  {t('nav.contact')}
                 </a>
               </li>
             </ul>
@@ -55,10 +60,10 @@ export default function Home() {
           />
           <ul className='list-inside text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]'>
             <li className='mb-2'>
-              <h1>Hi! I im Kaic</h1>
+              <h1>{t('header.title')}</h1>
             </li>
             <li className='mb-2'>
-              <h1>and I develop software for the 21st century.</h1>
+              <h1>{t('header.subtitle')}</h1>
             </li>
             <li className='mb-2'>
               <h1>
@@ -66,7 +71,7 @@ export default function Home() {
               </h1>
             </li>
             <li className='mb-2'>
-              <h1>🌎 São Paulo, Brasil</h1>
+              <h1>🌎 {t('header.location')}</h1>
             </li>
           </ul>
         </main>

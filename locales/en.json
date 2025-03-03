@@ -1,0 +1,14 @@
+{
+    "Home": {
+        "nav": {
+            "articles": "My Articles",
+            "about": "About",
+            "contact": "Contact me"
+        },
+        "header": {
+            "title": "Hi! I'm Kaic",
+            "subtitle": "and I develop software for the 21st century.",
+            "location": "São Paulo, Brasil"
+        }
+    }
+}
