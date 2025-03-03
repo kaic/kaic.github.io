@@ -35,12 +35,14 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <NextIntlClientProvider
       locale={router.locale || browserLocale}
-      timeZone="America/Sao_Paulo"
+      timeZone='America/Sao_Paulo'
       messages={pageProps.messages}
     >
-    <div className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <Component {...pageProps} />
-    </div>
+      <div
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Component {...pageProps} />
+      </div>
     </NextIntlClientProvider>
   );
 }

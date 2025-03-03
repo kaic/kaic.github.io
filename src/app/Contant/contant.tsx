@@ -6,4 +6,4 @@ export const Contant = () => {
       </div>
     </article>
   );
-}
+};

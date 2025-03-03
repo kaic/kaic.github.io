@@ -6,4 +6,4 @@ export const About = () => {
       </div>
     </article>
   );
-}
+};

@@ -13,7 +13,6 @@ import { SectionSeparator } from './components/SectionSeparator';
 import { useTranslations } from 'next-intl';
 
 export default function Home() {
-
   const t = useTranslations('Home');
 
   return (
@@ -82,7 +81,6 @@ export default function Home() {
       <About />
       <SectionSeparator />
       <Contant />
-
 
       <footer className=''></footer>
     </div>
