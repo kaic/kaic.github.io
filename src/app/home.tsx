@@ -1,6 +1,6 @@
 //TODO:
 //- [ ] Add a Fix imports
-import Articles from './Articles/articles';
+import Articles from './Articles/Articles';
 import { Main } from './Main/Main';
 import { About } from './About/about';
 import { Contact } from './Contact/contact';
