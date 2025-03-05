@@ -1,5 +1,6 @@
 {
   "Home": {
+    "Main": {
     "nav": {
       "articles": "Meus Artigos",
       "about": "Sonre mim",
@@ -11,4 +12,5 @@
       "location": "São Paulo, Brasil"
     }
   }
+}
 }
