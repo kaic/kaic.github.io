@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <div>
       <Main />
-      <About />
-      <SectionSeparator />
       <Articles />
+      <SectionSeparator />
+      <About />
       <SectionSeparator />
       <Contact />
       <SectionSeparator />
