@@ -6,7 +6,8 @@ import { config } from '../config';
 //- [ ] Add a Fix imports
 import Articles from './Articles/articles';
 import { About } from './About/about';
-import { Contant } from './Contant/contant';
+import { Contact } from './Contact/contact';
+import { Footer } from './Footer/footer';
 
 import { SectionSeparator } from './components/SectionSeparator';
 
@@ -31,7 +32,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href='#'
+                  href='#about'
                   className='text-white hover:text-red-500 px-4 py-2 text-m sm:text-base'
                 >
                   {t('nav.about')}
@@ -39,7 +40,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href='#'
+                  href='#contact'
                   className='text-white hover:text-red-500 px-4 py-2 text-ms sm:text-base'
                 >
                   {t('nav.contact')}
@@ -80,9 +81,9 @@ export default function Home() {
       <SectionSeparator />
       <About />
       <SectionSeparator />
-      <Contant />
-
-      <footer className=''></footer>
+      <Contact />
+      <SectionSeparator />
+      <Footer />
     </div>
   );
 }
