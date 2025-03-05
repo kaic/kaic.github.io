@@ -1,23 +1,26 @@
 import { useTranslations } from 'next-intl';
-import { config } from '../../../config';
+import { config } from '@src/config';
 
 export const Intro = () => {
   const t = useTranslations('Home.Main');
   return (
-    <ul className='list-inside sm:text-left font-[family-name:var(--font-geist-mono)]'>
-      <li className='mb-2 text-lg font-bold'>
-        <h1>{t('header.title')}</h1>
+    <ul className='list-inside sm:text-left font-[family-name:var(--font-geist-mono)] xs:max-w-[40vw]'>
+      <li className='mb-2 text-2xl font-bold'>
+        <p>{t('header.title')}</p>
       </li>
       <li className='mb-2 text-sm'>
-        <h1>{t('header.subtitle')}</h1>
+        <p>{t('header.subtitle')}</p>
       </li>
       <li className='mb-2 text-sm'>
-        <h1>
+        <p>{t('header.description')}</p>
+      </li>
+      <li className='mb-2 text-sm'>
+        <p>
           💼 {config.job.role} @ {config.job.company}
-        </h1>
+        </p>
       </li>
       <li className='mb-2 text-sm'>
-        <h1>🌎 {t('header.location')}</h1>
+        <p>🌎 {t('header.location')}</p>
       </li>
     </ul>
   );

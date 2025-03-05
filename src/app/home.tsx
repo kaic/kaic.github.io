@@ -1,12 +1,10 @@
-//TODO:
-//- [ ] Add a Fix imports
-import Articles from './Articles/Articles';
-import { Main } from './Main/Main';
-import { About } from './About/About';
-import { Contact } from './Contact/contact';
-import { Footer } from './Footer/footer';
+import Articles from '@app/Articles/Articles';
+import { Main } from '@app//Main/Main';
+import { About } from '@app/About/About';
+import { Contact } from '@app/Contact/contact';
+import { Footer } from '@app/Footer/footer';
 
-import { SectionSeparator } from './components/SectionSeparator';
+import { SectionSeparator } from '@app/components/SectionSeparator';
 
 export default function Home() {
   return (

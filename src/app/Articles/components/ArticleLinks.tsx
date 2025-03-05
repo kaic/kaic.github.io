@@ -1,18 +1,28 @@
-import { ReactNode } from 'react';
+import { IArticle } from '../Articles';
 
 interface ArticleLinkProps {
-  href: string;
-  children: ReactNode;
+  article: IArticle;
 }
 
-export const ArticleLink = ({ href, children }: ArticleLinkProps) => {
+export const ArticleLink = ({ article }: ArticleLinkProps) => {
   return (
     <a
-      target='blank'
-      className='hover:text-red-500 hover:font-medium transition-all duration-200'
-      href={href}
+      href={article.url}
+      target='_blank'
+      rel='noopener noreferrer'
+      className='text-left block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden'
     >
-      {children}
+      <div className='p-4'>
+        <h3 className='text-lg font-bold text-gray-800 mb-2'>
+          {article.title}
+        </h3>
+        {article.description && (
+          <p className='text-pink-400 text-sm mb-3'>{article.description}</p>
+        )}
+        <div className='flex text-pink-700 text-sm font-medium'>
+          👉 Read article
+        </div>
+      </div>
     </a>
   );
 };
