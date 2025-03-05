@@ -2,7 +2,7 @@
 //- [ ] Add a Fix imports
 import Articles from './Articles/Articles';
 import { Main } from './Main/Main';
-import { About } from './About/about';
+import { About } from './About/About';
 import { Contact } from './Contact/contact';
 import { Footer } from './Footer/footer';
 
@@ -12,10 +12,9 @@ export default function Home() {
   return (
     <div>
       <Main />
+      <About />
       <SectionSeparator />
       <Articles />
-      <SectionSeparator />
-      <About />
       <SectionSeparator />
       <Contact />
       <SectionSeparator />

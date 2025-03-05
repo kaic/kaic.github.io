@@ -1,16 +1,19 @@
 {
   "Home": {
     "Main": {
-    "nav": {
-      "articles": "Meus Artigos",
-      "about": "Sonre mim",
-      "contact": "Contatos"
+      "nav": {
+        "articles": "Meus Artigos",
+        "about": "Sonre mim",
+        "contact": "Contatos"
+      },
+      "header": {
+        "title": "Oi Eu sou o Kaic",
+        "subtitle": "e eu desenvolvo software para o século XXI.",
+        "location": "São Paulo, Brasil"
+      }
     },
-    "header": {
-      "title": "Oi Eu sou o Kaic",
-      "subtitle": "e eu desenvolvo software para o século XXI.",
-      "location": "São Paulo, Brasil"
+    "About": {
+      "paragraph": "Nascido e criado em São Paulo, trabalho como Engenheiro de Software desenvolvendo soluções distribuídas em nuvem, com foco em entregar valor para o cliente de forma segura e escalável. Fora do trabalho, sou pai, apaixonado por futebol, cozinheiro amador e ocasionalmente estou jogando algo no PC ou lendo alguma coisa.\nDesde pequeno, fui fascinado por coisas eletrônicas - desmontava e montava tudo tentando entender seu funcionamento. Aos 9 anos, ganhei meu primeiro computador e me encantei com as todas suas possibilidades.\n\nComecei a programar aos 12, criando scripts para mods de GTA San Andreas e brincava com HTML/CSS no Blogspot e em ferramentas de foruns. Aos 15, iniciei estudos formais em Informática paralelamente ao ensino médio, quando realmente comecei a entender como computadores funcionam e decidi seguir carreira em engenharia de software.\n\nAos 18, dois marcos importantes aconteceram na minha vida: me tornei pai e consegui meu primeiro emprego como estagiário em uma consultoria de desenvolvimento em São Paulo.\n\nDesde então, trabalhei em projetos para grandes varejistas, seguradoras, a maior subadquirente do Brasil e a produtora do maior canal do YouTube da América Latina. Ajudei a desenvolver uma IDE web, implementei um dos primeiros sites PWA em produção no Brasil (2016) e co-fundei uma startup.\n\nAtualmente, concentro minhas atenções em arquitetura distribuída na nuvem, sistemas de larga escala, boas práticas de desenvolvimento, comunicação e LLMs."
     }
   }
-}
 }
