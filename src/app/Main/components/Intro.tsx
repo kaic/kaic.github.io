@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl';
-import { config } from '@src/config';
 
 export const Intro = () => {
   const t = useTranslations('Home.Main');
@@ -15,12 +14,14 @@ export const Intro = () => {
         <p>{t('header.description')}</p>
       </li>
       <li className='mb-2 text-sm'>
-        <p>
-          💼 {config.job.role} @ {config.job.company}
+        <p className='text-red-400'>
+          💼 {t('header.job.role')} @ {t('header.job.company')}
         </p>
       </li>
       <li className='mb-2 text-sm'>
-        <p>🌎 {t('header.location')}</p>
+        <p className='text-red-400'>
+          🌎 {t('header.location')}
+        </p>
       </li>
     </ul>
   );
