@@ -15,7 +15,7 @@ export const Nav = () => {
           <li key={nav.id}>
             <a
               href={`#${nav.name}`}
-              className='text-pink-700 hover:text-pink-900 active:text-pink-950 px-2 py-2'
+              className='text-red-400 hover:text-red-300 active:text-red-900 px-2 py-2'
             >
               {t(`nav.${nav.name}`)}
             </a>
