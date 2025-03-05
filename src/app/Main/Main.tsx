@@ -22,4 +22,4 @@ export const Main = () => {
       </main>
     </div>
   );
-}
+};
