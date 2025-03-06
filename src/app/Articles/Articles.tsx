@@ -21,7 +21,7 @@ function Articles() {
     },
     {
       title: "Be your tool's best friend, not its enemy",
-      description: 'How to make the most out of your tools.',
+      description: "i.e. don't spend the day fighting against your computer.",
       url: 'https://kaicbento.substack.com/p/be-your-tools-best-friend-not-its?r=5vxpr',
     },
     {
@@ -36,7 +36,7 @@ function Articles() {
         <h2 className='text-2xl font-bold'>My Articles</h2>
         <ul className='list-inside text-sm text-center sm:text-left'>
           {articlesList.map((article, index) => (
-            <li key={index} className='mb-2'>
+            <li key={index} className='mb-4'>
               <ArticleLink article={article}></ArticleLink>
             </li>
           ))}
