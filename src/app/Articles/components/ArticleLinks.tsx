@@ -10,10 +10,10 @@ export const ArticleLink = ({ article }: ArticleLinkProps) => {
       href={article.url}
       target='_blank'
       rel='noopener noreferrer'
-      className='text-left block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden'
+      className='text-left block bg-gray-800 rounded-lg'
     >
       <div className='p-4'>
-        <h3 className='text-lg font-bold text-gray-800 mb-2'>
+        <h3 className='text-lg font-bold text-white mb-2'>
           {article.title}
         </h3>
         {article.description && (
