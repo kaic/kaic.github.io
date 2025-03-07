@@ -7,19 +7,19 @@ export const Intro = () => {
       <li className='mb-2 text-2xl font-bold'>
         <p>{t('header.title')}</p>
       </li>
-      <li className='mb-2 text-sm'>
+      <li className='mb-2 text-base leading-loose'>
         <p>{t('header.subtitle')}</p>
       </li>
-      <li className='mb-2 text-sm'>
+      <li className='mb-2 text-base leading-loose'>
         <p>{t('header.description')}</p>
       </li>
       <li className='mb-2 text-sm'>
-        <p className='text-red-400'>
+        <p className='text-red-300'>
           💼 {t('header.job.role')} @ {t('header.job.company')}
         </p>
       </li>
       <li className='mb-2 text-sm'>
-        <p className='text-red-400'>
+        <p className='text-red-300'>
           🌎 {t('header.location')}
         </p>
       </li>
