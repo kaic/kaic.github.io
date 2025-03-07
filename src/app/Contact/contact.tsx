@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 
+const removeHttps = (str: string) => str.replace(/https:\/\//g, "");
 
 const SocialLinks = [
   {
@@ -10,7 +11,7 @@ const SocialLinks = [
         <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
       </svg>
     ),
-    url: 'mailto:kaicbento@outlook.com',
+    url: 'kaicbento@outlook.com',
     bgColor: 'bg-red-800'
   },
   {
@@ -40,23 +41,24 @@ export const Contact = () => {
 
   return (
     <article id='contact'>
-      <div className='grid grid-rows-[0.5px] p-8 pb-12 gap-16 sm:p-20'>
-        <h2 className='text-2xl font-bold text-left'>Contact me</h2>
+      <div className='grid grid-rows-[0.5px] p-8 pb-12 gap-12 sm:p-20'>
+        <h2 className='text-2xl font-bold text-left mb-20'>Contact me</h2>
         <p>{t('paragraph')}</p>
         {SocialLinks.map((link) => (
           <ul key={link.name}>
             <li>
               <a
-                href={link.url}
+                href={`mailto:${link.url}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-white hover:opacity-80 transition-opacity"
               >
-                <div className={`${link.bgColor} p-2 rounded`}>
+                <div className={`${link.bgColor} p-1 rounded`}>
                   {link.icon}
                 </div>
-                <span className="font-mono">{link.name}</span>
+                <span className="font-mono text-sm sm:text-base">{`${link.name} : ${removeHttps(link.url)}`}</span>
               </a>
+
             </li>
           </ul>
         ))}

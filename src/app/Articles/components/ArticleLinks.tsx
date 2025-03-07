@@ -10,6 +10,7 @@ export const ArticleLink = ({ article }: ArticleLinkProps) => {
       <h3 className='text-lg font-bold text-white mb-2'>
         {article.title}
       </h3>
+      <p className='text-gray-200 text-sm mb-2'>{article.date}</p>
       {article.description && (
         <p className='text-gray-200 text-sm mb-2'>{article.description}</p>
       )}
