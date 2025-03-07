@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import { ArticleLink } from './components/ArticleLinks';
 
 /**
@@ -14,6 +15,7 @@ export interface IArticle {
   url: string;
 }
 function Articles() {
+  const t = useTranslations('Home.Articles');
   const articlesList: IArticle[] = [
     {
       title: "Why did I rewrite my website from scratch to make it (almost) identical?",
@@ -38,7 +40,7 @@ function Articles() {
   return (
     <article id='articles'>
       <div className='grid grid-rows-[20px_1fr_20px] p-8 pb-5 gap-12 sm:p-20 font-mono'>
-        <h2 className='text-2xl font-bold'>My Articles</h2>
+        <h2 className='text-2xl font-bold'>{t('section-name')}</h2>
         <ul className='list-inside text-sm text-center sm:text-left'>
           {articlesList.map((article, index) => (
             <li key={index} className='mb-4'>
