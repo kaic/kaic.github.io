@@ -2,7 +2,7 @@ import Articles from '@app/Articles/Articles';
 import { Main } from '@app//Main/Main';
 import { About } from '@app/About/About';
 import { Contact } from '@app/Contact/contact';
-import { Footer } from '@app/Footer/footer';
+import { Footer } from '@src/app/Footer/Footer';
 
 import { SectionSeparator } from '@app/components/SectionSeparator';
 

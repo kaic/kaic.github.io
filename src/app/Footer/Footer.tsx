@@ -1,4 +1,8 @@
+import { useTranslations } from 'next-intl';
+
 export const Footer = () => {
+  const t = useTranslations('Home.Footer');
+
   return (
     <footer className='text-white mb-4 py-4 text-center'>
       <div className='container mx-auto'>
