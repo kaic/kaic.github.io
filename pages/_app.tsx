@@ -34,7 +34,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       messages={pageProps.messages}
     >
       <div
-        className={`${geistMono.variable} antialiased font-[family-name:var(--font-geist-mono)]`}
+        className={`scroll-smooth ${geistMono.variable} antialiased font-[family-name:var(--font-geist-mono)]`}
       >
         <Component {...pageProps} />
       </div>
