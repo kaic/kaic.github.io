@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 
-const removeHttps = (str: string) => str.replace(/https:\/\//g, "");
+import { sanitizeString } from '@src/utils';
 
 const SocialLinks = [
   {
@@ -11,7 +11,7 @@ const SocialLinks = [
         <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
       </svg>
     ),
-    url: 'kaicbento@outlook.com',
+    url: 'mailto:kaicbento@outlook.com',
     bgColor: 'bg-red-800'
   },
   {
@@ -48,7 +48,7 @@ export const Contact = () => {
           <ul key={link.name}>
             <li>
               <a
-                href={`mailto:${link.url}`}
+                href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-white hover:opacity-80 transition-opacity"
@@ -56,7 +56,7 @@ export const Contact = () => {
                 <div className={`${link.bgColor} p-1 rounded`}>
                   {link.icon}
                 </div>
-                <span className="font-mono text-sm sm:text-base">{`${link.name} : ${removeHttps(link.url)}`}</span>
+                <span className="font-mono text-sm sm:text-base">{`${link.name} : ${sanitizeString(link.url)}`}</span>
               </a>
 
             </li>
