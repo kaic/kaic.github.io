@@ -12,7 +12,6 @@ const SocialLinks = [
       </svg>
     ),
     url: 'mailto:kaicbento@outlook.com',
-    bgColor: 'bg-red-800'
   },
   {
     name: 'GitHub',
@@ -22,7 +21,6 @@ const SocialLinks = [
       </svg>
     ),
     url: 'https://github.com/kaic',
-    bgColor: 'bg-red-800'
   },
   {
     name: 'LinkedIn',
@@ -32,7 +30,6 @@ const SocialLinks = [
       </svg>
     ),
     url: 'https://linkedin.com/in/kaicbento',
-    bgColor: 'bg-red-800'
   }
 ];
 
@@ -53,7 +50,7 @@ export const Contact = () => {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-white hover:opacity-80 transition-opacity"
               >
-                <div className={`${link.bgColor} p-1 rounded`}>
+                <div className={'bg-red-500 p-1 rounded'}>
                   {link.icon}
                 </div>
                 <span className="font-mono text-sm sm:text-base">{`${link.name} : ${sanitizeString(link.url)}`}</span>
