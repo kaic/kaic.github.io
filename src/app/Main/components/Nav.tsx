@@ -6,11 +6,13 @@ const navList = [
   { id: 3, name: 'contact' },
 ];
 
+//TODO: Add language switch component
+
 export const Nav = () => {
   const t = useTranslations('Home.Main');
   return (
     <nav className='container mx-auto'>
-      <ul className='flex flex-wrap justify-center gap-4'>
+      <ul className='flex flex-wrap justify-center gap-1'>
         {navList.map(nav => (
           <li key={nav.id}>
             <a
