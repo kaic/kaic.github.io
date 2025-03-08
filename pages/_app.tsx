@@ -23,7 +23,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const userLanguage = navigator.language;
-      const simplifiedLocale = userLanguage.startsWith('en') ? 'pt-br' : 'en';
+      const simplifiedLocale = userLanguage.startsWith('en') ? 'en' : 'pt-br';
       setBrowserLocale(simplifiedLocale);
     }
   }, []);
