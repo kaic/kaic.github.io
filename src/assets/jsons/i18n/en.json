@@ -1,0 +1,35 @@
+{
+    "translation": {
+        "header": {
+            "t-hello": "Hi! I im Kaic,",
+            "t-slogan": "and I develop software for the 21st century.",
+            "t-role": "💼 Software Engineer @ Nubank",
+            "t-location": "🌎 São Paulo, Brazil",
+            "t-articles-link": "Articles",
+            "t-about-link": "About",
+            "t-contact-link": "Contact"
+        },
+        "about-me": {
+            "t-about-title": "About Me",
+            "t-about-p1": "Hi! My name is Kaic Bento. I am {{MY_AGE}} years old, born and resident in São Paulo, Brazil. Currently I work as a Tech Lead and Software Engineer, focusing on the development of distributed solutions in the cloud, always focusing on delivering value to the end customer in a safe and scalable way. Also, I'm a dad, a big fan of soccer, passionate about street culture and PC games. I also dedicate part of my time being curious about economics, geopolitics, entrepreneurship and world history.",
+            "t-about-p2": "I have personally always been very curious, and I always wanted to know how things work (especially electronics). From an early age I was drawn to buttons, wires, lights and screens. I disassembled and assembled everything I saw ahead in search of THAT answer. When I got my first computer at 9 years old, I was delighted. That machine did everything and, when combined with the internet, had all the answers! It was love at first sight.",
+            "t-about-p3": "I started venturing with programming at the age of 12, writing scripts with Sanny Builder to create MODs for GTA San Andreas. At that time I also got to know HTML and CSS while playing with Blogspot and some online forum tools. When I was 15 years old I started studying Computer Science integrated with high school and that's when I started to really learn how a computer worked, which made me fall in love with software engineering. That love make me the decision of which profession I wanted to follow.",
+            "t-about-p4": "At 18 two great things happened in my life: I became a father (yes, things are precocious in my life!) and I got my first job as a developer. I became an intern at a software consultancy in São Paulo and started my journey as a professional developer.",
+            "t-about-p5": "Since then I have worked on projects for large retailers, a large insurance company, the largest sub-buyer in Brazil, the content producer behind the largest YouTube channel in Latin America, I helped to develop an IDE for Web development, I was one of the first to implement in production a website using PWA in Brazil in 2016 and co-founded my own startup, among other things.",
+            "t-about-p6": "Currently I've been focusing my attention on the architecture of distributed systems in the cloud, large-scale systems, good development practices, communication, leadership and team management."
+        },
+        "articles": {
+            "t-articles-title": "Articles",
+            "t-articles-p1": "Here are some articles I wrote about technology, software engineering and other things I like to talk about."
+        },
+        "contact": {
+            "t-contact-title": "Talk to me",
+            "t-contact-p1": "Wanna talk to me about technology, work or something interesting? Here are my contacts."
+        },
+        "footer": {
+            "t-footer-p1": "This site was made with HTML, SASS, JavaScript and Webpack.",
+            "t-footer-sourcecode": "📕 Here's the Source Code",
+            "t-footer-p2": "All rights reserved."
+        }
+    }
+}

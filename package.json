@@ -1,36 +1,42 @@
 {
-  "name": "kaic.me",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write ."
-  },
-  "dependencies": {
-    "@anthropic-ai/claude-code": "^0.2.29",
-    "next": "15.1.7",
-    "next-intl": "^3.26.5",
-    "next-themes": "^0.4.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "yarn": "^1.22.22"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.7",
-    "eslint-config-prettier": "^10.0.2",
-    "eslint-plugin-prettier": "^5.2.3",
-    "postcss": "^8",
-    "prettier": "^3.5.3",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
-  }
+    "name": "kaic.github.io",
+    "version": "1.0.0",
+    "description": "My personal website",
+    "main": "index.js",
+    "scripts": {
+        "dev": "webpack-dev-server --mode development --env.development --open --progress",
+        "build": "webpack --mode production --env.production --progress",
+        "deploy": "node ./bin/gh-pages.js",
+        "production": "npm run build && npm run deploy",
+        "gh-pages-clean": "rm -rf node_modules/gh-pages/.cache"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kaic/kaic.githuib.io.git"
+    },
+    "author": "https://github.com/kaic",
+    "license": "GPL-3.0",
+    "homepage": "https://github.com/kaic/kaic.me#readme",
+    "dependencies": {
+        "bootstrap": "^4.3.1",
+        "rfs": "^9.0.0"
+    },
+    "devDependencies": {
+        "copy-webpack-plugin": "^5.0.4",
+        "css-loader": "^3.2.0",
+        "dotenv": "^8.1.0",
+        "extract-text-webpack-plugin": "^3.0.2",
+        "gh-pages": "^2.1.1",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^4.0.0-beta.8",
+        "i18next": "^19.6.3",
+        "i18next-browser-languagedetector": "^5.0.0",
+        "node-sass": "npm:dart-sass@^1.25.0",
+        "sass-loader": "6.0.7",
+        "style-loader": "0.20.2",
+        "url-loader": "1.0.1",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0"
+    }
 }

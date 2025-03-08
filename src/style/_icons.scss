@@ -1,0 +1,73 @@
+.icon-javascript,
+.icon-mongodb,
+.icon-jenkins,
+.icon-angularjs,
+.icon-nodejs,
+.icon-npm,
+.icon-postgreesql,
+.icon-docker,
+.icon-html-5,
+.icon-git,
+.icon-css3,
+.icon-linkedin,
+.icon-linux,
+.icon-console,
+.icon-api-settings,
+.icon-cloud-connection,
+.icon-sql,
+.icon-mysql,
+.icon-sprint-iteration,
+.icon-ionic,
+.icon-github,
+.icon-pdf,
+.icon-webpack,
+.icon-sass,
+.icon-bootstrap,
+.icon-mailbox-with-letter,
+.icon-c-plus-plus-logo,
+.icon-raspberry-pi,
+.icon-arduino,
+.icon-python {
+    display: inline-block;
+    @include rfs(1.8rem, width);
+    @include rfs(1.8rem, height);
+    fill: currentColor;
+    vertical-align: center;
+}
+
+.icon-javascript > svg,
+.icon-mongodb > svg,
+.icon-jenkins > svg,
+.icon-angularjs > svg,
+.icon-nodejs > svg,
+.icon-npm > svg,
+.icon-postgreesql > svg,
+.icon-docker > svg,
+.icon-html-5 > svg,
+.icon-git > svg,
+.icon-css3 > svg,
+.icon-linkedin > svg,
+.icon-linux > svg,
+.icon-console > svg,
+.icon-api-settings > svg,
+.icon-cloud-connection > svg,
+.icon-sql > svg,
+.icon-mysql > svg,
+.icon-sprint-iteration > svg,
+.icon-ionic > svg,
+.icon-github > svg,
+.icon-pdf > svg,
+.icon-webpack > svg,
+.icon-sass > svg,
+.icon-bootstrap > svg,
+.icon-mailbox-with-letter > svg,
+.icon-c-plus-plus-logo > svg,
+.icon-raspberry-pi > svg,
+.icon-arduino > svg,
+.icon-python > svg {
+    display: inline-block;
+    @include rfs(2rem, width);
+    @include rfs(2rem, height);
+    fill: currentColor;
+    vertical-align: center;
+}

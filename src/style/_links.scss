@@ -1,0 +1,28 @@
+a {
+    font-family: "IBM Plex Mono", monospace;
+    color: $primaryColor;
+
+    &:hover,
+    &:active {
+        color: $secundaryColor;
+        text-decoration: none;
+    }
+
+}
+
+#t-footer-sourcecode {
+    text-decoration: underline;
+}
+
+button {
+    &#translate-btn {
+        @include font-size(20px);
+        background: none;
+        color: white;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
+}
