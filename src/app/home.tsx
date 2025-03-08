@@ -4,7 +4,7 @@ import { About } from '@app/About/About';
 import { Contact } from '@app/Contact/contact';
 import { Footer } from '@src/app/Footer/Footer';
 
-import { SectionSeparator } from '@app/components/SectionSeparator';
+import { SectionSeparator } from '@app/Components/SectionSeparator';
 
 export default function Home() {
   return (
