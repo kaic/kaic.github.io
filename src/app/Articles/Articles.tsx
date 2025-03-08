@@ -27,15 +27,9 @@ function Articles() {
     {
       title: "Be your tool's best friend, not its enemy",
       description: "i.e. don't spend the day fighting against your computer.",
-      date: '2021-09-01',
+      date: '2024-12-22',
       url: 'https://kaicbento.substack.com/p/be-your-tools-best-friend-not-its?r=5vxpr',
-    },
-    {
-      title: "Be your tool's best friend, not its enemy",
-      description: "i.e. don't spend the day fighting against your computer.",
-      date: '2021-09-01',
-      url: 'https://kaicbento.substack.com/p/be-your-tools-best-friend-not-its?r=5vxpr',
-    },
+    }
   ];
 
   return (

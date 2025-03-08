@@ -15,7 +15,7 @@ export const Intro = () => {
       </li>
       <li className='mb-2 text-sm'>
         <p className='text-red-400'>
-          💼 {t('header.job.role')} @ {t('header.job.company')}
+          💼 {t('header.job.role')} <span className='text-white'>@</span> {t('header.job.company')}
         </p>
       </li>
       <li className='text-sm'>

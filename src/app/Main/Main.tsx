@@ -13,7 +13,7 @@ export const Main = () => {
           width={200}
           height={168}
           priority
-          className='rounded-full sm:self-center border-2 border-red-400 mb-2'
+          className='rounded-full sm:self-center border-2 border-red-400 mb-4'
         />
         <Nav />
         <Intro />
