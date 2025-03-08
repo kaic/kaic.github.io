@@ -29,7 +29,7 @@ function Articles() {
       description: "i.e. don't spend the day fighting against your computer.",
       date: '2024-12-22',
       url: 'https://kaicbento.substack.com/p/be-your-tools-best-friend-not-its?r=5vxpr',
-    }
+    },
   ];
 
   return (
