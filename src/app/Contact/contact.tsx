@@ -72,7 +72,7 @@ export const Contact = () => {
                 <div className={'bg-red-500 p-1 rounded'}>
                   {link.icon}
                 </div>
-                <span className="font-mono text-sm sm:text-base">{`${link.name} : ${sanitizeString(link.url)}`}</span>
+                <span className="font-mono text-base">{`${sanitizeString(link.url)}`}</span>
               </a>
             </li>
           </ul>

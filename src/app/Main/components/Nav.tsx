@@ -12,7 +12,7 @@ export const Nav = () => {
   const t = useTranslations('Home.Main');
   return (
     <nav className='container mx-auto'>
-      <ul className='flex flex-wrap justify-center gap-1'>
+      <ul className='text-lg flex flex-wrap justify-center gap-1 mb-2'>
         {navList.map(nav => (
           <li key={nav.id}>
             <a
