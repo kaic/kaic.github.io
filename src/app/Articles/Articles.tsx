@@ -18,7 +18,8 @@ function Articles() {
   const t = useTranslations('Home.Articles');
   const articlesList: IArticle[] = [
     {
-      title: "Why did I rewrite my website from scratch to make it (almost) identical?",
+      title:
+        'Why did I rewrite my website from scratch to make it (almost) identical?',
       date: '2021-09-01',
       description: 'The story of how I rewrote my website from scratch.',
       url: 'https://kaicbento.substack.com/p/be-your-tools-best-friend-not-its?r=5vxpr',

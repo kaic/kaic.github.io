@@ -1,1 +1,2 @@
-export const sanitizeString = (str: string) => str.replace(/https:\/\//g, "").replace(/mailto:/g, "");
+export const sanitizeString = (str: string) =>
+  str.replace(/https:\/\//g, '').replace(/mailto:/g, '');
