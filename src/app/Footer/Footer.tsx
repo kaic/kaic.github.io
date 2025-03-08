@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 
 import { sanitizeString } from '@src/utils';
 
-const SOUCE_CODE_LINK = {
+const SOURCE_CODE_LINK = {
   name: 'GitHub',
   url: 'https://github.com/kaic/kaic.github.io',
 };
