@@ -15,12 +15,12 @@ export const Footer = () => {
       <div className='grid grid-rows-[20px] p-4 gap-12 xs:gap-10 sm:gap-10 md-gap-10 lg:gap-2 xl:gap-2'>
         <p className='text-sm mb-2'>📜 {t('paragraph')}</p>
         <a
-          href={SOUCE_CODE_LINK.url}
+          href={SOURCE_CODE_LINK.url}
           target='_blank'
           rel='noopener noreferrer'
           className='text-white hover:opacity-80 transition-opacity'
         >
-          <p className='font-mono text-base text-red-400'>{`${sanitizeString(SOUCE_CODE_LINK.url)}`}</p>
+          <p className='font-mono text-base text-red-400'>{`${sanitizeString(SOURCE_CODE_LINK.url)}`}</p>
         </a>
       </div>
       <div className='mt-3'>
