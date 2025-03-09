@@ -12,7 +12,7 @@ export const Footer = () => {
 
   return (
     <footer className='text-white mb-4 py-4 text-center'>
-      <div className='grid grid-rows-[20px] p-4 gap-12 xs:gap-10 sm:gap-10 md-gap-10 lg:gap-2 xl:gap-2'>
+      <div className='flex flex-col items-center p-4 space-y-4'>
         <p className='text-sm mb-2'>📜 {t('paragraph')}</p>
         <a
           href={SOURCE_CODE_LINK.url}
