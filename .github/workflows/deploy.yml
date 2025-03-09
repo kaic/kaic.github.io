@@ -27,8 +27,6 @@ jobs:
       - name: Build with Next.js
         run: |
           npm run build
-          # Make sure to create the .nojekyll file to prevent GitHub Pages from ignoring files that begin with an underscore
-          touch out/.nojekyll
         
       - name: Deploy to production branch
         uses: JamesIves/github-pages-deploy-action@v4
