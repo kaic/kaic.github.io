@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Fundo cinza -->
+  <rect width="100" height="100" rx="10" fill="#2D2D2D" />
+  
+  <!-- Texto KAIC em vermelho claro com fonte monoespaçada -->
+  <text x="50" y="62" 
+    font-family="Courier, monospace" 
+    font-size="30" 
+    font-weight="bold" 
+    text-anchor="middle" 
+    fill="#FF6E67">KAIC</text>
+</svg>
