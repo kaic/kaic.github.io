@@ -1,40 +1,81 @@
-//TODO: Refazer README
-//TODO: Script de Deploy
-//TODO: Google Analytics
+# kaic.me
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![Website screenshot](docs/site_header.png)
 
-## Getting Started
+This is my personal website built with Next.js, React, and Tailwind CSS, hosted at [kaic.me](https://kaic.me).
 
-First, run the development server:
+## Project Structure
+
+The source code is on the `main` branch, and the production build is automatically deployed to the `production` branch via GitHub Actions.
+
+### Key Directories and Files
+
+- `.github/workflows`: Contains GitHub Actions deployment configuration
+- `locales`: Internationalization files (en.json, pt-br.json)
+- `pages`: Next.js Pages Router structure
+- `public`: Static assets
+- `src/app`: Main application components organized by section
+  - `About`, `Articles`, `Contact`, etc: Section-specific components
+  - `Components`: Reusable UI components
+- Configuration files: next.config.js, eslint.config.mjs, .prettierrc.json
+
+## Development
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/kaic/kaic.github.io.git
+   cd kaic.github.io
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## Building
+
+To create a production build locally:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will generate static files in the `out` directory.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Deployment happens automatically when changes are pushed to the `main` branch. The GitHub Action workflow:
 
-## Learn More
+1. Builds the Next.js application
+2. Creates a CNAME file with domain kaic.me
+3. Deploys the built files to the `production` branch
+4. GitHub Pages serves the content from the `production` branch
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [React](https://reactjs.org/) - JS Library
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- GitHub Actions - CI/CD
+- GitHub Pages - Hosting
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the [MIT License](LICENSE).
