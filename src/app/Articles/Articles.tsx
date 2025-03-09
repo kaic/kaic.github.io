@@ -34,7 +34,7 @@ function Articles() {
 
   return (
     <article id='articles'>
-      <div className='grid grid-rows-[20px_1fr_20px] p-8 pb-0 gap-12 sm:p-20 font-mono'>
+      <div className='grid grid-rows-[20px_1fr_20px] p-8 pb-0 gap-12 sm:p-20'>
         <h2 className='text-2xl font-bold'>{t('section-name')}</h2>
         <ul className='list-inside text-sm text-center sm:text-left'>
           {articlesList.map((article, index) => (

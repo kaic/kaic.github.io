@@ -20,7 +20,7 @@ export const Footer = () => {
           rel='noopener noreferrer'
           className='text-white hover:opacity-80 transition-opacity'
         >
-          <p className='font-mono text-base text-red-400'>{`${sanitizeString(SOURCE_CODE_LINK.url)}`}</p>
+          <p className=' text-base text-red-400'>{`${sanitizeString(SOURCE_CODE_LINK.url)}`}</p>
         </a>
       </div>
       <div className='mt-3'>

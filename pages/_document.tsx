@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function MyDocument() {
   return (
-    <Html>
+    <Html lang='en'>
       <Head>
         <title>Kaic Bento | Software Developer</title>
       </Head>

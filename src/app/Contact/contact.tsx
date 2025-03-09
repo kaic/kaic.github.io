@@ -70,7 +70,7 @@ export const Contact = () => {
                 className='flex items-center space-x-2 text-white hover:opacity-80 transition-opacity'
               >
                 <div className={'p-1 rounded'}>{link.icon}</div>
-                <span className='font-mono text-base'>{`${sanitizeString(link.url)}`}</span>
+                <span className='text-sm sm-text-base'>{`${sanitizeString(link.url)}`}</span>
               </a>
             </li>
           </ul>
