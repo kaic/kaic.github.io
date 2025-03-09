@@ -27,7 +27,11 @@ jobs:
       - name: Build with Next.js
         run: |
           npm run build
-        
+          
+      - name: Create CNAME file
+        run: |
+          echo "kaic.me" > out/CNAME
+          
       - name: Deploy to production branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
