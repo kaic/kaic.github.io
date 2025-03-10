@@ -23,10 +23,10 @@ const sourceCodePro = Source_Code_Pro({
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  const [browserLocale, setBrowserLocale] = useState<string>('en');
+  const [browserLocale, _] = useState<string>('en');
 
   useEffect(() => {
-    const handleRouteChange = (url: any) => {
+    const handleRouteChange = (url: string) => {
       window.gtag('config', GA_TRACKING_ID, {
         page_path: url,
       });
