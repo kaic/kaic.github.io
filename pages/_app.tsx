@@ -23,7 +23,6 @@ const sourceCodePro = Source_Code_Pro({
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  const [browserLocale, _] = useState<string>('en');
 
   useEffect(() => {
     const handleRouteChange = (url: string) => {
@@ -59,7 +58,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         }}
       />
     <NextIntlClientProvider
-      locale={router.locale || browserLocale}
+        locale={router.locale || 'en'}
       timeZone='America/Sao_Paulo'
       messages={pageProps.messages}
     >
