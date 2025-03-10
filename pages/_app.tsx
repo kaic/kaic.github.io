@@ -35,7 +35,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         className={`scroll-smooth ${sourceCodePro.className} antialiased`}
       >
         <Component {...pageProps} />
-        <GoogleAnalytics gaId="G-QQH756KNVV" />
       </div>
     </NextIntlClientProvider>
   );
