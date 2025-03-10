@@ -1,5 +1,13 @@
 import Home from '../src/app/home';
 
+export const metadata = {
+  title: 'Kaic Bento | Software Developer',
+  description: 'Portfólio de Kaic Bento, desenvolvedor de software',
+  authors: { name: 'Kaic Bento' },
+  keywords: 'software, developer',
+  themeColor: '#f87171',
+};
+
 export default Home;
 
 // Add getStaticProps to load translations
