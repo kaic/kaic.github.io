@@ -4,8 +4,6 @@ import './globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { GoogleAnalytics } from '@next/third-parties/google'; 
-
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ['latin'],
@@ -35,7 +33,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         className={`scroll-smooth ${sourceCodePro.className} antialiased`}
       >
         <Component {...pageProps} />
-        <GoogleAnalytics gaId="G-QQH756KNVV" />
       </div>
     </NextIntlClientProvider>
   );
