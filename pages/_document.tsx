@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 }
 
-const GA_TRACKING_ID = 'G-QQH756KNVV';
+const GA_TRACKING_ID = 'G-HPDY1JZJ7G';
 
 export default function MyDocument() {
   return (
