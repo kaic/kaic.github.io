@@ -16,7 +16,7 @@ export const ArticleLink = ({ article }: ArticleLinkProps) => {
         <a
           href={article.url}
           target='_blank'
-          rel='noopener noreferrer'
+          rel='noopener'
           className='hover:opacity-80 transition-opacity active:text-red-900'
         >
           Read
