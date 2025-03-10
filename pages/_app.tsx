@@ -3,7 +3,7 @@ import { Source_Code_Pro } from 'next/font/google';
 import './globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Script from 'next/script';
 
 const GA_TRACKING_ID = 'G-HPDY1JZJ7G';
