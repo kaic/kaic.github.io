@@ -17,7 +17,6 @@ export default function Home() {
     const loadTranslations = async () => {
       try {
         await getStaticProps({ locale });
-        console.log('Translations loaded for locale:', locale);
       } catch (error) {
         console.error('Failed to load translations:', error);
       }
