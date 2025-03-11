@@ -17,7 +17,8 @@
       }
     },
     "Articles": {
-      "section-name": "My Articles"
+      "section-name": "My Articles",
+      "link": "Read"
     },
     "About": {
       "section-name": "About me",
