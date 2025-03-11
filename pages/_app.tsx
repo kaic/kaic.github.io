@@ -3,8 +3,6 @@ import { Source_Code_Pro } from 'next/font/google';
 import './globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { useRouter } from 'next/router';
-import { GoogleAnalytics } from '@next/third-parties/google'; 
-
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ['latin'],
@@ -23,8 +21,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         messages={pageProps.messages}
       >
         <div className={`scroll-smooth ${sourceCodePro.className} antialiased`}>
-          <Component {...pageProps} />
-        <GoogleAnalytics gaId="G-QQH756KNV" />
+        <Component {...pageProps} />
         </div>
     </NextIntlClientProvider>
   );
