@@ -21,7 +21,7 @@ const sourceCodePro = Source_Code_Pro({
   variable: '--font-source-code-pro',
 });
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   return (
@@ -38,5 +38,3 @@ function MyApp({ Component, pageProps }: AppProps) {
     </NextIntlClientProvider>
   );
 }
-
-export default withGA(GA_TRACKING_ID, Router)(MyApp);
