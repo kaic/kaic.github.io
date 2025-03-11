@@ -3,8 +3,8 @@ import { Source_Code_Pro } from 'next/font/google';
 import './globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
-import Script from 'next/script';
+import Router from 'next/router';
+import withGA from 'next-ga';
 
 const GA_TRACKING_ID = 'G-HPDY1JZJ7G';
 
@@ -21,42 +21,10 @@ const sourceCodePro = Source_Code_Pro({
   variable: '--font-source-code-pro',
 });
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
-  useEffect(() => {
-    const handleRouteChange = (url: string) => {
-      window.gtag('config', GA_TRACKING_ID, {
-        page_path: url,
-      });
-    };
-
-    router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
-    };
-
-  }, [router.events]);
   return (
-    <>
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-      />
-      <Script
-        id="gtag-init"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
     <NextIntlClientProvider
         locale={router.locale || 'en'}
       timeZone='America/Sao_Paulo'
@@ -68,6 +36,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </div>
     </NextIntlClientProvider>
-    </>
   );
 }
+
+export default withGA(GA_TRACKING_ID, Router)(MyApp);
