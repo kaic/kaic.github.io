@@ -8,9 +8,6 @@ export const Intro = () => {
         <p>{t('header.title')}</p>
       </li>
       <li className='mb-2 text-base leading-loose'>
-        <p>{t('header.subtitle')}</p>
-      </li>
-      <li className='mb-2 text-base leading-loose'>
         <p>{t('header.description')}</p>
       </li>
       <li className='mb-2 text-sm'>
