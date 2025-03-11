@@ -21,7 +21,7 @@ function Articles() {
       title:
         'Why did I rewrite my website from scratch to make it (almost) identical?',
       date: '2025-03-11',
-      description: 'This is not a text (only) about frontend, React or CSS, but about the hidden complexities of software engineering decisions.',
+      description: 'This is not a text (only) about Ntext.js or React, but about the hidden complexities of software engineering decisions.',
       url: 'https://open.substack.com/pub/kaicbento/p/why-did-i-rewrite-my-website-from?r=5vxpr&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',
     },
     {
