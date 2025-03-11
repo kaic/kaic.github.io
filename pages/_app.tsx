@@ -15,14 +15,14 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   return (
-      <NextIntlClientProvider
-        locale={router.locale || 'en'}
-        timeZone='America/Sao_Paulo'
-        messages={pageProps.messages}
-      >
-        <div className={`scroll-smooth ${sourceCodePro.className} antialiased`}>
+    <NextIntlClientProvider
+      locale={router.locale || 'en'}
+      timeZone='America/Sao_Paulo'
+      messages={pageProps.messages}
+    >
+      <div className={`scroll-smooth ${sourceCodePro.className} antialiased`}>
         <Component {...pageProps} />
-        </div>
+      </div>
     </NextIntlClientProvider>
   );
 }
