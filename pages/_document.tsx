@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
-const GA_TRACKING_ID = 'G-QQH756KNV';
+const GA_TRACKING_ID = 'G-HPDY1JZJ7G';
 
 export default function MyDocument() {
   return (
