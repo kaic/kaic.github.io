@@ -38,18 +38,17 @@ export const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="flex-row items-center space-x-2 text-center" >
-      < button
+    <div className='flex-row items-center space-x-2 text-center'>
+      <button
         onClick={() => switchLocale('pt-br')}
         className={`text-sm ${currentLocale === 'pt-br' ? 'text-red-400 font-bold' : 'text-gray-400'}`}
       >
         PT-BR
       </button>
-      < span className="text-gray-500" >| </span>
+      <span className='text-gray-500'>| </span>
       <button
         onClick={() => switchLocale('en')}
-        className={`text-sm ${currentLocale === 'en' ? 'text-red-400 font-bold' : 'text-gray-400'}`
-        }
+        className={`text-sm ${currentLocale === 'en' ? 'text-red-400 font-bold' : 'text-gray-400'}`}
       >
         EN
       </button>
