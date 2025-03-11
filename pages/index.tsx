@@ -10,15 +10,12 @@ export const metadata = {
 
 export default Home;
 
-// Add getStaticProps to load translations
-export async function getStaticProps({ locale }: { locale: string }) {
+export async function getStaticProps() {
   try {
-    // Load messages for the current locale
-    const messages = await import(`../locales/${locale || 'en'}.json`);
+    const messages = await import(`../locales/en.json`);
 
     return {
       props: {
-        // Pass the messages to the page component via props
         messages: messages.default,
       },
     };

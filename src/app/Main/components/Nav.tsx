@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import { LanguageSwitcher } from '@src/LanguagueSwitcher';
 
 const navList = [
   { id: 1, name: 'about' },
@@ -6,13 +7,12 @@ const navList = [
   { id: 3, name: 'contact' },
 ];
 
-//TODO: Add language switch component
-
 export const Nav = () => {
   const t = useTranslations('Home.Main');
   return (
     <nav className='container mx-auto'>
-      <ul className='text-lg flex flex-wrap justify-center gap-1 mb-4'>
+      <LanguageSwitcher />
+      <ul className='text-lg flex flex-wrap justify-center gap-1 mb-4 mt-4'>
         {navList.map(nav => (
           <li key={nav.id}>
             <a
