@@ -11,8 +11,7 @@ export default function MyDocument() {
         async
         defer
         data-website-id={WEBSITE_ID}
-        src={`https://${WEBSITE_ID}-umami.com/umami.js`}
-      />
+        src="https://cloud.umami.is/script.js" />
       <body>
         <Main />
         <NextScript />
