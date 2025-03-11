@@ -3,12 +3,10 @@ import { Source_Code_Pro } from 'next/font/google';
 import './globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { useRouter } from 'next/router';
+import Script from 'next/script';
 
-declare global {
-  interface Window {
-    gtag: (command: string, trackingId: string, config: object) => void;
-  }
-}
+const WEBSITE_ID = '0b493e9f-c3e3-4eb8-a119-4bf453dcec5b';
+
 
 const sourceCodePro = Source_Code_Pro({
   subsets: ['latin'],
@@ -21,14 +19,21 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   return (
-    <NextIntlClientProvider
-      locale={router.locale || 'en'}
-      timeZone='America/Sao_Paulo'
-      messages={pageProps.messages}
-    >
-      <div className={`scroll-smooth ${sourceCodePro.className} antialiased`}>
-        <Component {...pageProps} />
-      </div>
-    </NextIntlClientProvider>
+    <>
+      <Script
+        strategy="afterInteractive"
+        data-website-id={WEBSITE_ID}
+        src="https://cloud.umami.is/script.js"
+      />
+      <NextIntlClientProvider
+        locale={router.locale || 'en'}
+        timeZone='America/Sao_Paulo'
+        messages={pageProps.messages}
+      >
+        <div className={`scroll-smooth ${sourceCodePro.className} antialiased`}>
+          <Component {...pageProps} />
+        </div>
+      </NextIntlClientProvider>
+    </>
   );
 }
