@@ -7,13 +7,12 @@ import { useLocale } from 'next-intl';
 import { useEffect } from 'react';
 
 import { SectionSeparator } from '@app/Components/SectionSeparator';
-import { getStaticProps } from '@src/LanguagueSwitcher';	
+import { getStaticProps } from '@src/LanguagueSwitcher';
 
 export default function Home() {
   const locale = useLocale();
 
   useEffect(() => {
-
     const loadTranslations = async () => {
       try {
         await getStaticProps({ locale });
