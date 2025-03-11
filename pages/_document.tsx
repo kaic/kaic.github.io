@@ -8,7 +8,6 @@ export default function MyDocument() {
     <Html lang='en'>
       <Head />
       <Script
-        async
         defer
         data-website-id={WEBSITE_ID}
         src="https://cloud.umami.is/script.js" />
