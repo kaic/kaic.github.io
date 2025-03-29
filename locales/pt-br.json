@@ -24,9 +24,11 @@
     "Articles": {
       "section-name": "Meus Artigos",
       "subscribe-link": "Se inscreva para receber meus insights técnicos",
+      "newsletter-frequency": "Newsletter gratuita",
       "link": "Leia"
     },
     "Contact": {
+      "section-name": "Contatos",
       "paragraph": "Quer falar comigo sobre tecnologia, trabalho ou algo interessante? Aqui estão os meus contatos. Sinta-se à vontade para entrar em contato!"
     },
     "Footer": {
