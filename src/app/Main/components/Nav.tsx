@@ -2,22 +2,24 @@ import { useTranslations } from 'next-intl';
 import { LanguageSwitcher } from '@src/LanguagueSwitcher';
 
 const navList = [
-  { id: 1, name: 'about' },
-  { id: 2, name: 'articles' },
-  { id: 3, name: 'contact' },
+  { id: 1, name: 'about', link: 'about' },
+  { id: 2, name: 'articles', link: 'articles' },
+  { id: 3, name: 'contact', link: 'contact' },
 ];
 
 export const Nav = () => {
   const t = useTranslations('Home.Main');
   return (
-    <nav className='container mx-auto'>
-      <LanguageSwitcher />
-      <ul className='text-lg flex flex-wrap justify-center gap-1 mb-4 mt-4'>
+    <nav className='flex flex-col items-end'>
+      <div className='mb-2'>
+        <LanguageSwitcher />
+      </div>
+      <ul className='flex items-center gap-4 sm:gap-6'>
         {navList.map(nav => (
-          <li key={nav.id}>
+          <li key={nav.id} className="text-center min-w-[80px]">
             <a
-              href={`#${nav.name}`}
-              className='text-red-400 hover:opacity-80 transition-opacity active:text-red-900 px-2 py-2'
+              href={`#${nav.link}`}
+              className='text-red-400 hover:opacity-80 transition-opacity active:text-red-900 px-1 py-1 text-base font-medium inline-block relative after:content-[""] after:absolute after:w-0 after:h-0.5 after:bg-red-400 after:left-1/2 after:-translate-x-1/2 after:-bottom-0.5 after:transition-all hover:after:w-full'
             >
               {t(`nav.${nav.name}`)}
             </a>

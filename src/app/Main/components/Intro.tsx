@@ -7,9 +7,7 @@ export const Intro = () => {
   
   return (
     <div className='sm:text-left font-[family-name:var(--font-geist-mono)] xs:max-w-[40vw]'>
-      <h1 className='text-2xl font-bold mb-3'>
-        {t('header.title')}
-      </h1>
+      {/* Title moved to Main component */}
       <p className='mb-4 text-base leading-loose'>
         {t('header.description')}
       </p>

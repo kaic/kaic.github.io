@@ -38,19 +38,27 @@ export const LanguageSwitcher = () => {
   };
 
   return (
-    <div className='flex-row items-center space-x-2 text-center'>
-      <button
-        onClick={() => switchLocale('pt-br')}
-        className={`text-sm ${currentLocale === 'pt-br' ? 'text-red-400 font-bold' : 'text-gray-400'}`}
-      >
-        PT-BR
-      </button>
-      <span className='text-gray-500'>| </span>
+    <div className='flex items-center space-x-3 text-center p-1 rounded-full bg-gray-800 bg-opacity-30'>
       <button
         onClick={() => switchLocale('en')}
-        className={`text-sm ${currentLocale === 'en' ? 'text-red-400 font-bold' : 'text-gray-400'}`}
+        className={`text-xs font-medium px-2 py-1 rounded-full transition-all duration-200 ${
+          currentLocale === 'en' 
+            ? 'text-red-400' 
+            : 'text-gray-300 hover:text-gray-100'
+        }`}
       >
         EN
+      </button>
+      <span className='text-gray-500'>|</span>
+      <button
+        onClick={() => switchLocale('pt-br')}
+        className={`text-xs font-medium px-2 py-1 rounded-full transition-all duration-200 ${
+          currentLocale === 'pt-br' 
+            ? 'text-red-400' 
+            : 'text-gray-300 hover:text-gray-100'
+        }`}
+      >
+        PT-BR
       </button>
     </div>
   );
