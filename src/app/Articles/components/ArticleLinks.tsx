@@ -1,9 +1,23 @@
-import { IArticle } from '../Articles';
+import { IArticle, IReadSource } from '../Articles';
 import { useTranslations } from 'next-intl';
 
 interface ArticleLinkProps {
   article: IArticle;
 }
+
+const SourceLink = ({ source, label }: { source: IReadSource, label: string }) => {
+  return (
+    <a
+      href={source.url}
+      target='_blank'
+      rel='noopener'
+      className='hover:opacity-80 transition-opacity active:text-red-900 mr-4 flex items-center'
+    >
+      {label} ({source.language.toUpperCase()})
+      <span className='text-xs ml-1 opacity-70'>[{source.platform}]</span>
+    </a>
+  );
+};
 
 export const ArticleLink = ({ article }: ArticleLinkProps) => {
   const t = useTranslations('Home.Articles');
@@ -15,15 +29,10 @@ export const ArticleLink = ({ article }: ArticleLinkProps) => {
         <p className='text-gray-200 text-base mb-2'>{article.description}</p>
       )}
       <p className='text-gray-200 text-sm mb-2'>{article.date}</p>
-      <div className='flex text-red-400 text-lg font-medium'>
-        <a
-          href={article.url}
-          target='_blank'
-          rel='noopener'
-          className='hover:opacity-80 transition-opacity active:text-red-900'
-        >
-          {t(`link`)}
-        </a>
+      <div className='flex flex-wrap text-red-400 text-lg font-medium'>
+        {article.sources.map((source, index) => (
+          <SourceLink key={index} source={source} label={t('link')} />
+        ))}
       </div>
     </div>
   );
