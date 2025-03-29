@@ -8,17 +8,18 @@
       },
       "header": {
         "title": "Oi, Eu sou o Kaic",
-        "description": "Desenvolvendo soluções cloud distribuídas com foco em segurança e escalabilidade. Atualmente me especializando em arquitetura cloud, sistemas de larga escala e LLMs.",
+        "description": "Desenvolvendo soluções escaláveis e inovadoras no maior banco digital do Brasil. Com experiência em varejo, fintechs, serviços financeiros e mídia digital, enfrento desafios técnicos complexos de forma direta, garantindo soluções que funcionem de maneira eficiente em larga escala.",
         "location": "São Paulo, Brasil",
         "job": {
           "role": "Software Engineer",
           "company": "Nubank"
-        }
+        },
+        "experience": "Construindo soluções digitais desde 2016"
       }
     },
     "About": {
       "section-name": "Sobre mim",
-      "paragraph": "Nascido e criado em São Paulo, atualmente trabalhando no Nubank como Engenheiro de Software, desenvolvendo soluções distribuídas em nuvem, com foco em entregar valor para o cliente de forma segura e escalável. Fora do trabalho, sou pai, apaixonado por futebol, cozinheiro amador e ocasionalmente estou jogando algo no PC ou lendo alguma coisa.\n\nComecei a programar aos 12, criando scripts para mods de GTA San Andreas e brincava com HTML/CSS no Blogspot e em ferramentas de foruns. Aos 15, iniciei estudos formais em Informática paralelamente ao ensino médio, quando realmente comecei a entender como computadores funcionam e decidi seguir carreira em engenharia de software.\n\nAos 18, dois marcos importantes aconteceram na minha vida: me tornei pai e consegui meu primeiro emprego como estagiário em uma consultoria de desenvolvimento em São Paulo.\n\nDesde então, trabalhei em projetos para grandes varejistas, seguradoras, a maior subadquirente do Brasil e a produtora do maior canal do YouTube da América Latina. Ajudei a desenvolver uma IDE web, implementei um dos primeiros sites PWA em produção no Brasil (2016) e co-fundei uma startup.\n\nAtualmente, concentro minhas atenções em arquitetura distribuída na nuvem, sistemas de larga escala, boas práticas de desenvolvimento, comunicação e LLMs."
+      "paragraph": "Nascido e criado em São Paulo, atualmente estou engenhando soluções distribuídas em cloud no Nubank, principal banco digital da América Latina, onde foco em entregar produtos seguros e escaláveis que impactam milhões de clientes. Fora do trabalho, sou pai, apaixonado por futebol e cozinheiro amador.\n\nMinha jornada profissional me levou por diversos setores—grandes varejistas, seguradoras, a maior subadquirente de pagamentos do Brasil e a produtora do canal do YouTube mais assistido da América Latina. Contribuí com projetos inovadores, incluindo plataformas de desenvolvimento web, pioneirei Progressive Web Apps no Brasil (2016) e co-fundei uma startup de tecnologia.\n\nCom mais de uma década de experiência profissional, sou especialista em arquitetura de nuvem distribuída, sistemas escaláveis e aplicação de soluções de IA para desafios complexos de negócios. Sou apaixonado por código elegante, comunicação eficaz e criação de tecnologia que faz diferença."
     },
     "Articles": {
       "section-name": "Meus Artigos",

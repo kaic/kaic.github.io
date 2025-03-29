@@ -8,12 +8,13 @@
       },
       "header": {
         "title": "Hi, I'm Kaic",
-        "description": "Developing distributed cloud solutions with a focus on security and scalability. Currently specializing in cloud architecture, large-scale systems, and LLMs.",
+        "description": "Developing scalable and innovative solutions at Brazil’s top digital bank. With a background in retail, fintech, financial services, and digital media, I tackle complex technical challenges head-on, ensuring solutions that operate effectively at scale.",
         "location": "São Paulo, Brazil",
         "job": {
           "role": "Software Engineer",
           "company": "Nubank"
-        }
+        },
+        "experience": "Building digital solutions since 2016"
       }
     },
     "Articles": {
@@ -23,7 +24,7 @@
     },
     "About": {
       "section-name": "About me",
-      "paragraph": "Born and raised in São Paulo, currently working at Nubank as a Software Engineer, developing distributed cloud solutions, focusing on delivering value to clients in a secure and scalable way. Outside of work, I'm a father, football enthusiast, and amateur cook, and occasionally you'll find me playing something on my PC or reading.\n\nI started programming at 12, creating scripts for GTA San Andreas mods and playing with HTML/CSS on Blogspot and forum tools. At 15, I began formal studies in Computer Science in high school, when I started to understand how computers work and decided to pursue a career in software engineering.\nAt 18, two important milestones happened in my life: I became a father and landed my first job as an intern at a development consultancy in São Paulo.\nSince then, I've worked on projects for major retailers, insurance companies, Brazil's largest sub-acquirer, and the production company behind Latin America's biggest YouTube channel. I helped develop a web IDE, implemented one of Brazil's first PWA sites in production (2016), and co-founded a startup.\nCurrently, I focus on distributed cloud architecture, large-scale systems, development best practices, communication, and LLMs."
+      "paragraph": "Born and raised in São Paulo, I'm currently engineering distributed cloud solutions at Nubank, Latin America's leading digital bank, where I focus on delivering secure, scalable products that impact millions of customers. Outside of work, I'm a father, football enthusiast, and amateur cook.\n\nMy professional journey has taken me through diverse sectors—from major retailers and insurance companies to Brazil's largest payment sub-acquirer and the production company behind Latin America's most-viewed YouTube channel. I've contributed to innovative projects including web development platforms, pioneered Progressive Web Apps in Brazil (2016), and co-founded a technology startup.\n\nWith over a decade of professional experience, I specialize in distributed cloud architecture, scalable systems, and applying AI solutions to complex business challenges. I'm passionate about elegant code, effective communication, and creating technology that makes a difference."
     },
     "Contact": {
       "paragraph": "Wanna talk to me about technology, work or something interesting? Here are my contacts and social networks. Feel free to reach out!"
