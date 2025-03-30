@@ -47,7 +47,7 @@ function Articles() {
           platform: 'dev.to'
         },
         {
-          url: 'https://dev.to/kaic/voce-nao-esta-mais-codificando-sozinho-programando-na-era-dos-agentes-4h8k',
+          url: 'https://dev.to/kaic/voce-nao-esta-mais-codificando-sozinhoa-o-desenvolvimento-na-era-dos-code-agents-11o9',
           language: 'pt-br',
           platform: 'dev.to'
         }
