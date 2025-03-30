@@ -2,8 +2,11 @@
 import Image from 'next/image';
 import { Nav } from './components/Nav';
 import { Intro } from './components/Intro';
+import { useTranslations } from 'next-intl';
 
 export const Main = () => {
+  const t = useTranslations('Home.Main');
+  
   return (
     <div className='grid grid-rows-[2px_1fr_2px] items-center justify-items-center p-8 pb-4 gap-10 sm:p-20'>
       <main className='w-full max-w-4xl flex flex-col gap-2 row-start-2 items-center sm:items-start'>
@@ -19,7 +22,7 @@ export const Main = () => {
             />
             <div className='sm:block'>
               <h1 className='text-2xl font-bold text-white'>
-                Hi, I&apos;m Kaic
+                {t('header.title')}
               </h1>
             </div>
           </div>
