@@ -6,6 +6,8 @@ export default function MyDocument() {
   return (
     <Html lang='en'>
       <Head>
+        <link rel="icon" href="/favicon.ico" />
+        
         {/* Umami */}
         <script
           defer
