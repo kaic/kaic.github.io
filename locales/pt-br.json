@@ -8,24 +8,34 @@
       },
       "header": {
         "title": "Oi, Eu sou o Kaic",
+        "tagline": "Engenheiro de software escrevendo sobre software, decisões difíceis e aprendizados reais da vida de dev.",
         "description": "Desenvolvendo soluções escaláveis e inovadoras no maior banco digital do Brasil. Com experiência em varejo, fintechs, serviços financeiros e mídia digital, enfrento desafios técnicos complexos de forma direta, garantindo soluções que funcionem de maneira eficiente em larga escala.",
         "location": "São Paulo, Brasil",
         "job": {
           "role": "Software Engineer",
           "company": "Nubank"
         },
-        "experience": "Construindo soluções digitais desde 2016"
+        "experience": "Construindo soluções digitais desde 2016",
+        "cta_button": "Leia meus artigos"
       }
     },
     "About": {
       "section-name": "Sobre mim",
-      "paragraph": "Nascido e criado em São Paulo, atualmente estou engenhando soluções distribuídas em cloud no Nubank, principal banco digital da América Latina, onde foco em entregar produtos seguros e escaláveis que impactam milhões de clientes. Fora do trabalho, sou pai, apaixonado por futebol e cozinheiro amador.\n\nMinha jornada profissional me levou por diversos setores—grandes varejistas, seguradoras, a maior subadquirente de pagamentos do Brasil e a produtora do canal do YouTube mais assistido da América Latina. Contribuí com projetos inovadores, incluindo plataformas de desenvolvimento web, pioneirei Progressive Web Apps no Brasil (2016) e co-fundei uma startup de tecnologia.\n\nCom mais de uma década de experiência profissional, sou especialista em arquitetura de nuvem distribuída, sistemas escaláveis e aplicação de soluções de IA para desafios complexos de negócios. Sou apaixonado por código elegante, comunicação eficaz e criação de tecnologia que faz diferença."
+      "paragraph": "Nascido e criado em São Paulo, atualmente estou trabalhando em soluções distribuídas em cloud no Nubank, principal banco digital da América Latina, onde foco em entregar produtos seguros e escaláveis que impactam milhões de clientes. Fora do trabalho, sou pai, apaixonado por futebol e cozinheiro amador.\n\nMinha jornada profissional me levou por diversos setores—grandes varejistas, seguradoras, a maior subadquirente de pagamentos do Brasil e a produtora do canal do YouTube mais assistido da América Latina. Contribuí com projetos inovadores, incluindo plataformas de desenvolvimento web, pioneirei Progressive Web Apps no Brasil (2016) e co-fundei uma startup de tecnologia.\n\nCom mais de uma década de experiência profissional, sou especialista em arquitetura de nuvem distribuída, sistemas escaláveis e aplicação de soluções de IA para desafios complexos de negócios. Sou apaixonado por código elegante, comunicação eficaz e criação de tecnologia que faz diferença.",
+      "career": "Destaques da Carreira",
+      "previous_experience": "Experiência em Diversos Setores",
+      "industries": "Varejo, Fintech, Mídia, Pagamentos",
+      "specializations": "Backend & Arquitetura Cloud",
+      "journey_title": "Minha Evolução Profissional",
+      "journey_description": "De full-stack para engenharia backend especializada, meu foco evoluiu para construir sistemas escaláveis e robustos."
     },
     "Articles": {
       "section-name": "Meus Artigos",
       "subscribe-link": "Se inscreva para receber meus insights técnicos",
       "newsletter-frequency": "Newsletter gratuita",
-      "link": "Leia"
+      "link": "Leia",
+      "read_more": "Ler mais →",
+      "subscribe-button": "Assinar Newsletter"
     },
     "Contact": {
       "section-name": "Contatos",

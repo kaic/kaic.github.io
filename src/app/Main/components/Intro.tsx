@@ -1,16 +1,28 @@
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export const Intro = () => {
   const t = useTranslations('Home.Main');
   
-  // No longer using dynamic calculation for years of experience
-  
   return (
-    <div className='sm:text-left font-[family-name:var(--font-geist-mono)] xs:max-w-[40vw]'>
-      {/* Title moved to Main component */}
-      <p className='mb-4 text-base leading-loose'>
-        {t('header.description')}
-      </p>
+    <div className='sm:text-left font-[family-name:var(--font-geist-mono)] w-full'>
+      <div className='mb-6'>
+        <h2 className='text-2xl font-bold text-red-400 mb-3'>
+          {t('header.tagline')}
+        </h2>
+        <p className='mb-4 text-base leading-loose'>
+          {t('header.description')}
+        </p>
+        
+        <Link href="#articles" className="inline-flex items-center px-5 py-2.5 mt-2 rounded-lg border border-red-400 bg-red-400 bg-opacity-10 hover:bg-opacity-20 transition-all duration-300 shadow-sm shadow-red-900/20">
+          <span className="font-medium text-white hover:text-red-400 transition-colors">
+            {t('header.cta_button')}
+          </span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-2 text-red-400 group-hover:translate-x-1 transition-transform">
+            <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
+          </svg>
+        </Link>
+      </div>
       
       <div className='mb-4 p-3 border-l-2 border-red-400'>
         <div className='flex flex-col space-y-3'>

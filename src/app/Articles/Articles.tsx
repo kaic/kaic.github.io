@@ -82,46 +82,51 @@ function Articles() {
 
   return (
     <article id='articles'>
-      <div className='grid grid-rows-[auto_1fr_auto] p-8 pb-0 gap-8 sm:p-20'>
-        <div className='flex flex-col sm:flex-row sm:justify-between sm:items-center mb-8'>
+      <div className='max-w-4xl mx-auto grid grid-rows-[auto_1fr_auto] p-4 pb-0 gap-6 sm:p-6 md:p-10 lg:p-20'>
+        <div className='flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 sm:mb-8'>
           <h2 className='text-2xl font-bold mb-4 sm:mb-0'>{t('section-name')}</h2>
-          
-          <a
-            href="https://kaicbento.substack.com/about"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center px-5 py-2.5 rounded-lg border border-red-400 bg-red-400 bg-opacity-10 hover:bg-opacity-20 transition-all duration-300 shadow-sm shadow-red-900/20"
-          >
-            <div className="mr-3 relative">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-red-400 group-hover:scale-110 transition-transform duration-300">
-                <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-                <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
-              </svg>
-              <span className="absolute -top-1 -right-1 flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-              </span>
-            </div>
-            <div>
-              <span className="font-medium text-white group-hover:text-red-400 transition-colors">
-                {t(`subscribe-link`)}
-              </span>
-              <div className="text-xs text-gray-300">
-                {t('newsletter-frequency')}
-              </div>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-2 text-red-400 group-hover:translate-x-1 transition-transform">
-              <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
-            </svg>
-          </a>
         </div>
-        <ul className='grid gap-4 sm:gap-6'>
+        <ul className='grid gap-6 sm:gap-8 mb-6 sm:mb-8'>
           {articlesList.map((article, index) => (
-            <li key={index} className=''>
+            <li key={index}>
               <ArticleLink article={article} />
             </li>
           ))}
         </ul>
+        
+        <div className="mt-6 sm:mt-8 p-4 sm:p-6 rounded-lg border border-red-400 bg-red-400 bg-opacity-5 shadow-lg">
+          <div className="flex flex-col sm:flex-row sm:items-center">
+            <div className="mb-4 sm:mb-0 sm:mr-8 sm:flex-1">
+              <h3 className="text-xl font-bold text-white mb-2">✉️ {t('subscribe-link')}</h3>
+              <p className="text-gray-300">{t('newsletter-frequency')}</p>
+            </div>
+            <div className="sm:flex-shrink-0 w-full sm:w-auto">
+              <a
+                href="https://kaicbento.substack.com/about"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center w-full sm:w-auto px-6 py-3 rounded-lg border border-red-400 bg-red-400 bg-opacity-10 hover:bg-opacity-20 transition-all duration-300 shadow-sm shadow-red-900/20"
+              >
+                <div className="mr-3 relative">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-red-400 group-hover:scale-110 transition-transform duration-300">
+                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                    <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                  </svg>
+                  <span className="absolute -top-1 -right-1 flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                  </span>
+                </div>
+                <span className="font-medium text-white group-hover:text-red-400 transition-colors">
+                  {t('subscribe-button')}
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-2 text-red-400 group-hover:translate-x-1 transition-transform">
+                  <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </article>
   );
