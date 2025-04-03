@@ -67,6 +67,15 @@ const SocialLinks = [
 
 export const Contact = () => {
   const t = useTranslations('Home.Contact');
+  const locale = useLocale();
+  
+  const getLocalizedLabel = (link: typeof SocialLinks[0]) => {
+    return locale === 'pt-br' ? link.labelPt : link.label;
+  };
+  
+  const getLocalizedDescription = (link: typeof SocialLinks[0]) => {
+    return locale === 'pt-br' ? link.descriptionPt : link.description;
+  };
 
   return (
     <article id='contact'>
@@ -90,9 +99,9 @@ export const Contact = () => {
               
               <div className='flex-1'>
                 <h3 className='text-lg font-semibold text-white mb-1 group-hover:text-red-400 transition-colors'>
-                  {useLocale() === 'pt-br' ? link.labelPt : link.label}
+                  {getLocalizedLabel(link)}
                 </h3>
-                <p className='text-gray-300 text-sm mb-2'>{useLocale() === 'pt-br' ? link.descriptionPt : link.description}</p>
+                <p className='text-gray-300 text-sm mb-2'>{getLocalizedDescription(link)}</p>
                 <div className='text-red-400 text-sm font-medium flex items-center'>
                   <span>{link.display}</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform">
