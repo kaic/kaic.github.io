@@ -1,11 +1,17 @@
-import { IArticle, IReadSource } from '../Articles';
 import { useTranslations } from 'next-intl';
+import { 
+  IArticle, 
+  IReadSource, 
+  formatArticleDate, 
+  isMultilingualArticle,
+  getPlatformStyle
+} from '@src/utils';
 
 interface ArticleLinkProps {
   article: IArticle;
 }
 
-// Plataform icons
+// Plataform icons component - could be moved to a separate icons file
 const PlatformIcon = ({ platform }: { platform: string }) => {
   switch (platform) {
     case 'substack':
@@ -25,19 +31,8 @@ const PlatformIcon = ({ platform }: { platform: string }) => {
   }
 };
 
+// Source button component
 const SourceButton = ({ source, label }: { source: IReadSource, label: string }) => {
-  // Define platform-specific styling
-  const getPlatformStyle = (platform: string) => {
-    switch (platform) {
-      case 'substack':
-        return 'bg-orange-500 bg-opacity-20 text-orange-300 border-orange-500 hover:bg-opacity-30';
-      case 'dev.to':
-        return 'bg-indigo-500 bg-opacity-20 text-indigo-300 border-indigo-500 hover:bg-opacity-30';
-      default:
-        return 'bg-red-500 bg-opacity-20 text-red-300 border-red-500 hover:bg-opacity-30';
-    }
-  };
-
   return (
     <a
       href={source.url}
@@ -54,30 +49,43 @@ const SourceButton = ({ source, label }: { source: IReadSource, label: string })
   );
 };
 
-export const ArticleLink = ({ article }: ArticleLinkProps) => {
+// Language badge component
+const LanguageBadge = ({ article }: { article: IArticle }) => {
   const t = useTranslations('Home.Articles');
   
-  // Format date nicely
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return new Intl.DateTimeFormat('en-US', { 
-      year: 'numeric', 
-      month: 'short', 
-      day: 'numeric' 
-    }).format(date);
-  };
+  if (!isMultilingualArticle(article)) return null;
+  
+  return (
+    <div className="flex items-center px-2 py-1 mb-3 bg-gray-800 border border-red-400 border-opacity-30 rounded-md shadow-sm">
+      <span className="text-xs text-gray-200 font-medium flex items-center">
+        <span className="text-red-400 mr-1">{t('available_in')}</span>
+        <div className="flex space-x-1 ml-1">
+          <span className="px-1.5 py-0.5 bg-gray-700 rounded text-[10px] uppercase font-bold">EN</span>
+          <span className="px-1.5 py-0.5 bg-gray-700 rounded text-[10px] uppercase font-bold">PT</span>
+        </div>
+      </span>
+    </div>
+  );
+};
+
+export const ArticleLink = ({ article }: ArticleLinkProps) => {
+  const t = useTranslations('Home.Articles');
 
   return (
     <div className='p-5 text-left block rounded-lg border border-gray-800 shadow-md'>
-      <h3 className='text-xl font-bold text-white mb-3'>
-        {article.title}
-      </h3>
+      <div className="flex justify-between items-start">
+        <h3 className='text-xl font-bold text-white mb-3'>
+          {article.title}
+        </h3>
+        <LanguageBadge article={article} />
+      </div>
+      
       {article.description && (
         <p className='text-gray-200 text-base mb-4'>{article.description}</p>
       )}
       <div className='flex justify-between items-center mb-4'>
         <div className='px-2 py-1 rounded-md bg-gray-800 bg-opacity-50'>
-          <p className='text-gray-300 text-sm'>{formatDate(article.date)}</p>
+          <p className='text-gray-300 text-sm'>{formatArticleDate(article.date)}</p>
         </div>
       </div>
       <div className='flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-700 border-opacity-50'>

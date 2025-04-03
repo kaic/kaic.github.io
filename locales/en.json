@@ -17,6 +17,16 @@
         },
         "experience": "Building digital solutions since 2016",
         "cta_button": "Read my articles"
+      },
+      "newsletter": {
+        "exclusive": "Exclusive content",
+        "title": "Tech insights in your inbox",
+        "description": "Engineering articles on software development, web architecture, and real-world solutions.",
+        "frequency": "Monthly delivery",
+        "value_prop": "Practical lessons",
+        "cta_button": "Subscribe Free",
+        "join_others": "Join 19 subscribers",
+        "guarantee": "Unsubscribe anytime"
       }
     },
     "Articles": {
@@ -25,7 +35,9 @@
       "newsletter-frequency": "Free newsletter",
       "link": "Read",
       "read_more": "Read more →",
-      "subscribe-button": "Subscribe to Newsletter"
+      "subscribe-button": "Subscribe to Newsletter",
+      "available_in": "Available in:",
+      "all_languages": "All Languages"
     },
     "About": {
       "section-name": "About me",
