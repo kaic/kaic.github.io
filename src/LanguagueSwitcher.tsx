@@ -1,26 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocale } from 'next-intl';
 
-export async function getStaticProps(context?: { locale?: string }) {
-  try {
-    const locale = context?.locale;
-
-    const messages = await import(`../locales/${locale}.json`);
-
-    return {
-      props: {
-        messages: messages.default,
-      },
-    };
-  } catch (error) {
-    console.error('Error loading translations:', error);
-    return {
-      props: {
-        messages: {},
-      },
-    };
-  }
-}
+// Função getStaticProps foi movida para o arquivo onde o componente é utilizado
 
 export const LanguageSwitcher = () => {
   const currentLocale = useLocale();
@@ -31,7 +12,16 @@ export const LanguageSwitcher = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null;
+  // Renderiza um placeholder com a mesma estrutura durante SSR
+  if (!mounted) {
+    return (
+      <div className='flex items-center space-x-3 text-center p-1 rounded-full bg-gray-800 bg-opacity-30'>
+        <span className='text-xs font-medium px-2 py-1 rounded-full text-gray-300'>EN</span>
+        <span className='text-gray-500'>|</span>
+        <span className='text-xs font-medium px-2 py-1 rounded-full text-gray-300'>PT-BR</span>
+      </div>
+    );
+  }
 
   const switchLocale = (newLocale: string) => {
     window.changeLanguage(newLocale);
@@ -46,6 +36,7 @@ export const LanguageSwitcher = () => {
             ? 'text-red-400' 
             : 'text-gray-300 hover:text-gray-100'
         }`}
+        aria-label="Switch to English"
       >
         EN
       </button>
@@ -57,6 +48,7 @@ export const LanguageSwitcher = () => {
             ? 'text-red-400' 
             : 'text-gray-300 hover:text-gray-100'
         }`}
+        aria-label="Mudar para Português"
       >
         PT-BR
       </button>

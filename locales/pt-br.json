@@ -22,16 +22,16 @@
         "exclusive": "Conteúdo exclusivo",
         "title": "Insights de tecnologia no seu email",
         "description": "Artigos sobre desenvolvimento de software, arquitetura web e soluções do mundo real.",
-        "frequency": "Entrega mensal",
-        "value_prop": "Lições práticas",
+        "frequency": "Texto novo todo mês",
+        "value_prop": "Lições que aprendi na prática",
         "cta_button": "Inscreva-se Grátis",
-        "join_others": "Junte-se a 19 assinantes",
+        "join_others": "Já somos 19 por aqui!",
         "guarantee": "Cancele quando quiser"
       }
     },
     "About": {
       "section-name": "Sobre mim",
-      "paragraph": "Nascido e criado em São Paulo, atualmente estou trabalhando em soluções distribuídas em cloud no Nubank, principal banco digital da América Latina, onde foco em entregar produtos seguros e escaláveis que impactam milhões de clientes. Fora do trabalho, sou pai, apaixonado por futebol e cozinheiro amador.\n\nMinha jornada profissional me levou por diversos setores—grandes varejistas, seguradoras, a maior subadquirente de pagamentos do Brasil e a produtora do canal do YouTube mais assistido da América Latina. Contribuí com projetos inovadores, incluindo plataformas de desenvolvimento web, pioneirei Progressive Web Apps no Brasil (2016) e co-fundei uma startup de tecnologia.\n\nCom mais de uma década de experiência profissional, sou especialista em arquitetura de nuvem distribuída, sistemas escaláveis e aplicação de soluções de IA para desafios complexos de negócios. Sou apaixonado por código elegante, comunicação eficaz e criação de tecnologia que faz diferença.",
+      "paragraph": "Sou engenheiro de software em São Paulo. Hoje trabalho no Nubank — o maior banco digital da América Latina e um dos principais do mundo — no time responsável pela homepage, uma das partes mais acessadas do app. Tenho atuado com sistemas distribuídos, performance e arquitetura escalável, contribuindo com otimizações de carregamento, migração de componentes legados e refatorações que ajudam a reduzir complexidade e dívida técnica. Também apoio colegas, escrevo documentação técnica e venho me envolvendo cada vez mais em conversas sobre arquitetura.\n\nMinha trajetória passa por áreas como pagamentos, mídia digital, varejo e impacto social. Comecei como desenvolvedor fullstack e já trabalhei com backend, frontend, mobile e infraestrutura — o que me deu uma base sólida pra lidar com diferentes contextos, tecnologias e times. Tenho familiaridade com ambientes de grande escala, pipelines de deploy, monitoramento e todos aqueles detalhes pequenos (mas essenciais) que fazem um sistema continuar de pé.\n\nMe importo com código limpo — mas principalmente com código que pode ser mantido por bastante tempo. Acredito que tecnologia é meio, não fim. E que a gente tá sempre em movimento — aprendendo, se adaptando e construindo junto.\n\nFora do trabalho, sou pai, apaixonado por futebol e cozinheiro amador. Tô sempre atrás de um novo prato, uma boa partida ou uma oportunidade de aprender algo novo.",
       "career": "Destaques da Carreira",
       "previous_experience": "Experiência em Diversos Setores",
       "industries": "Varejo, Fintech, Mídia, Pagamentos",

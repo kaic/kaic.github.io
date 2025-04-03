@@ -8,8 +8,8 @@ export const About = () => {
 
   return (
     <article id='about'>
-      <div className='max-w-4xl mx-auto p-8 pb-20 sm:p-20'>
-        <h2 className='text-2xl font-bold text-left mb-8'>{t('section-name')}</h2>
+      <div className='max-w-4xl mx-auto p-6 pb-16 md:p-12 lg:p-20'>
+        <h2 className='text-2xl font-bold text-red-300 text-left mb-8'>{t('section-name')}</h2>
         
         <div className='space-y-6 text-gray-100'>
           {paragraphs.map((paragraph, index) => (

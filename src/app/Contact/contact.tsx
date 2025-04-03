@@ -1,10 +1,12 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 const SocialLinks = [
   {
     name: 'Email',
     label: 'Send me an email',
+    labelPt: 'Envie-me um email',
     description: 'For job opportunities or project collaborations',
+    descriptionPt: 'Para oportunidades de trabalho ou colaborações em projetos',
     icon: (
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -22,7 +24,9 @@ const SocialLinks = [
   {
     name: 'GitHub',
     label: 'Check my code',
+    labelPt: 'Veja meu código',
     description: 'View my projects and contributions',
+    descriptionPt: 'Veja meus projetos e contribuições',
     icon: (
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -43,7 +47,9 @@ const SocialLinks = [
   {
     name: 'LinkedIn',
     label: 'Connect with me',
+    labelPt: 'Conecte-se comigo',
     description: 'For professional networking',
+    descriptionPt: 'Para networking profissional',
     icon: (
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -64,12 +70,12 @@ export const Contact = () => {
 
   return (
     <article id='contact'>
-      <div className='max-w-4xl mx-auto p-8 pb-20 sm:p-20'>
-        <h2 className='text-2xl font-bold text-left mb-8'>{t('section-name')}</h2>
+      <div className='max-w-4xl mx-auto p-6 pb-16 md:p-12 lg:p-20'>
+        <h2 className='text-2xl font-bold text-red-300 text-left mb-8'>{t('section-name')}</h2>
         
         <p className='text-lg mb-10 max-w-2xl'>{t('paragraph')}</p>
         
-        <div className='grid gap-6 md:grid-cols-1 lg:gap-8'>
+        <div className='grid gap-4 sm:gap-6 lg:gap-8'>
           {SocialLinks.map(link => (
             <a
               key={link.name}
@@ -84,9 +90,9 @@ export const Contact = () => {
               
               <div className='flex-1'>
                 <h3 className='text-lg font-semibold text-white mb-1 group-hover:text-red-400 transition-colors'>
-                  {link.label}
+                  {useLocale() === 'pt-br' ? link.labelPt : link.label}
                 </h3>
-                <p className='text-gray-300 text-sm mb-2'>{link.description}</p>
+                <p className='text-gray-300 text-sm mb-2'>{useLocale() === 'pt-br' ? link.descriptionPt : link.description}</p>
                 <div className='text-red-400 text-sm font-medium flex items-center'>
                   <span>{link.display}</span>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform">

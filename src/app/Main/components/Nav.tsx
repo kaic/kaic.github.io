@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { LanguageSwitcher } from '@src/LanguagueSwitcher';
+import { useEffect, useState } from 'react';
 
 const navList = [
   { id: 1, name: 'articles', link: 'articles' },
@@ -9,6 +10,12 @@ const navList = [
 
 export const Nav = () => {
   const t = useTranslations('Home.Main');
+  const [isMounted, setIsMounted] = useState(false);
+  
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+  
   return (
     <nav className='flex flex-col items-end'>
       <div className='mb-2'>

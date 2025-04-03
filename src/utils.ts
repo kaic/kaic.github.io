@@ -35,9 +35,12 @@ export const isMultilingualArticle = (article: IArticle): boolean => {
   return hasEnglish && hasPortuguese;
 };
 
-export const formatArticleDate = (dateString: string): string => {
+export const formatArticleDate = (dateString: string, locale: string = 'en'): string => {
   const date = new Date(dateString);
-  return new Intl.DateTimeFormat('en-US', { 
+  // Map the locale to the correct format for Intl.DateTimeFormat
+  const dateLocale = locale === 'pt-br' ? 'pt-BR' : 'en-US';
+  
+  return new Intl.DateTimeFormat(dateLocale, { 
     year: 'numeric', 
     month: 'short', 
     day: 'numeric' 
@@ -48,7 +51,7 @@ export const formatArticleDate = (dateString: string): string => {
 export const getPlatformStyle = (platform: string): string => {
   switch (platform) {
     case 'substack':
-      return 'bg-orange-500 bg-opacity-20 text-orange-300 border-orange-500 hover:bg-opacity-30';
+      return 'bg-orange-500 bg-opacity-20 text-orange-400 border-orange-500 hover:bg-opacity-30';
     case 'dev.to':
       return 'bg-indigo-500 bg-opacity-20 text-indigo-300 border-indigo-500 hover:bg-opacity-30';
     default:
