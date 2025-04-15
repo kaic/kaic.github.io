@@ -13,7 +13,8 @@
         "location": "São Paulo, Brasil",
         "job": {
           "role": "Software Engineer",
-          "company": "Nubank"
+          "company": "Nubank",
+          "companyUrl": "https://www.nubank.com.br/"
         },
         "experience": "Construindo soluções digitais desde 2016",
         "cta_button": "Leia meus artigos"

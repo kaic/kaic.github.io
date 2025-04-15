@@ -34,9 +34,11 @@ export const Intro = () => {
               </svg>
             </div>
             <div>
-              <span className='text-red-400 font-medium'>{t('header.job.role')}</span>
+              <span className='text-white font-medium'>{t('header.job.role')}</span>
               <span className='text-white mx-1'>@</span>
-              <span className='text-white'>{t('header.job.company')}</span>
+              <Link href={t('header.job.companyUrl')} target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-white transition-colors">
+                {t('header.job.company')}
+              </Link>
             </div>
           </div>
           
