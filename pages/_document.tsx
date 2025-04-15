@@ -13,6 +13,7 @@ export default function MyDocument() {
           defer
           src='https://cloud.umami.is/script.js'
           data-website-id='0b493e9f-c3e3-4eb8-a119-4bf453dcec5b'
+          data-path-exclusions='/cyberpunk-red-nsp-dash/*'
         />
 
         {/* Google Analytics */}
