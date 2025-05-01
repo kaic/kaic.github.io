@@ -36,7 +36,9 @@ export const isMultilingualArticle = (article: IArticle): boolean => {
 };
 
 export const formatArticleDate = (dateString: string, locale: string = 'en'): string => {
-  const date = new Date(dateString);
+  // Adding T12:00:00 to ensure the date is interpreted at noon in local timezone
+  // This prevents timezone issues where dates can appear as the previous day
+  const date = new Date(`${dateString}T12:00:00`);
   // Map the locale to the correct format for Intl.DateTimeFormat
   const dateLocale = locale === 'pt-br' ? 'pt-BR' : 'en-US';
   

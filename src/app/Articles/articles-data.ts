@@ -6,6 +6,30 @@ import { IArticle } from '@src/utils';
  */
 const articlesData: IArticle[] = [
   {
+    title: "Why Your Monitoring is Failing You — and How Observability Can Fix It",
+    date: '2025-05-03',
+    description: "Why your dashboards aren't enough — and how to evolve from reactive monitoring to real, actionable observability",
+    sources: [
+      {
+        url: 'https://open.substack.com/pub/kaicbento/p/why-your-monitoring-is-failing-you?r=5vxpr&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',
+        language: 'en',
+        platform: 'substack'
+      }
+    ]
+  },
+  {
+    title: "Meu monitoramento é péssimo. O que eu faço?",
+    date: '2025-05-01',
+    description: 'Por que seus dashboards não são suficientes — e como evoluir do monitoramento reativo para uma observabilidade real e confiável',
+    sources: [
+      {
+        url: 'https://open.substack.com/pub/kaicbento/p/meu-monitoramento-e-pessimo-o-que?r=5vxpr&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',
+        language: 'pt-br',
+        platform: 'substack'
+      }
+    ]
+  },
+  {
     title: "You're not coding alone anymore: Coding in the age of agents",
     date: '2025-03-29',
     description: 'How LLMs, code agents, MCPs, and "vibe coding" are reshaping the way we build and think about software.',
