@@ -35,8 +35,8 @@ export const Intro = () => {
             </div>
             <div>
               <span className='text-white font-medium'>{t('header.job.role')}</span>
-              <span className='text-white mx-1'> </span>
-              <span className="text-red-400">
+              {" "}
+              <span className="text-white">
                 {t('header.job.company')}
               </span>
             </div>
