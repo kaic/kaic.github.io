@@ -57,7 +57,14 @@ export const ArticleLink = ({ article }: ArticleLinkProps) => {
     <div className='p-4 sm:p-5 text-left block rounded-lg border border-gray-800 shadow-md'>
       <div>
         <h3 className='text-xl font-bold text-red-400 mb-3'>
-          {article.title}
+          <a
+            href={article.sources[0]?.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            {article.title}
+          </a>
         </h3>
       </div>
       
