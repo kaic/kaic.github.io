@@ -35,10 +35,10 @@ export const Intro = () => {
             </div>
             <div>
               <span className='text-white font-medium'>{t('header.job.role')}</span>
-              <span className='text-white mx-1'>@</span>
-              <Link href={t('header.job.companyUrl')} target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-white transition-colors">
+              <span className='text-white mx-1'> </span>
+              <span className="text-red-400">
                 {t('header.job.company')}
-              </Link>
+              </span>
             </div>
           </div>
           
