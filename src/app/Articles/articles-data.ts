@@ -38,16 +38,6 @@ const articlesData: IArticle[] = [
         url: 'https://open.substack.com/pub/kaicbento/p/youre-not-coding-alone-anymore-coding',
         language: 'en',
         platform: 'substack'
-      },
-      {
-        url: 'https://dev.to/kaic/youre-not-coding-alone-anymore-coding-in-the-age-of-agents-1i1e',
-        language: 'en',
-        platform: 'dev.to'
-      },
-      {
-        url: 'https://dev.to/kaic/voce-nao-esta-mais-codificando-sozinhoa-o-desenvolvimento-na-era-dos-code-agents-11o9',
-        language: 'pt-br',
-        platform: 'dev.to'
       }
     ]
   },
