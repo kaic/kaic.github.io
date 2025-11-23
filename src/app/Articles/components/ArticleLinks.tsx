@@ -3,7 +3,6 @@ import {
   IArticle, 
   IReadSource, 
   formatArticleDate, 
-  isMultilingualArticle,
   getPlatformStyle
 } from '@src/utils';
 
@@ -41,7 +40,7 @@ const SourceButton = ({ source, label }: { source: IReadSource, label: string })
       className={`hover:opacity-90 transition-all active:scale-95 mr-2 mb-2 inline-flex items-center px-4 py-2 rounded-md text-sm border border-opacity-30 ${getPlatformStyle(source.platform)}`}
     >
       <PlatformIcon platform={source.platform} />
-      {label} {source.language.toUpperCase()}
+      {label}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4 ml-2">
         <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
       </svg>
@@ -49,37 +48,7 @@ const SourceButton = ({ source, label }: { source: IReadSource, label: string })
   );
 };
 
-// Language badge component
-const LanguageBadge = ({ article }: { article: IArticle }) => {
-  const t = useTranslations('Home.Articles');
-  
-  if (!isMultilingualArticle(article)) return null;
-  
-  // Get available languages from article
-  const availableLanguages = Array.from(
-    new Set(article.sources.map(source => source.language))
-  );
-  
-  const languageDisplayMap: Record<string, string> = {
-    'en': 'EN',
-    'pt-br': 'PT'
-  };
-  
-  return (
-    <div className="flex items-center px-1 py-0.5 sm:px-2 sm:py-1 mb-2 sm:mb-3 bg-gray-800 border border-red-400 border-opacity-30 rounded-md shadow-sm">
-      <span className="text-xs text-gray-200 font-medium flex items-center">
-        <span className="text-red-400 mr-1">{t('available_in')}</span>
-        <div className="flex space-x-1 ml-1">
-          {availableLanguages.map(lang => (
-            <span key={lang} className="px-1.5 py-0.5 bg-gray-700 rounded text-[10px] uppercase font-bold">
-              {languageDisplayMap[lang] || lang.toUpperCase()}
-            </span>
-          ))}
-        </div>
-      </span>
-    </div>
-  );
-};
+
 
 export const ArticleLink = ({ article }: ArticleLinkProps) => {
   const t = useTranslations('Home.Articles');
@@ -90,8 +59,6 @@ export const ArticleLink = ({ article }: ArticleLinkProps) => {
         <h3 className='text-xl font-bold text-red-400 mb-3'>
           {article.title}
         </h3>
-        
-        {isMultilingualArticle(article) && <LanguageBadge article={article} />}
       </div>
       
       {article.description && (

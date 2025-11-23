@@ -4,7 +4,6 @@ export const sanitizeString = (str: string) =>
 // Types for articles and sources
 export interface IReadSource {
   url: string;
-  language: string;
   platform: string;
 }
 
@@ -14,26 +13,6 @@ export interface IArticle {
   date: string;
   sources: IReadSource[];
 }
-
-export type LanguageFilter = 'all' | 'en' | 'pt-br';
-
-// Utility functions for articles
-export const filterArticlesByLanguage = (
-  articles: IArticle[],
-  languageFilter: LanguageFilter
-): IArticle[] => {
-  if (languageFilter === 'all') return articles;
-  
-  return articles.filter(article => 
-    article.sources.some(source => source.language === languageFilter)
-  );
-};
-
-export const isMultilingualArticle = (article: IArticle): boolean => {
-  const hasEnglish = article.sources.some(source => source.language === 'en');
-  const hasPortuguese = article.sources.some(source => source.language === 'pt-br');
-  return hasEnglish && hasPortuguese;
-};
 
 export const formatArticleDate = (dateString: string, locale: string = 'en'): string => {
   // Adding T12:00:00 to ensure the date is interpreted at noon in local timezone
