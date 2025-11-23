@@ -8,12 +8,12 @@
       },
       "header": {
         "title": "Oi, Eu sou o Kaic",
-        "tagline": "Engenheiro de software escrevendo sobre software, decisões difíceis e aprendizados reais da vida de dev.",
-        "description": "Desenvolvendo soluções escaláveis e inovadoras no maior banco digital do Brasil. Com experiência em varejo, fintechs, serviços financeiros e mídia digital, enfrento desafios técnicos complexos de forma direta, garantindo soluções que funcionem de maneira eficiente em larga escala.",
+        "tagline": "My technical-digital diary",
+        "description": "O Diário de um Engenheiro em Sistemas de Alto Impacto",
         "location": "São Paulo, Brasil",
         "job": {
           "role": "Software Engineer",
-          "company": "Nubank",
+          "company": "Ex-Nubank",
           "companyUrl": "https://www.nubank.com.br/"
         },
         "experience": "Construindo soluções digitais desde 2016",
