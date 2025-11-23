@@ -6,6 +6,18 @@ import { IArticle } from '@src/utils';
  */
 const articlesData: IArticle[] = [
   {
+    title: "What does fixing a child’s lamp have to do with repairing a slow CI/CD",
+    date: '2025-11-25',
+    description: "Sometimes, the most impactful changes come from simple, pragmatic fixes. This story highlights observation, practicality, and the power of being an expert fixer.",
+    sources: [
+      {
+        url: 'https://kaicbento.substack.com/p/what-does-fixing-a-childs-lamp-have',
+        language: 'en',
+        platform: 'substack'
+      }
+    ]
+  },
+  {
     title: "Why Your Monitoring is Failing You — and How Observability Can Fix It",
     date: '2025-05-03',
     description: "Why your dashboards aren't enough — and how to evolve from reactive monitoring to real, actionable observability",
