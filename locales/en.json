@@ -8,12 +8,12 @@
       },
       "header": {
         "title": "Hi, I'm Kaic",
-        "tagline": "Software engineer writing about software, hard decisions, and real dev life learnings.",
-        "description": "Developing scalable and innovative solutions at Brazil's top digital bank. With a background in retail, fintech, financial services, and digital media, I tackle complex technical challenges head-on, ensuring solutions that operate effectively at scale.",
+        "tagline": "My technical-digital diary",
+        "description": "The Diary of a High-Impact Systems Engineer",
         "location": "São Paulo, Brazil",
         "job": {
           "role": "Software Engineer",
-          "company": "Nubank",
+          "company": "Ex-Nubank",
           "companyUrl": "https://www.nubank.com.br/"
         },
         "experience": "Building digital solutions since 2016",
