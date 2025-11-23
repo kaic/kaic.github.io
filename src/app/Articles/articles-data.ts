@@ -12,7 +12,6 @@ const articlesData: IArticle[] = [
     sources: [
       {
         url: 'https://kaicbento.substack.com/p/what-does-fixing-a-childs-lamp-have',
-        language: 'en',
         platform: 'substack'
       }
     ]
@@ -24,19 +23,6 @@ const articlesData: IArticle[] = [
     sources: [
       {
         url: 'https://open.substack.com/pub/kaicbento/p/why-your-monitoring-is-failing-you?r=5vxpr&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',
-        language: 'en',
-        platform: 'substack'
-      }
-    ]
-  },
-  {
-    title: "Meu monitoramento é péssimo. O que eu faço?",
-    date: '2025-05-01',
-    description: 'Por que seus dashboards não são suficientes — e como evoluir do monitoramento reativo para uma observabilidade real e confiável',
-    sources: [
-      {
-        url: 'https://open.substack.com/pub/kaicbento/p/meu-monitoramento-e-pessimo-o-que?r=5vxpr&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',
-        language: 'pt-br',
         platform: 'substack'
       }
     ]
@@ -48,7 +34,6 @@ const articlesData: IArticle[] = [
     sources: [
       {
         url: 'https://open.substack.com/pub/kaicbento/p/youre-not-coding-alone-anymore-coding',
-        language: 'en',
         platform: 'substack'
       }
     ]
@@ -61,7 +46,6 @@ const articlesData: IArticle[] = [
     sources: [
       {
         url: 'https://open.substack.com/pub/kaicbento/p/why-did-i-rewrite-my-website-from?r=5vxpr&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',
-        language: 'en',
         platform: 'substack'
       }
     ]
@@ -73,7 +57,6 @@ const articlesData: IArticle[] = [
     sources: [
       {
         url: 'https://kaicbento.substack.com/p/be-your-tools-best-friend-not-its?r=5vxpr',
-        language: 'en',
         platform: 'substack'
       }
     ]
