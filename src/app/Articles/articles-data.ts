@@ -7,7 +7,7 @@ import { IArticle } from '@src/utils';
 const articlesData: IArticle[] = [
   {
     title: "What does fixing a child’s lamp have to do with repairing a slow CI/CD",
-    date: '2025-11-25',
+    date: '2025-11-24',
     description: "Sometimes, the most impactful changes come from simple, pragmatic fixes. This story highlights observation, practicality, and the power of being an expert fixer.",
     sources: [
       {
