@@ -14,6 +14,25 @@ export interface IArticle {
   sources: IReadSource[];
 }
 
+// Types for projects
+export interface IProjectLink {
+  url: string;
+  label: string;
+  type: 'github' | 'demo' | 'website' | 'download';
+}
+
+export interface IProject {
+  title: string;
+  description: string;
+  longDescription?: string;
+  image: string;
+  date: string;
+  status: 'active' | 'archived' | 'in-development';
+  technologies: string[];
+  links: IProjectLink[];
+  featured?: boolean;
+}
+
 export const formatArticleDate = (dateString: string, locale: string = 'en'): string => {
   // Adding T12:00:00 to ensure the date is interpreted at noon in local timezone
   // This prevents timezone issues where dates can appear as the previous day
