@@ -3,6 +3,7 @@
     "Main": {
       "nav": {
         "articles": "My Articles",
+        "projects": "Projects",
         "about": "About",
         "contact": "Contact me"
       },
@@ -39,6 +40,9 @@
       "subscribe-button": "Subscribe to Newsletter",
       "available_in": "Available in:",
       "all_languages": "All Languages"
+    },
+    "Projects": {
+      "section-name": "My Projects"
     },
     "About": {
       "section-name": "About me",

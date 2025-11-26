@@ -1,4 +1,5 @@
 import Articles from '@app/Articles/Articles';
+import Projects from '@app/Projects/Projects';
 import { Main } from '@app//Main/Main';
 import { About } from '@app/About/About';
 import { Contact } from '@app/Contact/contact';
@@ -11,6 +12,8 @@ export default function Home() {
     <div>
       <Main />
       <Articles />
+      <SectionSeparator />
+      <Projects />
       <SectionSeparator />
       <About />
       <SectionSeparator />

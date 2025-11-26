@@ -3,6 +3,7 @@
     "Main": {
       "nav": {
         "articles": "Meus Artigos",
+        "projects": "Projetos",
         "about": "Sobre mim",
         "contact": "Contatos"
       },
@@ -49,6 +50,9 @@
       "subscribe-button": "Assinar Newsletter",
       "available_in": "Disponível em:",
       "all_languages": "Todos os Idiomas"
+    },
+    "Projects": {
+      "section-name": "Meus Projetos"
     },
     "Contact": {
       "section-name": "Contatos",
