@@ -1,4 +1,4 @@
-import { useTranslations, useLocale } from 'next-intl';
+
 import { 
   IProject, 
   IProjectLink
@@ -110,8 +110,6 @@ const ProjectLinkButton = ({ link }: { link: IProjectLink }) => {
 };
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {
-  const locale = useLocale();
-  
   return (
     <div className='p-5 sm:p-6 text-left block rounded-lg border border-gray-800 shadow-md hover:border-red-400 hover:border-opacity-50 transition-all duration-300'>
       {/* Project Image */}
