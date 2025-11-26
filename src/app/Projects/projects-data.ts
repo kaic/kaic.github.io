@@ -10,7 +10,6 @@ const projectsData: IProject[] = [
     description: 'Minimal hardware monitoring Half-Life style overlay theme for Rainmeter to watch CPU, GPU, RAM, and more.',
     longDescription: 'A Half-Life inspired monitoring theme for Rainmeter featuring real-time CPU, GPU, RAM, Disk, and Network monitoring with a custom TempBridge service for accurate GPU readings.',
     image: '/projects/halflife-monitoring.png',
-    date: '2024-01-15',
     status: 'active',
     technologies: ['C#', '.NET 8.0', 'Rainmeter', 'LibreHardwareMonitor', 'Windows Services'],
     links: [

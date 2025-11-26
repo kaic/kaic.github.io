@@ -1,8 +1,7 @@
 import { useTranslations, useLocale } from 'next-intl';
 import { 
   IProject, 
-  IProjectLink, 
-  formatArticleDate
+  IProjectLink
 } from '@src/utils';
 
 interface ProjectCardProps {
@@ -152,15 +151,6 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           ))}
         </div>
       )}
-
-      {/* Date */}
-      <div className='mb-4'>
-        <div className='px-2 py-1 rounded-md bg-gray-800 bg-opacity-50 inline-block'>
-          <p className='text-gray-300 text-sm'>
-            {formatArticleDate(project.date, locale)}
-          </p>
-        </div>
-      </div>
 
       {/* Action Links */}
       <div className='flex flex-wrap gap-2 pt-4 border-t border-gray-700 border-opacity-50'>

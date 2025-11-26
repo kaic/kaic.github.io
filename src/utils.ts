@@ -26,7 +26,6 @@ export interface IProject {
   description: string;
   longDescription?: string;
   image: string;
-  date: string;
   status: 'active' | 'archived' | 'in-development';
   technologies: string[];
   links: IProjectLink[];
