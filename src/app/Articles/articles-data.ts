@@ -6,6 +6,17 @@ import { IArticle } from '@src/utils';
  */
 const articlesData: IArticle[] = [
   {
+    title: "How I hacked my own hardware monitor using a text file and some C# magic",
+    date: '2025-11-27',
+    description: "Why install 500MB of bloatware when 10MB of code and a text file can do the trick?",
+    sources: [
+      {
+        url: 'https://kaicbento.substack.com/p/how-i-hacked-my-own-hardware-monitor',
+        platform: 'substack'
+      }
+    ]
+  },
+  {
     title: "What does fixing a child’s lamp have to do with repairing a slow CI/CD",
     date: '2025-11-24',
     description: "Sometimes, the most impactful changes come from simple, pragmatic fixes. This story highlights observation, practicality, and the power of being an expert fixer.",
