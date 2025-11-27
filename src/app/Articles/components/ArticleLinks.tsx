@@ -3,7 +3,8 @@ import {
   IArticle, 
   IReadSource, 
   formatArticleDate, 
-  getPlatformStyle
+  getPlatformStyle,
+  addReferer
 } from '@src/utils';
 
 interface ArticleLinkProps {
@@ -34,7 +35,7 @@ const PlatformIcon = ({ platform }: { platform: string }) => {
 const SourceButton = ({ source, label }: { source: IReadSource, label: string }) => {
   return (
     <a
-      href={source.url}
+      href={addReferer(source.url)}
       target='_blank'
       rel='noopener'
       className={`hover:opacity-90 transition-all active:scale-95 mr-2 mb-2 inline-flex items-center px-4 py-2 rounded-md text-sm border border-opacity-30 ${getPlatformStyle(source.platform)}`}
@@ -58,7 +59,7 @@ export const ArticleLink = ({ article }: ArticleLinkProps) => {
       <div>
         <h3 className='text-xl font-bold text-red-400 mb-3'>
           <a
-            href={article.sources[0]?.url}
+            href={addReferer(article.sources[0]?.url)}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"

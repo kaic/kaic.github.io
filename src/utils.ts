@@ -57,3 +57,13 @@ export const getPlatformStyle = (platform: string): string => {
       return 'bg-red-500 bg-opacity-20 text-red-300 border-red-500 hover:bg-opacity-30';
   }
 };
+
+export const addReferer = (url: string): string => {
+  try {
+    const urlObj = new URL(url);
+    urlObj.searchParams.set('ref', 'kaic.me');
+    return urlObj.toString();
+  } catch {
+    return url;
+  }
+};
