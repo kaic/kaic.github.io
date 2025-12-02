@@ -6,6 +6,17 @@ import { IArticle } from '@src/utils';
  */
 const articlesData: IArticle[] = [
   {
+    title: "From Personal Script to Public Tool: How I Built a Windows Setup Generator",
+    date: '2025-12-02',
+    description: "Turning a Personal Automation Into a Tool Anyone Can Use",
+    sources: [
+      {
+        url: 'https://open.substack.com/pub/kaicbento/p/from-personal-script-to-public-tool',
+        platform: 'substack'
+      }
+    ]
+  },
+  {
     title: "How I hacked my own hardware monitor using a text file and some C# magic",
     date: '2025-11-27',
     description: "Why install 500MB of bloatware when 10MB of code and a text file can do the trick?",
