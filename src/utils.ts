@@ -30,6 +30,7 @@ export interface IProject {
   technologies: string[];
   links: IProjectLink[];
   featured?: boolean;
+  repo?: string;
 }
 
 export const formatArticleDate = (dateString: string, locale: string = 'en'): string => {

@@ -6,6 +6,7 @@ import {
 
 interface ProjectCardProps {
   project: IProject;
+  stars?: number | null;
 }
 
 // Project link icon component
@@ -109,7 +110,9 @@ const ProjectLinkButton = ({ link }: { link: IProjectLink }) => {
   );
 };
 
-export const ProjectCard = ({ project }: ProjectCardProps) => {
+export const ProjectCard = ({ project, stars }: ProjectCardProps) => {
+  const displayStars = typeof stars === 'number' ? stars : '—';
+
   return (
     <div className='p-5 sm:p-6 text-left block rounded-lg border border-gray-800 shadow-md hover:border-red-400 hover:border-opacity-50 transition-all duration-300'>
       {/* Project Image */}
@@ -125,9 +128,17 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
 
       {/* Header with title and status */}
       <div className='flex justify-between items-start mb-3'>
-        <h3 className='text-xl font-bold text-red-400'>
-          {project.title}
-        </h3>
+        <div>
+          <h3 className='text-xl font-bold text-red-400'>
+            {project.title}
+          </h3>
+          <div className='flex items-center gap-2 text-amber-300 text-sm mt-1'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81H7.03a1 1 0 00.95-.69l1.07-3.292z" />
+            </svg>
+            <span>{displayStars}</span>
+          </div>
+        </div>
         <StatusBadge status={project.status} />
       </div>
       
