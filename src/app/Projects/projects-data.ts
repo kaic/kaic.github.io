@@ -28,6 +28,23 @@ const projectsData: IProject[] = [
     featured: true
   },
   {
+    title: 'Motion-With-Accelerometer',
+    repo: 'kaic/Motion-With-Accelerometer',
+    description: 'A simple Arduino-based inertial motion tracker using a 3-axis analog accelerometer (e.g., ADXL335).',
+    longDescription: 'Reads raw acceleration, removes sensor bias, integrates acceleration to estimate velocity and position, and streams telemetry over Serial for inspection and logging.',
+    image: '/projects/motion-with-accelerometer.png',
+    status: 'active',
+    technologies: ['Arduino', 'C/C++', 'Accelerometer', 'Embedded'],
+    links: [
+      {
+        url: 'https://github.com/kaic/Motion-With-Accelerometer',
+        label: 'View on GitHub',
+        type: 'github'
+      }
+    ],
+    featured: true
+  },
+  {
     title: 'HalfLife Monitoring',
     repo: 'kaic/halflife-monitoring',
     description: 'Minimal hardware monitoring Half-Life style overlay theme for Rainmeter to watch CPU, GPU, RAM, and more.',
