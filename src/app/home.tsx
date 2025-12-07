@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <div>
       <Main />
-      <Articles />
-      <SectionSeparator />
       <Projects />
+      <SectionSeparator />
+      <Articles />
       <SectionSeparator />
       <About />
       <SectionSeparator />

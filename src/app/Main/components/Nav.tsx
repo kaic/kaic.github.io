@@ -2,8 +2,8 @@ import { useTranslations } from 'next-intl';
 import { LanguageSwitcher } from '@src/LanguagueSwitcher';
 
 const navList = [
-  { id: 1, name: 'articles', link: 'articles' },
-  { id: 2, name: 'projects', link: 'projects' },
+  { id: 1, name: 'projects', link: 'projects' },
+  { id: 2, name: 'articles', link: 'articles' },
   { id: 3, name: 'about', link: 'about' },
   { id: 4, name: 'contact', link: 'contact' },
 ];
