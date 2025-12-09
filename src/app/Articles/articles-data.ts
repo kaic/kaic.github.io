@@ -6,6 +6,17 @@ import { IArticle } from '@src/utils';
  */
 const articlesData: IArticle[] = [
   {
+    title: "What Happens When Your Open Source Project Suddenly Gets Attention",
+    date: '2025-12-09',
+    description: "An Honest Debrief",
+    sources: [
+      {
+        url: 'https://open.substack.com/pub/kaicbento/p/what-happens-when-your-open-source',
+        platform: 'substack'
+      }
+    ]
+  },
+  {
     title: "From Personal Script to Public Tool: How I Built a Windows Setup Generator",
     date: '2025-12-02',
     description: "Turning a Personal Automation Into a Tool Anyone Can Use",
