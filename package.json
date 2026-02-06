@@ -11,7 +11,7 @@
     "prettier:fix": "prettier --write ."
   },
   "dependencies": {
-    "@anthropic-ai/claude-code": "^2.0.50",
+    "@anthropic-ai/claude-code": "^2.1.7",
     "@next/third-parties": "^15.2.1",
     "next": "15.5.9",
     "next-intl": "^3.26.5",
